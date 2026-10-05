@@ -272,13 +272,39 @@ def nuxt_state(page, keys):
 
 
 def civic(now, seen):
-    """中選會: upcoming votes (countdown) and new announcements about elections, referendums, recalls."""
+    """中選會: upcoming votes (countdown, from the homepage calendar) and new announcements (from its RSS)
+    about elections, referendums, recalls."""
     cfg, items = CONFIG["civic"], []
     try:
-        objs = nuxt_state(get(cfg["url"]).decode("utf-8", "replace"), {"calendarList", "bulletinList"})
+        objs = nuxt_state(get(cfg["url"]).decode("utf-8", "replace"), {"calendarList"})
+        for obj in objs:
+            for ev in obj.get("calendarList") or []:
+                d = datetime.strptime(ev["date"], "%Y%m%d").date()
+                left = (d - now.date()).days
+                if 0 <= left <= cfg["countdown_days"]:
+                    when = "今天" if left == 0 else f"還有 {left} 天"
+                    items.append({"title": f"📅 {ev['title']}：{d.month}/{d.day}（{when}）",
+                                  "link": cfg["url"], "source": "中選會行事曆"})
     except Exception as ex:
-        warn(f"中選會", ex)
-        return items
+        warn("中選會行事曆", ex)
+
+    titles = set()  # the same announcement can appear in more than one feed
+    for src in cfg["rss"]:
+        try:
+            entries = feedparser.parse(get(src["url"])).entries
+        except Exception as ex:
+            warn(src["name"], ex)
+            continue
+        for e in entries:
+            # pubDate is Taiwan local time without a zone ("2026-09-22 17:04:22"); feedparser would read it as UTC.
+            t = datetime.strptime(e.published, "%Y-%m-%d %H:%M:%S").replace(tzinfo=TZ)
+            if (t < now - WINDOW or e.link in seen or e.title in titles
+                    or not any(k in e.title for k in cfg["keywords"])
+                    or any(k in e.title for k in cfg["exclude"])):
+                continue
+            titles.add(e.title)
+            items.append({"title": e.title.strip(), "link": e.link, "source": src["name"]})
+    return items
 
     for obj in objs:
         for ev in obj.get("calendarList") or []:

@@ -59,7 +59,11 @@ quake_box = { min_lat = 21.0, max_lat = 26.5, min_lon = 119.0, max_lon = 123.0 }
 [civic]
 name = "🗳️ Civic"
 url = "https://www.cec.gov.tw/"
-countdown_days = 30   # 中選會行事曆上的投票日，進入 30 天內每天顯示倒數
+countdown_days = 30   # 中選會行事曆上的投票日（首頁），進入 30 天內每天顯示倒數
+rss = [               # 中選會 RSS（https://web.cec.gov.tw/central/article/21444）
+  { name = "中選會新聞稿", url = "https://web.cec.gov.tw/api/central/rss/news" },
+  { name = "中選會公告", url = "https://web.cec.gov.tw/api/central/rss/bulletin" },
+]
 keywords = ["公投", "公民投票", "罷免", "投票日", "投票所", "選舉人名冊", "選舉公報", "登記", "意見發表會", "辯論會"]
 exclude = ["訪視", "裁罰", "統計表"]
 
