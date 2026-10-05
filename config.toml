@@ -18,7 +18,7 @@ keep_days = 14          # digest.xml 保留最近幾天
 summary_chars = 200     # 原文摘要（feed 或網頁自帶的，不是 AI 寫的）最多幾個字
 
 [[category]]
-name = "🌍 世界"
+name = "🌍 World"
 each = true   # BBC 每天 1 則；維基百科「新聞動態」有新條目時再加 1 則（標準較全球化，平衡 BBC 偏英國、歐洲的視角）
 sources = [
   { name = "BBC World", method = "rss_first", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
