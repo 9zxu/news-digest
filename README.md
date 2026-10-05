@@ -15,5 +15,6 @@ uv run digest.py --preview --open   # 看今天實際會產生什麼：重新抓
 - `.github/workflows/digest.yml` — 每天 06:30（台灣時間）執行
 - `sources.md` — 來源測試紀錄
 - `mcp_server.py` — MCP：`get_digest`、`read_article`、prompt `explain`
+- `index.template.html` — 網頁版樣式（9zxu.github.io 的 Everforest 配色）
 
 本機 push 前先 `git pull`（Actions 每天會 commit `data/`）。

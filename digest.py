@@ -510,7 +510,7 @@ def render(day):
     chips = sorted(day.get("hot", []), key=lambda c: c.get("region", "world") != "world")  # world first, then Taiwan
     if chips:
         links = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in chips)
-        parts.append(f"<p><b>{escape(CONFIG['hot']['label'])}：</b>{links}</p>")
+        parts.append(f'<p class="topics"><b>{escape(CONFIG["hot"]["label"])}：</b>{links}</p>')
     if day.get("tracking"):
         parts.append(f"<h3>{escape(CONFIG['tracking']['name'])}</h3><ul>")
         parts += [f'<li>【{escape(i["topic"])}】<a href="{escape(i["link"])}">{escape(i["title"])}</a> '
@@ -541,7 +541,7 @@ def write_feed(extra=None):
     items, sections = [], []
     for _, day in sorted(days.items(), reverse=True)[:CONFIG["keep_days"]]:
         title, body = render(day)
-        sections.append(f'<section id="{day["date"]}"><h2>{escape(title)}</h2>\n{body}</section>')
+        sections.append(f'<section class="day" id="{day["date"]}"><h2>{escape(title)}</h2>\n{body}</section>')
         pub = format_datetime(datetime.fromisoformat(day["generated"]))
         items.append(f"""  <item>
     <title>{escape(title)}</title>
@@ -563,16 +563,8 @@ def write_feed(extra=None):
 </rss>
 """)
     # Item links point here (#date), so tapping a title in the reader opens the same content.
-    (PUBLIC / "index.html").write_text(f"""<!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{escape(cfg['title'])}</title>
-<link rel="alternate" type="application/rss+xml" href="digest.xml">
-<style>body{{max-width:40rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui,sans-serif}}
-section{{border-top:1px solid #ccc;padding-top:.5rem}}blockquote{{margin:.25rem 0 1rem;color:#555}}</style>
-</head><body><p>RSS：<a href="digest.xml">digest.xml</a></p>
-{chr(10).join(sections)}
-</body></html>
-""")
+    page = (ROOT / "index.template.html").read_text()
+    (PUBLIC / "index.html").write_text(page.replace("{{title}}", escape(cfg["title"])).replace("{{sections}}", "\n".join(sections)))
 
 
 def main():

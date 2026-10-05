@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{title}}</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
+<link rel="alternate" type="application/rss+xml" href="digest.xml" title="{{title}}">
+<script>
+  // Same theme handling as 9zxu.github.io; same origin, so the saved choice is shared.
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      document.documentElement.setAttribute("data-theme", t || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+<style>
+  /* Everforest palette from 9zxu.github.io */
+  :root {
+    --ef-bg-dim: #1c1a17; --ef-bg0: #26231f; --ef-bg1: #2d2a25; --ef-bg2: #34302a; --ef-bg3: #3c3730; --ef-bg4: #453f37;
+    --ef-fg: #d8cfc0; --ef-grey1: #a39a8c; --ef-grey2: #beb4a4; --ef-green: #a3b088; --ef-red: #d9846f;
+  }
+  [data-theme=light] {
+    --ef-bg-dim: #ece4d3; --ef-bg0: #f7f1e4; --ef-bg1: #f0e9da; --ef-bg2: #e9e1cd; --ef-bg3: #ddd3ba; --ef-bg4: #d0c4a8;
+    --ef-fg: #3d3a34; --ef-grey1: #656355; --ef-grey2: #5a5246; --ef-green: #546935; --ef-red: #a24632;
+  }
+  :root {
+    --color-bg: var(--ef-bg0); --color-surface: var(--ef-bg1); --color-surface-raised: var(--ef-bg2);
+    --color-border: var(--ef-bg3); --color-border-strong: var(--ef-bg4);
+    --color-text: var(--ef-fg); --color-text-muted: var(--ef-grey2); --color-text-faint: var(--ef-grey1);
+    --color-link-hover: var(--ef-green);
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--color-bg); color: var(--color-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--color-text); text-decoration: none; }
+  a:hover { color: var(--color-link-hover); text-decoration: underline; }
+
+  .topbar {
+    position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    height: 3.5rem; padding: 0 1.25rem; background: var(--color-bg); border-bottom: 1px solid var(--color-border);
+  }
+  .topbar__brand { font-weight: 600; }
+  .topbar__actions { display: flex; align-items: center; gap: .5rem; }
+  .icon-btn {
+    display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem;
+    border: 1px solid var(--color-border); border-radius: 6px; background: var(--color-surface); color: var(--color-text); cursor: pointer;
+  }
+  .icon-btn:hover { background: var(--color-surface-raised); color: var(--color-text); text-decoration: none; }
+  .icon-btn svg { width: 1.1rem; height: 1.1rem; }
+  .icon-btn .icon-sun, [data-theme=light] .icon-btn .icon-moon { display: none; }
+  [data-theme=light] .icon-btn .icon-sun { display: inline; }
+
+  main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  .day h2 { font-size: 1.5rem; margin: 2.25rem 0 1rem; padding-top: .25rem; border-top: 1px solid var(--color-border); }
+  .day:first-child h2 { border-top: none; margin-top: 0; padding-top: 0; }
+  .day h3 { font-size: 1.2rem; margin: 1.75rem 0 .75rem; }
+  .day p { margin: 1rem 0; }
+  .day a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--color-border-strong); }
+  .day a:hover { text-decoration-color: currentColor; }
+  .day ul { margin: 1rem 0; padding-left: 1.5rem; }
+  .day li + li { margin-top: .25rem; }
+  .day small { color: var(--color-text-faint); }
+  .day blockquote { margin: .5rem 0 1.25rem; padding: .1rem 1rem; border-left: 3px solid var(--color-border-strong); color: var(--color-text-muted); }
+  .day hr { border: none; border-top: 1px solid var(--color-border); margin: 2.5rem 0 1rem; }
+
+  /* 主題： line as pills, like the tags on 9zxu.github.io */
+  .topics { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; font-size: .875rem; }
+  .topics a { padding: .2rem .6rem; border-radius: 999px; background: var(--color-surface); color: var(--color-text-muted); text-decoration: none; }
+  .topics a:hover { color: var(--color-text); text-decoration: none; }
+
+  .site-footer { border-top: 1px solid var(--color-border); color: var(--color-text-muted); font-size: .875rem; padding: 1.5rem 2rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="topbar__brand" href="./">{{title}}</a>
+  <div class="topbar__actions">
+    <a class="icon-btn" href="digest.xml" aria-label="RSS feed" title="RSS feed">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
+    </a>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    </button>
+  </div>
+</div>
+<main>
+{{sections}}
+</main>
+<footer class="site-footer"><a href="https://9zxu.github.io/">zxu's home</a> · <a href="digest.xml">RSS</a></footer>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", function () {
+    var d = document.documentElement, next = d.getAttribute("data-theme") === "light" ? "dark" : "light";
+    d.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+</script>
+</body>
+</html>
