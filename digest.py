@@ -410,29 +410,40 @@ def wikipedia_ongoing():
     for t in titles:
         if zh.get(t):
             chips.append({"name": re.sub(r"\s*\(.*?\)$", "", zh[t]),
-                          "link": f"https://zh.wikipedia.org/zh-tw/{urllib.parse.quote(zh[t])}"})
+                          "link": f"https://zh.wikipedia.org/zh-tw/{urllib.parse.quote(zh[t].replace(' ', '_'))}"})
         else:
             chips.append({"name": t, "link": f"https://en.wikipedia.org/wiki/{urllib.parse.quote(t.replace(' ', '_'))}"})
     return chips
 
 
+def wikipedia_zh(name, year):
+    """The Chinese Wikipedia article for a topic name. Search ranks the general article first ("九合一選舉"),
+    so if a result is a dated edition ("2022年中華民國地方公職人員選舉"), try this year's edition of it."""
+    api = "https://zh.wikipedia.org/w/api.php?"
+    results = [r["title"] for r in json.loads(get(api + urllib.parse.urlencode({
+        "action": "query", "list": "search", "srsearch": name, "srlimit": 5, "format": "json", "formatversion": 2,
+    })))["query"]["search"]]
+    if not results:
+        return None
+    for title in results:
+        if m := re.search(r"(19|20)\d\d", title):
+            candidate = title.replace(m.group(0), str(year), 1)
+            exists = json.loads(get(api + urllib.parse.urlencode({
+                "action": "query", "titles": candidate, "format": "json", "formatversion": 2,
+            })))["query"]["pages"][0]
+            if "missing" not in exists:
+                return candidate
+    return results[0]
+
+
 def hot(now, seen):
-    """Keywords for what is going on right now, plus a new article from each CNA topic for tracking."""
+    """Long-running events, linked to Wikipedia for the background: Taiwan (CNA homepage topics) and
+    world (Wikipedia's "Ongoing"). Also a new article from each CNA topic for tracking."""
     cfg, chips, tracked = CONFIG["hot"], [], []
     try:
-        for e in feedparser.parse(get(CONFIG["alerts"]["cwa_warnings"])).entries:
-            if "颱風" in e.title:
-                m = re.search(r"(?:輕度|中度|強烈)颱風\s*([\u4e00-\u9fff]{2,4})", e.title)
-                chips.append({"name": f"颱風{m.group(1)}" if m else "颱風", "link": e.link})
-            elif "低溫" in e.title:
-                chips.append({"name": "寒流", "link": e.link})
+        chips += [{"region": "world", **c} for c in wikipedia_ongoing()]
     except Exception as ex:
-        warn(f"中央氣象署", ex)
-
-    try:
-        chips += wikipedia_ongoing()
-    except Exception as ex:
-        warn(f"Wikipedia", ex)
+        warn("Wikipedia", ex)
 
     try:
         page = get(cfg["cna_url"]).decode("utf-8", "replace")
@@ -440,7 +451,14 @@ def hot(now, seen):
             name = m.group(2).strip()
             if name in cfg["cna_exclude"]:
                 continue
-            chips.append({"name": name, "link": urllib.parse.urljoin(cfg["cna_url"], m.group(1))})
+            try:
+                article = wikipedia_zh(name, now.year)
+            except Exception as ex:
+                warn("Wikipedia", ex)
+                article = None
+            link = (f"https://zh.wikipedia.org/zh-tw/{urllib.parse.quote(article.replace(' ', '_'))}" if article
+                    else urllib.parse.urljoin(cfg["cna_url"], m.group(1)))  # no article: the CNA topic page
+            chips.append({"region": "taiwan", "name": name, "link": link})
             if not cfg.get("track_cna_topics"):
                 continue
             for href, title in re.findall(r'<a class="_ellipsis_simple" href="([^"]+)">([^<]+)</a>', m.group(3)):
@@ -450,10 +468,7 @@ def hot(now, seen):
                     seen.add(link)
                     break
     except Exception as ex:
-        warn(f"中央社專題", ex)
-
-    names = set()
-    chips = [c for c in chips if not (c["name"] in names or names.add(c["name"]))]
+        warn("中央社專題", ex)
     return chips, tracked
 
 
@@ -497,9 +512,11 @@ def render(day):
 
     cats = list(enumerate(day["headlines"]))
     parts = [p for i, cat in cats if is_top(i) for p in section(i, cat)]  # World, 台灣
-    if day.get("hot"):
-        chips = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in day["hot"])
-        parts.append(f"<p><b>{escape(CONFIG['hot']['name'])}:</b> {chips}</p>")
+    for region, label in (("taiwan", CONFIG["hot"]["taiwan"]), ("world", CONFIG["hot"]["world"])):
+        chips = [c for c in day.get("hot", []) if c.get("region", "world") == region]
+        if chips:
+            links = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in chips)
+            parts.append(f"<p><b>{escape(label)}：</b>{links}</p>")
     if day["alerts"]:
         parts += [f"<h3>{escape(CONFIG['alerts']['name'])}</h3>", link_list(day["alerts"])]
     if day.get("tracking"):
@@ -594,8 +611,7 @@ def build():
     seen.update(a["link"] for cat in day["headlines"] for a in cat["articles"])
     day["hot"], tracked = hot(now, seen)
     shown = [a["title"] for cat in day["headlines"] for a in cat["articles"]] + [a["title"] for a in tracked]
-    chips, watched, day["watch_hits"] = watch(now, seen, {c["name"] for c in day["hot"]}, shown)
-    day["hot"] += chips
+    _, watched, day["watch_hits"] = watch(now, seen, {c["name"] for c in day["hot"]}, shown)
     day["tracking"] = tracked + watched
     day["failures"] = FAILURES
     for a in day["alerts"] + day["civic"]:
