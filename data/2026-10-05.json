@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "generated": "2026-10-05T22:58:06+08:00",
+  "generated": "2026-10-05T23:18:42+08:00",
   "alerts": [],
   "civic": [],
   "headlines": [
@@ -47,8 +47,8 @@
         {
           "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
           "link": "https://github.com/omlahore/RemoveMacAI",
-          "source": "Hacker News · 687 points",
-          "score": 687,
+          "source": "Hacker News · 693 points",
+          "score": 693,
           "summary": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible. - omlahore/RemoveMacAI"
         },
         {
@@ -69,8 +69,8 @@
     }
   ],
   "scores": {
-    "Hacker News": 687,
-    "Hacker News 熱門": 862,
+    "Hacker News": 693,
+    "Hacker News 熱門": 865,
     "alphaXiv": 241,
     "GitHub Trending": 1430
   },
