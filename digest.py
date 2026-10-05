@@ -44,6 +44,16 @@ AI_WORDS = re.compile(
 _cache = {}
 
 
+FAILURES = []
+
+
+def warn(source, ex):
+    """A source failed. Print it, and list it at the bottom of the day's post so a silent day isn't mistaken for a quiet one."""
+    print(f"! {source}: {ex}", file=sys.stderr)
+    if source not in FAILURES:
+        FAILURES.append(source)
+
+
 def get(url):
     """Fetch a URL; responses are cached because several sections read the same pages."""
     if url in _cache:
@@ -68,6 +78,7 @@ def get(url):
 def clean(text, limit=None):
     text = html.unescape(re.sub(r"<[^>]+>", " ", text or ""))
     text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+([,.;:!?)])", r"\1", text)  # removing tags can leave "league ," behind
     limit = limit or CONFIG["summary_chars"]
     return text if len(text) <= limit else text[:limit].rstrip() + "…"
 
@@ -114,17 +125,34 @@ def cna_home(src, now):
 
 
 def hn_top(src, now):
-    """Highest-scoring AI-related Hacker News story in the window."""
+    """Highest-scoring Hacker News story in the window: AI-related only, unless `any_topic` is set."""
     query = urllib.parse.urlencode({
         "tags": "story", "hitsPerPage": 500,
         "numericFilters": f"created_at_i>{int((now - WINDOW).timestamp())},points>30",
     })
     hits = json.loads(get(f"https://hn.algolia.com/api/v1/search_by_date?{query}"))["hits"]
     for h in sorted(hits, key=lambda h: -h["points"]):
-        if AI_WORDS.search(h["title"]):
+        if src.get("any_topic") or AI_WORDS.search(h["title"]):
             discussion = f"https://news.ycombinator.com/item?id={h['objectID']}"
             yield article(h["title"], h.get("url") or discussion, f"{src['name']} · {h['points']} points",
                           score=h["points"])
+
+
+def itn_html():
+    return json.loads(get("https://en.wikipedia.org/w/api.php?" + urllib.parse.urlencode({
+        "action": "parse", "page": "Template:In_the_news", "prop": "text", "format": "json", "formatversion": 2,
+    })))["parse"]["text"]
+
+
+def wikipedia_itn(src, now):
+    """Stories in the "In the news" box on English Wikipedia's main page, top first."""
+    text = itn_html()
+    box = re.search(r"<ul>(.*?)</ul>", text, re.S)
+    for li in re.findall(r"<li>(.*?)</li>", box.group(1) if box else "", re.S):
+        main = re.search(r'<b>\s*<a href="(/wiki/[^"#]+)"', li) or re.search(r'<a href="(/wiki/[^"#]+)"', li)
+        title = re.sub(r"\s*\(pictured\)", "", clean(li, 300))
+        if main and not re.match(r"In [a-z][\w -]*,", title):  # sports results read "In rugby league, ..."
+            yield article(title, f"https://en.wikipedia.org{main.group(1)}", src["name"], "")
 
 
 def alphaxiv(src, now):
@@ -158,7 +186,7 @@ def github_trending(src, now):
                           f"{src['name']} · {n:,} stars today", desc.group(1) if desc else "", score=n)
 
 
-PICKERS = {"rss_first": rss_first, "cna_home": cna_home, "hn_top": hn_top,
+PICKERS = {"rss_first": rss_first, "cna_home": cna_home, "wikipedia_itn": wikipedia_itn, "hn_top": hn_top,
            "alphaxiv": alphaxiv, "hf_papers": hf_papers, "github_trending": github_trending}
 
 
@@ -170,7 +198,7 @@ def headlines(category, now, seen, scores):
         try:
             top = next((a for a in PICKERS[src["method"]](src, now) if a["link"] not in seen), None)
         except Exception as ex:
-            print(f"! {src['name']}: {ex}", file=sys.stderr)
+            warn(f"{src['name']}", ex)
             continue
         if top is None:
             continue
@@ -178,6 +206,7 @@ def headlines(category, now, seen, scores):
             scores[src["name"]] = top["score"]
         if top["score"] is None or top["score"] >= src.get("min", 0):
             picked.append(top)
+            seen.add(top["link"])
             if not category.get("each"):
                 break
     return picked
@@ -198,7 +227,7 @@ def alerts(now, seen):
                 e = max(hits, key=lambda e: entry_time(e) or now)
                 items.append({"title": e.title.strip(), "link": e.link, "source": "中央氣象署"})
     except Exception as ex:
-        print(f"! 中央氣象署: {ex}", file=sys.stderr)
+        warn(f"中央氣象署", ex)
 
     box = cfg["quake_box"]
     query = urllib.parse.urlencode({
@@ -215,7 +244,7 @@ def alerts(now, seen):
             items.append({"title": f"規模 {p['mag']} 地震 {t:%m/%d %H:%M}（{p['place']}）",
                           "link": p["url"], "source": "USGS"})
     except Exception as ex:
-        print(f"! USGS: {ex}", file=sys.stderr)
+        warn(f"USGS", ex)
     return items
 
 
@@ -243,7 +272,7 @@ def civic(now, seen):
     try:
         objs = nuxt_state(get(cfg["url"]).decode("utf-8", "replace"), {"calendarList", "bulletinList"})
     except Exception as ex:
-        print(f"! 中選會: {ex}", file=sys.stderr)
+        warn(f"中選會", ex)
         return items
 
     for obj in objs:
@@ -272,15 +301,33 @@ def civic(now, seen):
     return items
 
 
-def watch(now, seen, known):
+STOPWORDS = {"after", "with", "from", "that", "this", "have", "into", "over", "says", "said", "about", "their",
+             "what", "watch", "will", "been", "more", "than", "were", "when", "how"}
+
+
+def tokens(text):
+    words = {w for w in re.findall(r"[a-z]{4,}", text.lower()) if w not in STOPWORDS}
+    cjk = re.sub(r"[^\u4e00-\u9fff]", "", text)
+    return words | {cjk[i:i + 2] for i in range(len(cjk) - 1)}
+
+
+def similar(a, b):
+    """Rough same-story check: enough shared words (or Chinese character pairs) between two headlines."""
+    ta, tb = tokens(a), tokens(b)
+    common = ta & tb
+    return len(common) >= 3 and len(common) >= 0.25 * min(len(ta), len(tb))
+
+
+def watch(now, seen, known, shown_titles):
     """Keyword rules over the pool's recent headlines. A topic switches itself on when at least `min_hits`
-    articles match and off when coverage dies down. Returns (chips, one new article per topic, hit counts)."""
+    articles match and off when coverage dies down. Returns (chips, one new article per topic, hit counts).
+    The article shown for a topic skips stories already on the page (e.g. the world headline)."""
     pool = []
     for src in CONFIG["tracking"]["pool"]:
         try:
             entries = feedparser.parse(get(src["url"])).entries
         except Exception as ex:
-            print(f"! {src['name']}: {ex}", file=sys.stderr)
+            warn(f"{src['name']}", ex)
             continue
         pool += [(src["name"], e) for e in entries if (entry_time(e) or now) >= now - WINDOW]
 
@@ -302,9 +349,10 @@ def watch(now, seen, known):
             known.add(name)
             chips.append({"name": name, "link": hits[0][1].link})
             for source, e in hits:
-                if e.link not in seen:
+                if e.link not in seen and not any(similar(e.title, t) for t in shown_titles):
                     items.append({"topic": name, "title": clean(e.title, 300), "link": e.link, "source": source})
                     seen.add(e.link)
+                    shown_titles.append(e.title)
                     break
     return chips, items, counts
 
@@ -312,9 +360,7 @@ def watch(now, seen, known):
 def wikipedia_ongoing():
     """The "Ongoing" line of English Wikipedia's In the news box, named by the Chinese article when there is one."""
     api = "https://en.wikipedia.org/w/api.php?"
-    text = json.loads(get(api + urllib.parse.urlencode({
-        "action": "parse", "page": "Template:In_the_news", "prop": "text", "format": "json", "formatversion": 2,
-    })))["parse"]["text"]
+    text = itn_html()
     i = text.find("Ongoing")
     if i < 0:
         return []
@@ -350,12 +396,12 @@ def hot(now, seen):
             elif "低溫" in e.title:
                 chips.append({"name": "寒流", "link": e.link})
     except Exception as ex:
-        print(f"! 中央氣象署: {ex}", file=sys.stderr)
+        warn(f"中央氣象署", ex)
 
     try:
         chips += wikipedia_ongoing()
     except Exception as ex:
-        print(f"! Wikipedia: {ex}", file=sys.stderr)
+        warn(f"Wikipedia", ex)
 
     try:
         page = get(cfg["cna_url"]).decode("utf-8", "replace")
@@ -373,7 +419,7 @@ def hot(now, seen):
                     seen.add(link)
                     break
     except Exception as ex:
-        print(f"! 中央社專題: {ex}", file=sys.stderr)
+        warn(f"中央社專題", ex)
 
     names = set()
     chips = [c for c in chips if not (c["name"] in names or names.add(c["name"]))]
@@ -427,6 +473,8 @@ def render(day):
     marks = " · ".join(f'<a href="{escape(b["url"])}">{escape(b["name"])}</a>' for b in CONFIG.get("bookmark", []))
     if marks:
         parts.append(f"<hr><p><small>📊 數據：{marks}</small></p>")
+    if day.get("failures"):
+        parts.append(f"<p><small>⚠️ 今日抓取失敗：{escape('、'.join(day['failures']))}</small></p>")
     title = f"📰 {d.month}/{d.day} 週{'一二三四五六日'[d.weekday()]}"
     if day["alerts"]:
         title += " 🚨"
@@ -490,9 +538,11 @@ def main():
     }
     seen.update(a["link"] for cat in day["headlines"] for a in cat["articles"])
     day["hot"], tracked = hot(now, seen)
-    chips, watched, day["watch_hits"] = watch(now, seen, {c["name"] for c in day["hot"]})
+    shown = [a["title"] for cat in day["headlines"] for a in cat["articles"]] + [a["title"] for a in tracked]
+    chips, watched, day["watch_hits"] = watch(now, seen, {c["name"] for c in day["hot"]}, shown)
     day["hot"] += chips
     day["tracking"] = tracked + watched
+    day["failures"] = FAILURES
     for a in day["alerts"] + day["civic"]:
         print(f"{a['source']}: {a['title']}")
     print(f"🔥 {' · '.join(c['name'] for c in day['hot'])}")
@@ -502,6 +552,8 @@ def main():
         print(f"{cat['name']}: {' / '.join(a['title'] for a in cat['articles']) or '無'}")
     print(f"scores: {scores}")
     print(f"watch hits: {day['watch_hits']}")
+    if FAILURES:
+        print(f"failures: {FAILURES}")
     DATA.mkdir(exist_ok=True)
     (DATA / f"{today}.json").write_text(json.dumps(day, ensure_ascii=False, indent=2))
     write_feed()

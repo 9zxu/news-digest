@@ -6,7 +6,8 @@
 # method：
 #   rss_first        取 feed 的第一篇。只適合「依編輯判斷的重要性排序」的 feed（例如 BBC）。
 #   cna_home         中央社首頁最大的那則頭條（抓網頁，不是 RSS；網站改版時可能失效）。
-#   hn_top           Hacker News 過去 36 小時、標題含 AI 關鍵字、分數最高的一篇。
+#   wikipedia_itn    維基百科英文版首頁「In the news」最上面的新條目。
+#   hn_top           Hacker News 過去 36 小時、標題含 AI 關鍵字、分數最高的一篇；any_topic = true 時不限主題。
 #   alphaxiv         alphaXiv 過去 7 天按讚數最高的論文（涵蓋 arXiv cs.AI、cs.CL、cs.LG 等）。
 #   hf_papers        Hugging Face Daily Papers 兩天前那一批中按讚數最高的論文（讓按讚數先累積）。
 #   github_trending  GitHub Trending 今日第一名（不限 AI）。
@@ -18,8 +19,10 @@ summary_chars = 200     # 原文摘要（feed 或網頁自帶的，不是 AI 寫
 
 [[category]]
 name = "🌍 世界"
+each = true   # BBC 每天 1 則；維基百科「新聞動態」有新條目時再加 1 則（標準較全球化，平衡 BBC 偏英國、歐洲的視角）
 sources = [
   { name = "BBC World", method = "rss_first", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
+  { name = "Wikipedia 新聞動態", method = "wikipedia_itn" },
 ]
 
 [[category]]
@@ -34,6 +37,7 @@ name = "💻 Developer"
 each = true   # 每個來源各自判斷門檻，可能 0–3 則
 sources = [
   { name = "Hacker News", method = "hn_top", min = 300 },
+  { name = "Hacker News 熱門", method = "hn_top", any_topic = true, min = 1000 },   # 不限 AI：大當機、重大資安漏洞
   { name = "alphaXiv", method = "alphaxiv", min = 150 },
   { name = "Hugging Face Papers", method = "hf_papers", min = 300 },
   { name = "GitHub Trending", method = "github_trending", min = 1000 },
@@ -51,7 +55,7 @@ quake_box = { min_lat = 21.0, max_lat = 26.5, min_lon = 119.0, max_lon = 123.0 }
 
 # 只在有事時出現：選舉、公投、罷免
 [civic]
-name = "🗳️ 政治參與"
+name = "🗳️ 公民參與"
 url = "https://www.cec.gov.tw/"
 countdown_days = 30   # 中選會行事曆上的投票日，進入 30 天內每天顯示倒數
 keywords = ["公投", "公民投票", "罷免", "投票日", "投票所", "選舉人名冊", "選舉公報", "登記", "意見發表會", "辯論會"]
@@ -101,8 +105,38 @@ match = '(typhoon|hurricane|cyclone|颱風|颶風|氣旋)'
 min_hits = 3
 
 [[watch]]
-name = "選舉"
-match = '(general election|presidential election|election results?|wins? (the )?election|runoff|referendum|大選|總統選舉|公投|罷免|開票)'
+name = "公民參與"   # 選舉、公投、罷免、學運、罷工、遊行、示威、抗議（國內外）
+match = '(general election|presidential election|snap election|early election|election results?|wins? (the )?election|runoff|referendum|recall vote|大選|總統選舉|公投|罷免|學運|罷工|遊行|示威|抗議|general strike|mass protests?|protesters?|student protests?)'
+min_hits = 4
+
+[[watch]]
+name = "全球政治"   # 政變、彈劾、倒閣、制裁、峰會、領導人下台
+match = '(\bcoup\b|impeach\w*|政變|彈劾|sanctions on|制裁|summit|峰會|(prime minister|president|PM) resigns|宣布下台|辭職下台|不信任案|no-confidence)'
+min_hits = 2
+
+[[watch]]
+name = "兩岸政治"
+match = '(解放軍|共軍|共機|共艦|圍台|軍演|台海|台灣海峽|\bPLA\b|Taiwan Strait|\bblockade|國台辦|陸委會|海基會|海協會)'
+min_hits = 3
+
+[[watch]]
+name = "半導體與科技地緣政治"
+match = '(出口管制|export controls?|晶片禁令|chip (ban|curbs|controls)|半導體關稅|chip tariffs?|semiconductor tariffs?|實體清單|entity list)'
+min_hits = 2
+
+[[watch]]
+name = "重大災難與事故"
+match = '(恐攻|terror(ist)? attack|墜機|plane crash|crash (a |the )?plane|劫機|hijack\w*|mass shooting|大規模槍擊|deadly (fire|blast|explosion)|爆炸)'
+min_hits = 2
+
+[[watch]]
+name = "疫情與公共衛生"
+match = '(疫情|pandemic|outbreak|禽流感|bird flu|鼠疫|plague|PHEIC|public health emergency)'
+min_hits = 2
+
+[[watch]]
+name = "民生大事"
+match = '(大停電|分區供電|限電|blackout|power outage|電價|油價|基本工資|停水)'
 min_hits = 2
 
 [[watch]]
