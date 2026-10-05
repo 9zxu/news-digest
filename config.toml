@@ -65,7 +65,7 @@ rss = [               # 中選會 RSS（https://web.cec.gov.tw/central/article/2
   { name = "中選會公告", url = "https://web.cec.gov.tw/api/central/rss/bulletin" },
 ]
 keywords = ["公投", "公民投票", "罷免", "投票日", "投票所", "選舉人名冊", "選舉公報", "登記", "意見發表會", "辯論會"]
-exclude = ["訪視", "裁罰", "統計表"]
+exclude = ["訪視", "主委", "勉勵", "期勉", "裁罰", "統計表"]
 
 # 近期大事：一行關鍵字，點進去看背景；事件結束後自動消失
 #   - 中央氣象署：颱風警報 →「颱風＋名字」，低溫特報 →「寒流」
