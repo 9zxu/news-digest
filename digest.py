@@ -475,7 +475,7 @@ def render(day):
         parts.append(f"<hr><p><small>📊 數據：{marks}</small></p>")
     if day.get("failures"):
         parts.append(f"<p><small>⚠️ 今日抓取失敗：{escape('、'.join(day['failures']))}</small></p>")
-    title = f"📰 {d.month}/{d.day} 週{'一二三四五六日'[d.weekday()]}"
+    title = f"📰 {d:%a, %b} {d.day}"
     if day["alerts"]:
         title += " 🚨"
     return title, "\n".join(parts)

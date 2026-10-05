@@ -177,6 +177,6 @@ name = "中選會選舉資料庫"
 url = "https://db.cec.gov.tw/"
 
 [feed]
-title = "每日頭條"
+title = "zxu's RSS"
 # 本機測試時可改成 http://<Mac 的 IP>:8000/
 site_url = "https://9zxu.github.io/news-digest/"
