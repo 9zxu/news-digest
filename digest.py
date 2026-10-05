@@ -464,10 +464,12 @@ def render(day):
         parts.append("</ul>")
     if day["civic"]:
         parts += [f"<h3>{escape(CONFIG['civic']['name'])}</h3>", link_list(day["civic"])]
-    for cat in day["headlines"]:
+    for i, cat in enumerate(day["headlines"]):
         if not cat["articles"] and cat.get("each"):
             continue  # threshold-only sections disappear on quiet days
-        parts.append(f"<h3>{escape(cat['name'])}</h3>")
+        # Use the current section name from config.toml, so a rename also applies to earlier days.
+        name = CONFIG["category"][i]["name"] if i < len(CONFIG["category"]) else cat["name"]
+        parts.append(f"<h3>{escape(name)}</h3>")
         if not cat["articles"]:
             parts.append("<p>無</p>")
         for a in cat["articles"]:
