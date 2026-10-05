@@ -1,0 +1,125 @@
+# news-digest 設定檔
+# 原則：不要錯過最重要的，平常的小事不一定要知道。
+#   - 世界、台灣：每天各 1 篇頭條。
+#   - 警報、政治參與、AI：只有超過門檻時才出現，沒事就整段不顯示。
+#
+# method：
+#   rss_first        取 feed 的第一篇。只適合「依編輯判斷的重要性排序」的 feed（例如 BBC）。
+#   cna_home         中央社首頁最大的那則頭條（抓網頁，不是 RSS；網站改版時可能失效）。
+#   hn_top           Hacker News 過去 36 小時、標題含 AI 關鍵字、分數最高的一篇。
+#   hf_papers        Hugging Face Daily Papers 兩天前那一批中按讚數最高的論文（讓按讚數先累積）。
+#   github_trending  GitHub Trending 今日第一名（不限 AI）。
+# min：門檻（分數、按讚數、今日星星數）。低於門檻就不顯示；每天的實際數字會記在 data/*.json 的 scores，方便調整。
+
+timezone = "Asia/Taipei"
+keep_days = 14          # digest.xml 保留最近幾天
+summary_chars = 200     # 原文摘要（feed 或網頁自帶的，不是 AI 寫的）最多幾個字
+
+[[category]]
+name = "🌍 世界"
+sources = [
+  { name = "BBC World", method = "rss_first", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
+]
+
+[[category]]
+name = "🇹🇼 台灣"
+sources = [
+  { name = "中央社", method = "cna_home", url = "https://www.cna.com.tw/" },
+  { name = "中央社 政治", method = "rss_first", url = "https://feeds.feedburner.com/rsscna/politics" },
+]
+
+[[category]]
+name = "🤖 AI／技術"
+each = true   # 每個來源各自判斷門檻，可能 0–3 則
+sources = [
+  { name = "Hacker News", method = "hn_top", min = 300 },
+  { name = "Hugging Face Papers", method = "hf_papers", min = 300 },
+  { name = "GitHub Trending", method = "github_trending", min = 1000 },
+]
+
+# 只在有事時出現：颱風、寒流、大地震
+[alerts]
+name = "🚨 警報"
+# 中央氣象署：只能原封不動呈現標題並連回原文（見 sources.md 的使用聲明）
+cwa_warnings = "https://www.cwa.gov.tw/rss/Data/cwa_warning.xml"
+warning_keywords = ["颱風", "低溫"]   # 低溫特報 = 寒流
+# 地震：USGS（免 API key），台灣周邊範圍內規模 >= quake_min
+quake_min = 6.0
+quake_box = { min_lat = 21.0, max_lat = 26.5, min_lon = 119.0, max_lon = 123.0 }
+
+# 只在有事時出現：選舉、公投、罷免
+[civic]
+name = "🗳️ 政治參與"
+url = "https://www.cec.gov.tw/"
+countdown_days = 30   # 中選會行事曆上的投票日，進入 30 天內每天顯示倒數
+keywords = ["公投", "公民投票", "罷免", "投票日", "投票所", "選舉人名冊", "選舉公報", "登記", "意見發表會", "辯論會"]
+exclude = ["訪視", "裁罰", "統計表"]
+
+# 近期大事：一行關鍵字，點進去看背景；事件結束後自動消失
+#   - 中央氣象署：颱風警報 →「颱風＋名字」，低溫特報 →「寒流」
+#   - 維基百科英文版首頁的「Ongoing」（由編輯維護的進行中國際大事，例如俄烏戰爭），連到中文維基百科條目
+#   - 中央社首頁的專題標籤（例如 2026亞運、九合一），排除固定專欄
+[hot]
+name = "🔥 近期大事"
+cna_url = "https://www.cna.com.tw/"
+cna_exclude = ["中央社好POD", "特派看世界", "解釋性新聞", "新聞圖表", "AI淨零", "媒體識讀"]
+track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，每天附 1 則該專題的新文章
+
+# 事件追蹤：有事發生時每天跟進，平常不出現。
+# 每個主題每天最多 1 則：在 pool 裡依序找標題含任一關鍵字、還沒出現過的文章。
+#   - 有日期的（奧運、亞運、世足、選舉）：只在 start ~ end 期間追蹤。
+#   - 沒日期的（戰爭、重大政治事件）：在 GitHub 開一個 label 為 `track` 的 issue，
+#     標題 = 主題名稱，內文 = 關鍵字（逗號或換行分隔）；關閉 issue 就停止追蹤。手機上用 GitHub app 就能操作。
+[tracking]
+name = "📌 追蹤中"
+pool = [
+  { name = "BBC World", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
+  { name = "BBC Sport", url = "https://feeds.bbci.co.uk/sport/rss.xml" },
+  { name = "中央社 國際", url = "https://feeds.feedburner.com/rsscna/intworld" },
+  { name = "中央社 政治", url = "https://feeds.feedburner.com/rsscna/politics" },
+  { name = "中央社 體育", url = "https://feeds.feedburner.com/rsscna/sport" },
+  { name = "公視新聞網", url = "https://news.pts.org.tw/xml/newsfeed.xml" },
+]
+
+# 日期以官方公布為準，⚠️ 標記的是預估值，公布後請更新
+[[topic]]
+name = "115年地方選舉"
+keywords = ["九合一", "地方選舉", "開票", "當選"]
+start = 2026-11-14
+end = 2026-11-30
+
+[[topic]]
+name = "2028 洛杉磯奧運"
+keywords = ["奧運", "Olympic", "LA28"]
+start = 2028-07-07
+end = 2028-08-01
+
+[[topic]]
+name = "2030 世界盃足球賽"   # ⚠️ 日期預估
+keywords = ["世足", "世界盃足球", "World Cup"]
+start = 2030-06-01
+end = 2030-07-25
+
+[[topic]]
+name = "2030 杜哈亞運"       # ⚠️ 日期預估
+keywords = ["亞運", "Asian Games"]
+start = 2030-11-01
+end = 2030-12-15
+
+# 每篇最下方固定附上的數據連結，自己看趨勢用
+[[bookmark]]
+name = "Epoch AI"
+url = "https://epoch.ai/data"
+
+[[bookmark]]
+name = "Our World in Data"
+url = "https://ourworldindata.org/"
+
+[[bookmark]]
+name = "中選會選舉資料庫"
+url = "https://db.cec.gov.tw/"
+
+[feed]
+title = "每日頭條"
+# 本機測試時可改成 http://<Mac 的 IP>:8000/
+site_url = "https://9zxu.github.io/news-digest/"

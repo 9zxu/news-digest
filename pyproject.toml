@@ -1,0 +1,6 @@
+[project]
+name = "news-digest"
+version = "0.1.0"
+description = "Merge several news RSS feeds into one once-a-day digest feed"
+requires-python = ">=3.11"
+dependencies = ["feedparser>=6"]

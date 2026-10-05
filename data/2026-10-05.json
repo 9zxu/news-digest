@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-05",
+  "generated": "2026-10-05T21:47:40+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "name": "🌍 世界",
+      "each": false,
+      "articles": [
+        {
+          "title": "Spanish PM Sánchez calls early election after housing protests",
+          "link": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis."
+        }
+      ]
+    },
+    {
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "諾貝爾醫學獎得主戴瑟羅斯低調如「角落生物」明年訪台傳授光遺傳",
+          "link": "https://www.cna.com.tw/news/ahel/202610050299.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "2026年諾貝爾醫學獎美德3學者共享桂冠，得主之一的戴瑟羅斯樂於分享技術，讓光遺傳學遍地開花，在台灣科學家眼中，他像角落生物慷慨、細膩，是研討會獨行俠，明年訪台演講。"
+        }
+      ]
+    },
+    {
+      "name": "🤖 AI／技術",
+      "each": true,
+      "articles": [
+        {
+          "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+          "link": "https://github.com/omlahore/RemoveMacAI",
+          "source": "Hacker News · 660 points",
+          "score": 660,
+          "summary": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible. - omlahore/RemoveMacAI"
+        },
+        {
+          "title": "tester-army/e2e",
+          "link": "https://github.com/tester-army/e2e",
+          "source": "GitHub Trending · 1,430 stars today",
+          "score": 1430,
+          "summary": "Next generation e2e testing framework for web and mobile apps."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 660,
+    "GitHub Trending": 1430
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD%20%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD%20%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026亞運",
+      "link": "https://www.cna.com.tw/topic/newstopic/5026.aspx"
+    },
+    {
+      "name": "九合一",
+      "link": "https://www.cna.com.tw/topic/newstopic/5056.aspx"
+    }
+  ],
+  "tracking": [
+    {
+      "topic": "2026亞運",
+      "title": "林郁婷從強烈想放棄念頭到亞運奪金 看見自己堅強的意志力",
+      "link": "https://www.cna.com.tw/news/aspt/202610050282.aspx",
+      "source": "中央社專題"
+    },
+    {
+      "topic": "九合一",
+      "title": "台北市長選戰辯論有譜 蔣萬安沈伯洋達共識",
+      "link": "https://www.cna.com.tw/news/aloc/202610050296.aspx",
+      "source": "中央社專題"
+    }
+  ]
+}

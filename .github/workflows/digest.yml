@@ -1,0 +1,41 @@
+name: digest
+
+on:
+  schedule:
+    - cron: "30 22 * * *"   # 06:30 台灣時間；GitHub 的排程常延遲 10–30 分鐘，所以提早半小時
+  workflow_dispatch:         # 也可以在 Actions 頁面手動執行
+
+permissions:
+  contents: write   # 把 data/ 存回 repo（記錄已出現過的文章）
+  issues: read      # 讀 label 為 track 的 issue
+  pages: write
+  id-token: write
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run digest.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Save data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "digest $(TZ=Asia/Taipei date +%F)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deploy
+        uses: actions/deploy-pages@v4
