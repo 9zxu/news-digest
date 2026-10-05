@@ -492,12 +492,11 @@ def render(day):
         return "<ul>" + "".join(f'<li><a href="{escape(i["link"])}">{escape(i["title"])}</a> '
                                 f'<small>— {escape(i["source"])}</small></li>' for i in items) + "</ul>"
 
-    def section(i, cat):
-        if not cat["articles"] and cat.get("each"):
+    def section(cfg):
+        cat = next((c for c in day["headlines"] if c.get("key") == cfg["key"]), None)
+        if cat is None or (not cat["articles"] and cfg.get("each")):
             return []  # threshold-only sections disappear on quiet days
-        # Use the current section name from config.toml, so a rename also applies to earlier days.
-        name = CONFIG["category"][i]["name"] if i < len(CONFIG["category"]) else cat["name"]
-        out = [f"<h3>{escape(name)}</h3>"]
+        out = [f"<h3>{escape(cfg['name'])}</h3>"]
         if not cat["articles"]:
             out.append("<p>無</p>")
         for a in cat["articles"]:
@@ -507,26 +506,21 @@ def render(day):
                 out.append(f"<blockquote>{escape(a['summary'])}</blockquote>")
         return out
 
-    def is_top(i):
-        return i < len(CONFIG["category"]) and CONFIG["category"][i].get("top")
-
-    cats = list(enumerate(day["headlines"]))
-    parts = [p for i, cat in cats if is_top(i) for p in section(i, cat)]  # World, 台灣
-    for region, label in (("taiwan", CONFIG["hot"]["taiwan"]), ("world", CONFIG["hot"]["world"])):
-        chips = [c for c in day.get("hot", []) if c.get("region", "world") == region]
-        if chips:
-            links = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in chips)
-            parts.append(f"<p><b>{escape(label)}：</b>{links}</p>")
-    if day["alerts"]:
-        parts += [f"<h3>{escape(CONFIG['alerts']['name'])}</h3>", link_list(day["alerts"])]
+    parts = []
+    chips = sorted(day.get("hot", []), key=lambda c: c.get("region", "world") != "world")  # world first, then Taiwan
+    if chips:
+        links = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in chips)
+        parts.append(f"<p><b>{escape(CONFIG['hot']['label'])}：</b>{links}</p>")
     if day.get("tracking"):
         parts.append(f"<h3>{escape(CONFIG['tracking']['name'])}</h3><ul>")
         parts += [f'<li>【{escape(i["topic"])}】<a href="{escape(i["link"])}">{escape(i["title"])}</a> '
                   f'<small>— {escape(i["source"])}</small></li>' for i in day["tracking"]]
         parts.append("</ul>")
+    if day["alerts"]:
+        parts += [f"<h3>{escape(CONFIG['alerts']['name'])}</h3>", link_list(day["alerts"])]
     if day["civic"]:
         parts += [f"<h3>{escape(CONFIG['civic']['name'])}</h3>", link_list(day["civic"])]
-    parts += [p for i, cat in cats if not is_top(i) for p in section(i, cat)]  # Developer
+    parts += [p for cfg in CONFIG["category"] for p in section(cfg)]
     marks = " · ".join(f'<a href="{escape(b["url"])}">{escape(b["name"])}</a>' for b in CONFIG.get("bookmark", []))
     if marks:
         parts.append(f"<hr><p><small>📊 Data: {marks}</small></p>")
@@ -604,7 +598,7 @@ def build():
         "generated": now.isoformat(timespec="seconds"),
         "alerts": alerts(now, seen),
         "civic": civic(now, seen),
-        "headlines": [{"name": cat["name"], "each": cat.get("each", False),
+        "headlines": [{"key": cat["key"], "name": cat["name"], "each": cat.get("each", False),
                        "articles": headlines(cat, now, seen, scores)} for cat in CONFIG["category"]],
         "scores": scores,  # top score per threshold source, shown or not — for tuning `min`
     }

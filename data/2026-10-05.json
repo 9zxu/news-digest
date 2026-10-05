@@ -22,7 +22,8 @@
           "score": null,
           "summary": ""
         }
-      ]
+      ],
+      "key": "world"
     },
     {
       "name": "🇹🇼 台灣",
@@ -35,7 +36,8 @@
           "score": null,
           "summary": "2026年諾貝爾醫學獎美德3學者共享桂冠，得主之一的戴瑟羅斯樂於分享技術，讓光遺傳學遍地開花，在台灣科學家眼中，他像角落生物慷慨、細膩，是研討會獨行俠，明年訪台演講。"
         }
-      ]
+      ],
+      "key": "taiwan"
     },
     {
       "name": "💻 Developer",
@@ -62,7 +64,8 @@
           "score": 1430,
           "summary": "Next generation e2e testing framework for web and mobile apps."
         }
-      ]
+      ],
+      "key": "developer"
     }
   ],
   "scores": {

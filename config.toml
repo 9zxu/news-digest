@@ -17,9 +17,18 @@ timezone = "Asia/Taipei"
 keep_days = 14          # digest.xml 保留最近幾天
 summary_chars = 200     # 原文摘要（feed 或網頁自帶的，不是 AI 寫的）最多幾個字
 
+# 區塊照這裡的順序顯示；key 用來對應 data/*.json，改名或調順序都不影響舊資料
 [[category]]
+key = "taiwan"
+name = "🇹🇼 台灣"
+sources = [
+  { name = "中央社", method = "cna_home", url = "https://www.cna.com.tw/" },
+  { name = "中央社 政治", method = "rss_first", url = "https://feeds.feedburner.com/rsscna/politics" },
+]
+
+[[category]]
+key = "world"
 name = "🌍 World"
-top = true    # top = true 的區塊排在最前面
 each = true   # BBC 每天 1 則；維基百科「新聞動態」有新條目時再加 1 則（標準較全球化，平衡 BBC 偏英國、歐洲的視角）
 sources = [
   { name = "BBC World", method = "rss_first", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
@@ -27,14 +36,7 @@ sources = [
 ]
 
 [[category]]
-name = "🇹🇼 台灣"
-top = true
-sources = [
-  { name = "中央社", method = "cna_home", url = "https://www.cna.com.tw/" },
-  { name = "中央社 政治", method = "rss_first", url = "https://feeds.feedburner.com/rsscna/politics" },
-]
-
-[[category]]
+key = "developer"
 name = "💻 Developer"
 each = true   # 每個來源各自判斷門檻，可能 0–3 則
 sources = [
@@ -69,8 +71,7 @@ exclude = ["訪視", "主委", "勉勵", "期勉", "裁罰", "統計表"]
 
 # 長期大事：連到中文維基百科看來龍去脈；事件結束、來源撤下後自動消失
 [hot]
-taiwan = "台灣主題"   # 中央社首頁的專題標籤，連到中文維基百科
-world = "世界主題"    # 維基百科英文版首頁的 Ongoing，連到中文維基百科
+label = "主題"   # 世界（維基百科英文版首頁的 Ongoing）在前，台灣（中央社首頁的專題標籤）在後，都連到中文維基百科
 cna_url = "https://www.cna.com.tw/"
 cna_exclude = ["中央社好POD", "特派看世界", "解釋性新聞", "新聞圖表", "AI淨零", "媒體識讀", "2026亞運"]
 track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，每天附 1 則該專題的新文章
@@ -82,7 +83,7 @@ track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，�
 #   - name 可以用 {0}、{1} 帶入 match 裡括號抓到的字，例如 iOS 28。
 #   - require：標題還必須包含這些字；exclude：標題包含這些字就不算（例如 beta、傳聞）。
 [tracking]
-name = "📌 Tracking"
+name = "主題報導"
 pool = [
   { name = "BBC World", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
   { name = "BBC Sport", url = "https://feeds.bbci.co.uk/sport/rss.xml" },
