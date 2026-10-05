@@ -64,7 +64,7 @@ exclude = ["訪視", "裁罰", "統計表"]
 [hot]
 name = "🔥 近期大事"
 cna_url = "https://www.cna.com.tw/"
-cna_exclude = ["中央社好POD", "特派看世界", "解釋性新聞", "新聞圖表", "AI淨零", "媒體識讀"]
+cna_exclude = ["中央社好POD", "特派看世界", "解釋性新聞", "新聞圖表", "AI淨零", "媒體識讀", "2026亞運"]
 track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，每天附 1 則該專題的新文章
 
 # 事件追蹤：全自動，不用手動設定。
@@ -108,11 +108,6 @@ min_hits = 2
 [[watch]]
 name = "奧運"
 match = '(奧運|olympics?)'
-min_hits = 4
-
-[[watch]]
-name = "亞運"
-match = '(亞運|asian games)'
 min_hits = 4
 
 [[watch]]
