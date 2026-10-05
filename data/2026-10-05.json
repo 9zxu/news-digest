@@ -1,12 +1,12 @@
 {
   "date": "2026-10-05",
-  "generated": "2026-10-05T21:48:35+08:00",
+  "generated": "2026-10-05T22:19:50+08:00",
   "alerts": [],
   "civic": [],
   "headlines": [
     {
-      "name": "🌍 世界",
-      "each": false,
+      "name": "🌍 World",
+      "each": true,
       "articles": [
         {
           "title": "Spanish PM Sánchez calls early election after housing protests",
@@ -14,6 +14,13 @@
           "source": "BBC World",
           "score": null,
           "summary": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis."
+        },
+        {
+          "title": "Over Saudi Arabia, the crew and passengers of Flydubai Flight 1073 avert an attempt to hijack or crash the aircraft.",
+          "link": "https://en.wikipedia.org/wiki/Flydubai_Flight_1073",
+          "source": "Wikipedia 新聞動態",
+          "score": null,
+          "summary": ""
         }
       ]
     },
@@ -31,15 +38,22 @@
       ]
     },
     {
-      "name": "🤖 AI／技術",
+      "name": "💻 Developer",
       "each": true,
       "articles": [
         {
           "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
           "link": "https://github.com/omlahore/RemoveMacAI",
-          "source": "Hacker News · 660 points",
-          "score": 660,
+          "source": "Hacker News · 670 points",
+          "score": 670,
           "summary": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible. - omlahore/RemoveMacAI"
+        },
+        {
+          "title": "Tokenization: A Survey for Modern NLP",
+          "link": "https://www.alphaxiv.org/abs/2609.tokenization-survey-modern-nlp",
+          "source": "alphaXiv · 240 likes",
+          "score": 240,
+          "summary": "While modern language models take raw text as their input and produce raw text as output, they do not operate over text directly. Hidden in the very first step of language model pipelines is tokenizat…"
         },
         {
           "title": "tester-army/e2e",
@@ -52,7 +66,9 @@
     }
   ],
   "scores": {
-    "Hacker News": 660,
+    "Hacker News": 670,
+    "Hacker News 熱門": 855,
+    "alphaXiv": 240,
     "GitHub Trending": 1430
   },
   "hot": [
@@ -65,26 +81,33 @@
       "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD%20%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
     },
     {
-      "name": "2026亞運",
-      "link": "https://www.cna.com.tw/topic/newstopic/5026.aspx"
-    },
-    {
       "name": "九合一",
       "link": "https://www.cna.com.tw/topic/newstopic/5056.aspx"
+    },
+    {
+      "name": "公民參與",
+      "link": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
     }
   ],
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 8,
+    "重大災難與事故": 1,
+    "Apple 發表會": 1
+  },
   "tracking": [
-    {
-      "topic": "2026亞運",
-      "title": "林郁婷從強烈想放棄念頭到亞運奪金 看見自己堅強的意志力",
-      "link": "https://www.cna.com.tw/news/aspt/202610050282.aspx",
-      "source": "中央社專題"
-    },
     {
       "topic": "九合一",
       "title": "台北市長選戰辯論有譜 蔣萬安沈伯洋達共識",
       "link": "https://www.cna.com.tw/news/aloc/202610050296.aspx",
       "source": "中央社專題"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Teenager's hand blown off during confrontation between France school protesters and police",
+      "link": "https://www.bbc.co.uk/news/articles/c9zrdmxp4vy6o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
     }
-  ]
+  ],
+  "failures": []
 }
