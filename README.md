@@ -34,11 +34,17 @@
 ## 使用方式
 
 ```bash
-uv run digest.py                         # 產生 data/今天.json 和 public/digest.xml
-cd public && python3 -m http.server 8000  # 本機測試；iPhone 在同一個 Wi-Fi 下訂閱 http://<Mac 的 IP>:8000/digest.xml
+uv run digest.py                    # 正式執行：抓新聞、存 data/今天.json、產生 public/（GitHub Actions 每天跑這個）
+uv run digest.py --preview --open   # 預覽今天：抓新聞、產生 public/ 並用瀏覽器打開，但不存 data/
+uv run digest.py --render --open    # 只重新排版：用已存的 data/ 產生 public/，不連網，改格式時用
 ```
 
-要改來源、門檻、追蹤主題：編輯 `config.toml`。每天各來源的實際分數記在 `data/*.json` 的 `scores`，可以用來調整門檻。
+## 調整顯示格式
+
+- **內容結構**（區塊順序、標題、emoji、顯示哪些欄位）：`digest.py` 的 `render()`。改完執行 `uv run digest.py --render --open`，馬上就能在瀏覽器看到結果。
+- **每篇的標題**（例如 `📰 Mon, Oct 5`）：也在 `render()` 的最後幾行。
+- **外觀**（字型、顏色、行距）：由 NetNewsWire 的主題決定，RSS 只傳送內容。`public/index.html` 的樣式只影響網頁版。
+- `public/` 裡的檔案都是程式產生的，不要直接修改。
 
 ## 部署
 

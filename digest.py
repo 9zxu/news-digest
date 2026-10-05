@@ -1,6 +1,10 @@
 """Build a once-a-day digest feed: don't miss what matters, skip the small stuff. Original text, no AI.
 
-Usage: uv run digest.py   -> writes data/YYYY-MM-DD.json and public/digest.xml
+Usage:
+  uv run digest.py            fetch today's news, save data/YYYY-MM-DD.json, write public/digest.xml and index.html
+  uv run digest.py --render   only re-render public/ from the saved data/ (no network) — for tweaking the format
+  uv run digest.py --preview  fetch today's news and write public/, but don't save data/ (nothing to commit)
+Add --open to open public/index.html in the browser afterwards.
 """
 
 import calendar
@@ -8,6 +12,7 @@ import html
 import json
 import re
 import ssl
+import subprocess
 import sys
 import time
 import tomllib
@@ -481,12 +486,14 @@ def render(day):
     return title, "\n".join(parts)
 
 
-def write_feed():
+def write_feed(extra=None):
+    """Write public/ from the saved days, plus `extra` (an unsaved preview of today) if given."""
     cfg = CONFIG["feed"]
-    days = sorted(DATA.glob("*.json"), reverse=True)[:CONFIG["keep_days"]]
+    days = {p.stem: json.loads(p.read_text()) for p in DATA.glob("*.json")}
+    if extra:
+        days[extra["date"]] = extra
     items, sections = [], []
-    for p in days:
-        day = json.loads(p.read_text())
+    for _, day in sorted(days.items(), reverse=True)[:CONFIG["keep_days"]]:
         title, body = render(day)
         sections.append(f'<section id="{day["date"]}"><h2>{escape(title)}</h2>\n{body}</section>')
         pub = format_datetime(datetime.fromisoformat(day["generated"]))
@@ -523,6 +530,19 @@ section{{border-top:1px solid #ccc;padding-top:.5rem}}blockquote{{margin:.25rem 
 
 
 def main():
+    if "--render" in sys.argv:
+        write_feed()
+    else:
+        day = build()
+        if "--preview" not in sys.argv:
+            DATA.mkdir(exist_ok=True)
+            (DATA / f"{day['date']}.json").write_text(json.dumps(day, ensure_ascii=False, indent=2))
+        write_feed(extra=day)
+    if "--open" in sys.argv:
+        subprocess.run(["open", PUBLIC / "index.html"])
+
+
+def build():
     now = datetime.now(TZ)
     today = now.date().isoformat()
     seen = seen_links(today)
@@ -554,9 +574,7 @@ def main():
     print(f"watch hits: {day['watch_hits']}")
     if FAILURES:
         print(f"failures: {FAILURES}")
-    DATA.mkdir(exist_ok=True)
-    (DATA / f"{today}.json").write_text(json.dumps(day, ensure_ascii=False, indent=2))
-    write_feed()
+    return day
 
 
 if __name__ == "__main__":
