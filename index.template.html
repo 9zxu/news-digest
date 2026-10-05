@@ -37,10 +37,17 @@
     --color-link-hover: var(--ef-green);
   }
 
+  /* Maple Mono has its own glyphs for flag letters, which turns 🇹🇼 into "TW"; send emoji ranges to the system emoji font first. */
+  @font-face {
+    font-family: "Emoji";
+    src: local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Noto Color Emoji");
+    unicode-range: U+1F1E6-1F1FF, U+1F300-1FAFF, U+2600-27BF;
+  }
+
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0; background: var(--color-bg); color: var(--color-text);
-    font-family: "Maple Mono CN", ui-monospace, Menlo, monospace, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: "Emoji", "Maple Mono CN", ui-monospace, Menlo, monospace;
     font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased;
   }
   a { color: var(--color-text); text-decoration: none; }
