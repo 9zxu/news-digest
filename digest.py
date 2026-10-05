@@ -451,10 +451,29 @@ def render(day):
         return "<ul>" + "".join(f'<li><a href="{escape(i["link"])}">{escape(i["title"])}</a> '
                                 f'<small>— {escape(i["source"])}</small></li>' for i in items) + "</ul>"
 
-    parts = []
+    def section(i, cat):
+        if not cat["articles"] and cat.get("each"):
+            return []  # threshold-only sections disappear on quiet days
+        # Use the current section name from config.toml, so a rename also applies to earlier days.
+        name = CONFIG["category"][i]["name"] if i < len(CONFIG["category"]) else cat["name"]
+        out = [f"<h3>{escape(name)}</h3>"]
+        if not cat["articles"]:
+            out.append("<p>無</p>")
+        for a in cat["articles"]:
+            out.append(f'<p><a href="{escape(a["link"])}"><b>{escape(a["title"])}</b></a><br>'
+                       f'<small>{escape(a["source"])}</small></p>')
+            if a["summary"]:
+                out.append(f"<blockquote>{escape(a['summary'])}</blockquote>")
+        return out
+
+    def is_top(i):
+        return i < len(CONFIG["category"]) and CONFIG["category"][i].get("top")
+
+    cats = list(enumerate(day["headlines"]))
+    parts = [p for i, cat in cats if is_top(i) for p in section(i, cat)]  # World, 台灣
     if day.get("hot"):
         chips = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in day["hot"])
-        parts.append(f"<p><b>{escape(CONFIG['hot']['name'])}：</b>{chips}</p>")
+        parts.append(f"<p><b>{escape(CONFIG['hot']['name'])}:</b> {chips}</p>")
     if day["alerts"]:
         parts += [f"<h3>{escape(CONFIG['alerts']['name'])}</h3>", link_list(day["alerts"])]
     if day.get("tracking"):
@@ -464,24 +483,12 @@ def render(day):
         parts.append("</ul>")
     if day["civic"]:
         parts += [f"<h3>{escape(CONFIG['civic']['name'])}</h3>", link_list(day["civic"])]
-    for i, cat in enumerate(day["headlines"]):
-        if not cat["articles"] and cat.get("each"):
-            continue  # threshold-only sections disappear on quiet days
-        # Use the current section name from config.toml, so a rename also applies to earlier days.
-        name = CONFIG["category"][i]["name"] if i < len(CONFIG["category"]) else cat["name"]
-        parts.append(f"<h3>{escape(name)}</h3>")
-        if not cat["articles"]:
-            parts.append("<p>無</p>")
-        for a in cat["articles"]:
-            parts.append(f'<p><a href="{escape(a["link"])}"><b>{escape(a["title"])}</b></a><br>'
-                         f'<small>{escape(a["source"])}</small></p>')
-            if a["summary"]:
-                parts.append(f"<blockquote>{escape(a['summary'])}</blockquote>")
+    parts += [p for i, cat in cats if not is_top(i) for p in section(i, cat)]  # Developer
     marks = " · ".join(f'<a href="{escape(b["url"])}">{escape(b["name"])}</a>' for b in CONFIG.get("bookmark", []))
     if marks:
-        parts.append(f"<hr><p><small>📊 數據：{marks}</small></p>")
+        parts.append(f"<hr><p><small>📊 Data: {marks}</small></p>")
     if day.get("failures"):
-        parts.append(f"<p><small>⚠️ 今日抓取失敗：{escape('、'.join(day['failures']))}</small></p>")
+        parts.append(f"<p><small>⚠️ Failed to fetch today: {escape(', '.join(day['failures']))}</small></p>")
     title = f"📰 {d:%a, %b} {d.day}"
     if day["alerts"]:
         title += " 🚨"

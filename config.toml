@@ -19,14 +19,16 @@ summary_chars = 200     # 原文摘要（feed 或網頁自帶的，不是 AI 寫
 
 [[category]]
 name = "🌍 World"
+top = true    # top = true 的區塊排在最前面
 each = true   # BBC 每天 1 則；維基百科「新聞動態」有新條目時再加 1 則（標準較全球化，平衡 BBC 偏英國、歐洲的視角）
 sources = [
   { name = "BBC World", method = "rss_first", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
-  { name = "Wikipedia 新聞動態", method = "wikipedia_itn" },
+  { name = "Wikipedia", method = "wikipedia_itn" },
 ]
 
 [[category]]
 name = "🇹🇼 台灣"
+top = true
 sources = [
   { name = "中央社", method = "cna_home", url = "https://www.cna.com.tw/" },
   { name = "中央社 政治", method = "rss_first", url = "https://feeds.feedburner.com/rsscna/politics" },
@@ -45,7 +47,7 @@ sources = [
 
 # 只在有事時出現：颱風、寒流、大地震
 [alerts]
-name = "🚨 警報"
+name = "🚨 Alerts"
 # 中央氣象署：只能原封不動呈現標題並連回原文（見 sources.md 的使用聲明）
 cwa_warnings = "https://www.cwa.gov.tw/rss/Data/cwa_warning.xml"
 warning_keywords = ["颱風", "低溫"]   # 低溫特報 = 寒流
@@ -55,7 +57,7 @@ quake_box = { min_lat = 21.0, max_lat = 26.5, min_lon = 119.0, max_lon = 123.0 }
 
 # 只在有事時出現：選舉、公投、罷免
 [civic]
-name = "🗳️ 公民參與"
+name = "🗳️ Civic"
 url = "https://www.cec.gov.tw/"
 countdown_days = 30   # 中選會行事曆上的投票日，進入 30 天內每天顯示倒數
 keywords = ["公投", "公民投票", "罷免", "投票日", "投票所", "選舉人名冊", "選舉公報", "登記", "意見發表會", "辯論會"]
@@ -66,7 +68,7 @@ exclude = ["訪視", "裁罰", "統計表"]
 #   - 維基百科英文版首頁的「Ongoing」（由編輯維護的進行中國際大事，例如俄烏戰爭），連到中文維基百科條目
 #   - 中央社首頁的專題標籤（例如 2026亞運、九合一），排除固定專欄
 [hot]
-name = "🔥 近期大事"
+name = "🔥 Trending"
 cna_url = "https://www.cna.com.tw/"
 cna_exclude = ["中央社好POD", "特派看世界", "解釋性新聞", "新聞圖表", "AI淨零", "媒體識讀", "2026亞運"]
 track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，每天附 1 則該專題的新文章
@@ -78,7 +80,7 @@ track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，�
 #   - name 可以用 {0}、{1} 帶入 match 裡括號抓到的字，例如 iOS 28。
 #   - require：標題還必須包含這些字；exclude：標題包含這些字就不算（例如 beta、傳聞）。
 [tracking]
-name = "📌 追蹤中"
+name = "📌 Tracking"
 pool = [
   { name = "BBC World", url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
   { name = "BBC Sport", url = "https://feeds.bbci.co.uk/sport/rss.xml" },
