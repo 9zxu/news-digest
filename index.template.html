@@ -74,7 +74,12 @@
   .day h3 { font-size: 1.2rem; margin: 1.75rem 0 .75rem; }
   .day p { margin: 1rem 0; }
   .day a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--color-border-strong); }
-  .day a:hover { text-decoration-color: currentColor; }
+  /* Links light up as a filled box on hover / keyboard focus, like 9zxu.github.io (and a selected link in NetNewsWire) */
+  .day a:hover, .day a:focus-visible {
+    background: var(--color-link-hover); color: var(--color-bg); text-decoration: none; border-radius: 3px;
+    box-shadow: 0 0 0 2px var(--color-link-hover); outline: none;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  }
   .day ul { margin: 1rem 0; padding-left: 1.5rem; }
   .day li + li { margin-top: .25rem; }
   .day small { color: var(--color-text-faint); }
@@ -84,7 +89,7 @@
   /* 主題： line as pills, like the tags on 9zxu.github.io */
   .topics { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; font-size: .875rem; }
   .topics a { padding: .2rem .6rem; border-radius: 999px; background: var(--color-surface); color: var(--color-text-muted); text-decoration: none; }
-  .topics a:hover { color: var(--color-text); text-decoration: none; }
+  .topics a:hover { color: var(--color-bg); border-radius: 999px; box-shadow: none; text-decoration: none; }
 
   .site-footer { border-top: 1px solid var(--color-border); color: var(--color-text-muted); font-size: .875rem; padding: 1.5rem 2rem; text-align: center; }
 </style>
