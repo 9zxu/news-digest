@@ -27,6 +27,10 @@
 | USGS 地震 | `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&...` | ✅ 免 key，可用經緯度範圍與規模篩選 |
 | 中央氣象署地震 | RSS 沒有 | ❌ 要用開放資料平臺的 API key |
 | 中選會首頁 | `https://www.cec.gov.tw/` 內的 `__NUXT_DATA__` | ✅ 有行事曆（投票日）和新聞稿、公告、最新消息；但文章網址是 JavaScript 產生的 |
+| alphaXiv | `https://api.alphaxiv.org/papers/v3/feed?pageNum=0&pageSize=20&sort=Likes&interval=7+Days` | ✅ 網站內部 API；sort 可用 Hot/Likes/Views，interval 可用 3/7/30/90 Days。7 天內最高 221 讚 |
+| arXiv cs.AI | https://rss.arxiv.org/rss/cs.AI | ⚠️ 可用，但每天上百篇、沒有重要性排序 → 改用 alphaXiv 的按讚數篩選 |
+| AlphaSignal | alphasignal.ai | ❌ 沒有 RSS；網站上的新聞沒有排序或分數 → 直接訂閱它的 email |
+| MacRumors | https://feeds.macrumors.com/MacRumors-All | ✅ 只放在事件追蹤的 pool（例如 iOS 28、WWDC） |
 | 中央社 體育 | https://feeds.feedburner.com/rsscna/sport | ✅ |
 | BBC Sport | https://feeds.bbci.co.uk/sport/rss.xml | ✅ |
 

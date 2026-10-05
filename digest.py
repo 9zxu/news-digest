@@ -10,7 +10,9 @@ import os
 import re
 import ssl
 import sys
+import time
 import tomllib
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
@@ -49,8 +51,18 @@ def get(url, headers=None):
         return _cache[url]
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (news-digest; personal RSS reader)",
                                                **(headers or {})})
-    with urllib.request.urlopen(req, timeout=20, context=SSL_CTX) as r:
-        body = r.read()
+    for attempt in range(3):  # sites occasionally answer 5xx or time out; try again before giving up
+        try:
+            with urllib.request.urlopen(req, timeout=20, context=SSL_CTX) as r:
+                body = r.read()
+            break
+        except urllib.error.HTTPError as ex:
+            if ex.code < 500 or attempt == 2:
+                raise
+        except urllib.error.URLError:
+            if attempt == 2:
+                raise
+        time.sleep(5 * (attempt + 1))
     if headers is None:
         _cache[url] = body
     return body
@@ -118,6 +130,15 @@ def hn_top(src, now):
                           score=h["points"])
 
 
+def alphaxiv(src, now):
+    """Most-liked papers on alphaXiv over the past week."""
+    query = urllib.parse.urlencode({"pageNum": 0, "pageSize": 20, "sort": "Likes", "interval": "7 Days"})
+    for p in json.loads(get(f"https://api.alphaxiv.org/papers/v3/feed?{query}"))["papers"]:
+        votes = (p.get("metrics") or {}).get("public_total_votes") or 0
+        yield article(p["title"], f"https://www.alphaxiv.org/abs/{p['universal_paper_id']}",
+                      f"{src['name']} · {votes} likes", p.get("abstract", ""), score=votes)
+
+
 def hf_papers(src, now):
     """Most-upvoted paper from two days ago, so the upvotes have had time to settle."""
     day = (now - timedelta(days=2)).date().isoformat()
@@ -141,7 +162,7 @@ def github_trending(src, now):
 
 
 PICKERS = {"rss_first": rss_first, "cna_home": cna_home, "hn_top": hn_top,
-           "hf_papers": hf_papers, "github_trending": github_trending}
+           "alphaxiv": alphaxiv, "hf_papers": hf_papers, "github_trending": github_trending}
 
 
 def headlines(category, now, seen, scores):

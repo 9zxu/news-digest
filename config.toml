@@ -7,6 +7,7 @@
 #   rss_first        取 feed 的第一篇。只適合「依編輯判斷的重要性排序」的 feed（例如 BBC）。
 #   cna_home         中央社首頁最大的那則頭條（抓網頁，不是 RSS；網站改版時可能失效）。
 #   hn_top           Hacker News 過去 36 小時、標題含 AI 關鍵字、分數最高的一篇。
+#   alphaxiv         alphaXiv 過去 7 天按讚數最高的論文（涵蓋 arXiv cs.AI、cs.CL、cs.LG 等）。
 #   hf_papers        Hugging Face Daily Papers 兩天前那一批中按讚數最高的論文（讓按讚數先累積）。
 #   github_trending  GitHub Trending 今日第一名（不限 AI）。
 # min：門檻（分數、按讚數、今日星星數）。低於門檻就不顯示；每天的實際數字會記在 data/*.json 的 scores，方便調整。
@@ -33,6 +34,7 @@ name = "🤖 AI／技術"
 each = true   # 每個來源各自判斷門檻，可能 0–3 則
 sources = [
   { name = "Hacker News", method = "hn_top", min = 300 },
+  { name = "alphaXiv", method = "alphaxiv", min = 150 },
   { name = "Hugging Face Papers", method = "hf_papers", min = 300 },
   { name = "GitHub Trending", method = "github_trending", min = 1000 },
 ]
@@ -79,6 +81,7 @@ pool = [
   { name = "中央社 政治", url = "https://feeds.feedburner.com/rsscna/politics" },
   { name = "中央社 體育", url = "https://feeds.feedburner.com/rsscna/sport" },
   { name = "公視新聞網", url = "https://news.pts.org.tw/xml/newsfeed.xml" },
+  { name = "MacRumors", url = "https://feeds.macrumors.com/MacRumors-All" },
 ]
 
 # 日期以官方公布為準，⚠️ 標記的是預估值，公布後請更新
@@ -87,6 +90,12 @@ name = "115年地方選舉"
 keywords = ["九合一", "地方選舉", "開票", "當選"]
 start = 2026-11-14
 end = 2026-11-30
+
+[[topic]]
+name = "iOS 28／WWDC 2027"   # ⚠️ 日期預估：WWDC 通常在 6 月，正式版通常在 9 月
+keywords = ["iOS 28", "macOS 28", "WWDC", "Apple Event"]
+start = 2027-06-01
+end = 2027-09-30
 
 [[topic]]
 name = "2028 洛杉磯奧運"
