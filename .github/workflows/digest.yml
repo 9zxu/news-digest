@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write   # 把 data/ 存回 repo（記錄已出現過的文章）
-  issues: read      # 讀 label 為 track 的 issue
   pages: write
   id-token: write
 

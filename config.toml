@@ -30,7 +30,7 @@ sources = [
 ]
 
 [[category]]
-name = "🤖 AI／技術"
+name = "💻 Developer"
 each = true   # 每個來源各自判斷門檻，可能 0–3 則
 sources = [
   { name = "Hacker News", method = "hn_top", min = 300 },
@@ -67,11 +67,12 @@ cna_url = "https://www.cna.com.tw/"
 cna_exclude = ["中央社好POD", "特派看世界", "解釋性新聞", "新聞圖表", "AI淨零", "媒體識讀"]
 track_cna_topics = true   # 中央社專題自動加入「📌 追蹤中」，每天附 1 則該專題的新文章
 
-# 事件追蹤：有事發生時每天跟進，平常不出現。
-# 每個主題每天最多 1 則：在 pool 裡依序找標題含任一關鍵字、還沒出現過的文章。
-#   - 有日期的（奧運、亞運、世足、選舉）：只在 start ~ end 期間追蹤。
-#   - 沒日期的（戰爭、重大政治事件）：在 GitHub 開一個 label 為 `track` 的 issue，
-#     標題 = 主題名稱，內文 = 關鍵字（逗號或換行分隔）；關閉 issue 就停止追蹤。手機上用 GitHub app 就能操作。
+# 事件追蹤：全自動，不用手動設定。
+# 每條規則用正規表示式比對 pool 裡過去 36 小時的新聞標題：
+#   - 符合的文章數 >= min_hits 才算「有大事」，主題自動出現在「🔥 近期大事」和「📌 追蹤中」（每天 1 則新文章）。
+#   - 報導變少、低於 min_hits，就自動消失。小事（只有一兩篇提到）不會出現。
+#   - name 可以用 {0}、{1} 帶入 match 裡括號抓到的字，例如 iOS 28。
+#   - require：標題還必須包含這些字；exclude：標題包含這些字就不算（例如 beta、傳聞）。
 [tracking]
 name = "📌 追蹤中"
 pool = [
@@ -84,36 +85,54 @@ pool = [
   { name = "MacRumors", url = "https://feeds.macrumors.com/MacRumors-All" },
 ]
 
-# 日期以官方公布為準，⚠️ 標記的是預估值，公布後請更新
-[[topic]]
-name = "115年地方選舉"
-keywords = ["九合一", "地方選舉", "開票", "當選"]
-start = 2026-11-14
-end = 2026-11-30
+[[watch]]
+name = "戰爭／衝突"
+match = '(invasion|invades?|declares? war|air ?strikes?|missile (attack|strike)s?|drone attacks?|ceasefire|truce|入侵|空襲|宣戰|開戰|停火|飛彈攻擊|無人機攻擊)'
+min_hits = 3
 
-[[topic]]
-name = "iOS 28／WWDC 2027"   # ⚠️ 日期預估：WWDC 通常在 6 月，正式版通常在 9 月
-keywords = ["iOS 28", "macOS 28", "WWDC", "Apple Event"]
-start = 2027-06-01
-end = 2027-09-30
+[[watch]]
+name = "大地震"
+match = '(major earthquake|powerful earthquake|strong earthquake|magnitude[- ][6-9]|強震|大地震|規模[6-9])'
+min_hits = 2
 
-[[topic]]
-name = "2028 洛杉磯奧運"
-keywords = ["奧運", "Olympic", "LA28"]
-start = 2028-07-07
-end = 2028-08-01
+[[watch]]
+name = "颱風／颶風"
+match = '(typhoon|hurricane|cyclone|颱風|颶風|氣旋)'
+min_hits = 3
 
-[[topic]]
-name = "2030 世界盃足球賽"   # ⚠️ 日期預估
-keywords = ["世足", "世界盃足球", "World Cup"]
-start = 2030-06-01
-end = 2030-07-25
+[[watch]]
+name = "選舉"
+match = '(general election|presidential election|election results?|wins? (the )?election|runoff|referendum|大選|總統選舉|公投|罷免|開票)'
+min_hits = 2
 
-[[topic]]
-name = "2030 杜哈亞運"       # ⚠️ 日期預估
-keywords = ["亞運", "Asian Games"]
-start = 2030-11-01
-end = 2030-12-15
+[[watch]]
+name = "奧運"
+match = '(奧運|olympics?)'
+min_hits = 4
+
+[[watch]]
+name = "亞運"
+match = '(亞運|asian games)'
+min_hits = 4
+
+[[watch]]
+name = "世足"
+match = '(世足|世界盃足球|fifa world cup)'
+min_hits = 4
+
+# Apple：只追大版本（iOS 28，不含 28.1）的正式發布，以及 WWDC／發表會本身
+[[watch]]
+name = "{0} {1} 發布"
+match = '\b(iOS|iPadOS|macOS|watchOS) (\d{2})\b(?!\.\d)'
+require = '(releas|available|launch|unveil|announc|發布|推出)'
+exclude = '(beta|\bRC\b|rumou?r|leak|expect|could|might|傳聞|爆料)'
+min_hits = 2
+
+[[watch]]
+name = "Apple 發表會"
+match = '(WWDC|Apple Event|蘋果發表會|keynote)'
+exclude = '(rumou?r|expect|could|might|what to|傳聞|爆料)'
+min_hits = 2
 
 # 每篇最下方固定附上的數據連結，自己看趨勢用
 [[bookmark]]

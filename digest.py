@@ -6,7 +6,6 @@ Usage: uv run digest.py   -> writes data/YYYY-MM-DD.json and public/digest.xml
 import calendar
 import html
 import json
-import os
 import re
 import ssl
 import sys
@@ -45,12 +44,11 @@ AI_WORDS = re.compile(
 _cache = {}
 
 
-def get(url, headers=None):
-    """Fetch a URL; plain requests are cached because several sections read the same pages."""
-    if headers is None and url in _cache:
+def get(url):
+    """Fetch a URL; responses are cached because several sections read the same pages."""
+    if url in _cache:
         return _cache[url]
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (news-digest; personal RSS reader)",
-                                               **(headers or {})})
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (news-digest; personal RSS reader)"})
     for attempt in range(3):  # sites occasionally answer 5xx or time out; try again before giving up
         try:
             with urllib.request.urlopen(req, timeout=20, context=SSL_CTX) as r:
@@ -63,8 +61,7 @@ def get(url, headers=None):
             if attempt == 2:
                 raise
         time.sleep(5 * (attempt + 1))
-    if headers is None:
-        _cache[url] = body
+    _cache[url] = body
     return body
 
 
@@ -275,34 +272,9 @@ def civic(now, seen):
     return items
 
 
-def github_topics():
-    """Open issues labelled `track` in this repo: title = topic, body = keywords (comma or newline separated)."""
-    repo, token = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_TOKEN")
-    if not repo:
-        return []
-    headers = {"Accept": "application/vnd.github+json", **({"Authorization": f"Bearer {token}"} if token else {})}
-    issues = json.loads(get(f"https://api.github.com/repos/{repo}/issues?labels=track&state=open&per_page=50", headers))
-    return [{"name": i["title"],
-             "keywords": [k.strip() for k in re.split(r"[,，、\n]", i.get("body") or "") if k.strip()] or [i["title"]]}
-            for i in issues]
-
-
-def matches(title, keyword):
-    if keyword.isascii():  # whole words only, so "AI" doesn't match "said"
-        return re.search(rf"\b{re.escape(keyword)}\b", title, re.I) is not None
-    return keyword in title
-
-
-def tracking(now, seen):
-    """Ongoing events: one new article per active topic, from the pool feeds in order."""
-    topics = [t for t in CONFIG.get("topic", []) if t.get("start", now.date()) <= now.date() <= t.get("end", now.date())]
-    try:
-        topics += github_topics()
-    except Exception as ex:
-        print(f"! GitHub issues: {ex}", file=sys.stderr)
-    if not topics:
-        return []
-
+def watch(now, seen, known):
+    """Keyword rules over the pool's recent headlines. A topic switches itself on when at least `min_hits`
+    articles match and off when coverage dies down. Returns (chips, one new article per topic, hit counts)."""
     pool = []
     for src in CONFIG["tracking"]["pool"]:
         try:
@@ -312,14 +284,29 @@ def tracking(now, seen):
             continue
         pool += [(src["name"], e) for e in entries if (entry_time(e) or now) >= now - WINDOW]
 
-    items = []
-    for t in topics:
+    chips, items, counts = [], [], {}
+    for rule in CONFIG.get("watch", []):
+        match = re.compile(rule["match"], re.I)
+        require = re.compile(rule["require"], re.I) if rule.get("require") else None
+        exclude = re.compile(rule["exclude"], re.I) if rule.get("exclude") else None
+        topics = {}  # name -> matching (source, entry), in pool order
         for source, e in pool:
-            if e.link not in seen and any(matches(e.title, k) for k in t["keywords"]):
-                items.append({"topic": t["name"], "title": e.title.strip(), "link": e.link, "source": source})
-                seen.add(e.link)  # don't show the same article under two topics
-                break
-    return items
+            m = match.search(e.title)
+            if m and (not require or require.search(e.title)) and not (exclude and exclude.search(e.title)):
+                topics.setdefault(rule["name"].format(*m.groups()), []).append((source, e))
+        for name, hits in topics.items():
+            counts[name] = len(hits)
+            # Skip quiet topics, and ones already covered by a CNA topic or Wikipedia (e.g. 亞運 vs 2026亞運).
+            if len(hits) < rule.get("min_hits", 2) or any(name in k or k in name for k in known):
+                continue
+            known.add(name)
+            chips.append({"name": name, "link": hits[0][1].link})
+            for source, e in hits:
+                if e.link not in seen:
+                    items.append({"topic": name, "title": clean(e.title, 300), "link": e.link, "source": source})
+                    seen.add(e.link)
+                    break
+    return chips, items, counts
 
 
 def wikipedia_ongoing():
@@ -503,7 +490,9 @@ def main():
     }
     seen.update(a["link"] for cat in day["headlines"] for a in cat["articles"])
     day["hot"], tracked = hot(now, seen)
-    day["tracking"] = tracked + tracking(now, seen)
+    chips, watched, day["watch_hits"] = watch(now, seen, {c["name"] for c in day["hot"]})
+    day["hot"] += chips
+    day["tracking"] = tracked + watched
     for a in day["alerts"] + day["civic"]:
         print(f"{a['source']}: {a['title']}")
     print(f"🔥 {' · '.join(c['name'] for c in day['hot'])}")
@@ -512,6 +501,7 @@ def main():
     for cat in day["headlines"]:
         print(f"{cat['name']}: {' / '.join(a['title'] for a in cat['articles']) or '無'}")
     print(f"scores: {scores}")
+    print(f"watch hits: {day['watch_hits']}")
     DATA.mkdir(exist_ok=True)
     (DATA / f"{today}.json").write_text(json.dumps(day, ensure_ascii=False, indent=2))
     write_feed()
