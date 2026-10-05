@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "generated": "2026-10-05T22:19:50+08:00",
+  "generated": "2026-10-05T22:21:58+08:00",
   "alerts": [],
   "civic": [],
   "headlines": [
@@ -9,16 +9,16 @@
       "each": true,
       "articles": [
         {
-          "title": "Spanish PM Sánchez calls early election after housing protests",
-          "link": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss",
+          "title": "No10 insists UK military base RAF Fairford is safe after US withdraws bombers",
+          "link": "https://www.bbc.co.uk/news/articles/cmy56yvv1kxxo?at_medium=RSS&at_campaign=rss",
           "source": "BBC World",
           "score": null,
-          "summary": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis."
+          "summary": "US media reported a new threat led to the bombers being removed on Sunday, following an incident near the base last week."
         },
         {
           "title": "Over Saudi Arabia, the crew and passengers of Flydubai Flight 1073 avert an attempt to hijack or crash the aircraft.",
           "link": "https://en.wikipedia.org/wiki/Flydubai_Flight_1073",
-          "source": "Wikipedia 新聞動態",
+          "source": "Wikipedia",
           "score": null,
           "summary": ""
         }
@@ -44,8 +44,8 @@
         {
           "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
           "link": "https://github.com/omlahore/RemoveMacAI",
-          "source": "Hacker News · 670 points",
-          "score": 670,
+          "source": "Hacker News · 671 points",
+          "score": 671,
           "summary": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible. - omlahore/RemoveMacAI"
         },
         {
@@ -66,7 +66,7 @@
     }
   ],
   "scores": {
-    "Hacker News": 670,
+    "Hacker News": 671,
     "Hacker News 熱門": 855,
     "alphaXiv": 240,
     "GitHub Trending": 1430
@@ -104,8 +104,8 @@
     },
     {
       "topic": "公民參與",
-      "title": "Teenager's hand blown off during confrontation between France school protesters and police",
-      "link": "https://www.bbc.co.uk/news/articles/c9zrdmxp4vy6o?at_medium=RSS&at_campaign=rss",
+      "title": "Spanish PM Sánchez calls early election after housing protests",
+      "link": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World"
     }
   ],
