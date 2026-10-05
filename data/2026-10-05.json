@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "generated": "2026-10-05T22:21:58+08:00",
+  "generated": "2026-10-05T22:45:56+08:00",
   "alerts": [],
   "civic": [],
   "headlines": [
@@ -29,7 +29,7 @@
       "each": false,
       "articles": [
         {
-          "title": "諾貝爾醫學獎得主戴瑟羅斯低調如「角落生物」明年訪台傳授光遺傳",
+          "title": "諾貝爾獎得主戴瑟羅斯低調如「角落生物」明年訪台傳授光遺傳",
           "link": "https://www.cna.com.tw/news/ahel/202610050299.aspx",
           "source": "中央社",
           "score": null,
@@ -44,15 +44,15 @@
         {
           "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
           "link": "https://github.com/omlahore/RemoveMacAI",
-          "source": "Hacker News · 671 points",
-          "score": 671,
+          "source": "Hacker News · 682 points",
+          "score": 682,
           "summary": "Turn off Apple Intelligence on macOS 27 and get its disk space back. One command, fully reversible. - omlahore/RemoveMacAI"
         },
         {
           "title": "Tokenization: A Survey for Modern NLP",
           "link": "https://www.alphaxiv.org/abs/2609.tokenization-survey-modern-nlp",
-          "source": "alphaXiv · 240 likes",
-          "score": 240,
+          "source": "alphaXiv · 241 likes",
+          "score": 241,
           "summary": "While modern language models take raw text as their input and produce raw text as output, they do not operate over text directly. Hidden in the very first step of language model pipelines is tokenizat…"
         },
         {
@@ -66,27 +66,26 @@
     }
   ],
   "scores": {
-    "Hacker News": 671,
-    "Hacker News 熱門": 855,
-    "alphaXiv": 240,
+    "Hacker News": 682,
+    "Hacker News 熱門": 862,
+    "alphaXiv": 241,
     "GitHub Trending": 1430
   },
   "hot": [
     {
+      "region": "world",
       "name": "伊朗戰爭",
-      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD%20%282026%E5%B9%B4%29"
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
     },
     {
+      "region": "world",
       "name": "俄烏戰爭",
-      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD%20%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
     },
     {
+      "region": "taiwan",
       "name": "九合一",
-      "link": "https://www.cna.com.tw/topic/newstopic/5056.aspx"
-    },
-    {
-      "name": "公民參與",
-      "link": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&at_campaign=rss"
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%B0%E6%96%B9%E5%85%AC%E8%81%B7%E4%BA%BA%E5%93%A1%E9%81%B8%E8%88%89"
     }
   ],
   "watch_hits": {
