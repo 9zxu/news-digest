@@ -14,5 +14,6 @@ uv run digest.py --preview --open   # 看今天實際會產生什麼：重新抓
 - `data/YYYY-MM-DD.json` — 每天的結果，含 `scores`、`watch_hits`
 - `.github/workflows/digest.yml` — 每天 06:30（台灣時間）執行
 - `sources.md` — 來源測試紀錄
+- `mcp_server.py` — MCP：`get_digest`、`read_article`、prompt `explain`
 
 本機 push 前先 `git pull`（Actions 每天會 commit `data/`）。
