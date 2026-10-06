@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-06",
+  "generated": "2026-10-06T10:23:22+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "卓榮泰：中國跨境鎮壓已成事實 籲民眾注意自我安全",
+          "link": "https://www.cna.com.tw/news/aipl/202610060040.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "中國涉嫌對總統賴清德家人進行非法監控。行政院長卓榮泰今天說，中國冒國際社會的最大禁忌，從事危害人權的跨境鎮壓，當跨境鎮壓已成為事實，就不能選擇沉默，呼籲全民及各團體，特別注意自我安全。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Trump says 'threat' led US to pull bombers from RAF Fairford",
+          "link": "https://www.bbc.co.uk/news/articles/cwj3413e5m1lo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The Pentagon confirmed on Sunday it had removed the B1 bombers from the base in England back to their home stations in America."
+        },
+        {
+          "title": "Flooding in Bangkok and across Thailand leaves at least 40 people dead.",
+          "link": "https://en.wikipedia.org/wiki/2026_Bangkok_floods",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Anthropic reported diary entry to police, woman faces felony charge",
+          "link": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+          "source": "Hacker News · 562 points",
+          "score": 562,
+          "summary": "According to the arrest report, Carli Michelle Heller, of Bonita Springs, Florida, wrote on September 26 that she would attack the Sheriff's office. She later said that..."
+        },
+        {
+          "title": "Towards Looped Models Done Right Part II: Rethinking at Fixed Points",
+          "link": "https://www.alphaxiv.org/abs/2610.looped-models-fixed-points",
+          "source": "alphaXiv · 208 likes",
+          "score": 208,
+          "summary": "Every recurrence of a looped language model adds cost in training, decoding, prefill, and reinforcement learning (RL). The closer recurrent states get to fixed points, the less the path to them matter…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 562,
+    "Hacker News 熱門": 516,
+    "alphaXiv": 208,
+    "GitHub Trending": 534
+  },
+  "hot": [
+    {
+      "region": "world",
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "region": "world",
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "region": "taiwan",
+      "name": "九合一",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%B0%E6%96%B9%E5%85%AC%E8%81%B7%E4%BA%BA%E5%93%A1%E9%81%B8%E8%88%89"
+    },
+    {
+      "region": "taiwan",
+      "name": "東協財經",
+      "link": "https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E7%A0%94%E7%94%9F%E9%86%AB"
+    }
+  ],
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 8,
+    "兩岸政治": 3,
+    "重大災難與事故": 2,
+    "疫情與公共衛生": 3,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "九合一",
+      "title": "林口重陽餐會拜票 蘇巧慧、李四川提長者福利政見",
+      "link": "https://www.cna.com.tw/news/aipl/202610050261.aspx",
+      "source": "中央社專題"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Spain PM pins hopes on housing crisis to help win snap election",
+      "link": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "駐捷代表投書：台海和平關乎捷克 正視台灣國際參與",
+      "link": "https://www.cna.com.tw/news/aipl/202610060012.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "重大災難與事故",
+      "title": "Flydubai co-pilot planned to crash plane into Tel Aviv airport or building, reports say",
+      "link": "https://www.bbc.co.uk/news/articles/cm3691y79xp5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "疫情與公共衛生",
+      "title": "US 'watching closely' after plague researcher dies in Russia",
+      "link": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
