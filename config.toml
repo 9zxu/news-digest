@@ -181,6 +181,10 @@ url = "https://ourworldindata.org/"
 name = "中選會選舉資料庫"
 url = "https://db.cec.gov.tw/"
 
+[[bookmark]]
+name = "World Monitor"
+url = "https://www.worldmonitor.app/"
+
 [feed]
 title = "zxu's RSS"
 # 本機測試時可改成 http://<Mac 的 IP>:8000/
