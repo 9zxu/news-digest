@@ -433,7 +433,7 @@ def front(seen, shown_titles):
             continue
         if any(g[2] in seen for g in group) or any(similar(title, t) for t in shown_titles):
             continue  # shown on an earlier day, or already today's headline
-        items.append({"topic": "主題", "title": clean(title, 300), "link": link, "source": "、".join(outlets)})
+        items.append({"topic": "熱門", "title": clean(title, 300), "link": link, "source": "、".join(outlets)})
         seen.update(g[2] for g in group)
         shown_titles.append(title)
     return items, {name: [t for t, _ in found] for name, found in pages.items()}
