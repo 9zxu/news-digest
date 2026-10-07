@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-07",
+  "generated": "2026-10-07T09:42:48+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "全法國學生動員示威提翻新校舍等10訴求 教師家長聲援",
+          "link": "https://www.cna.com.tw/news/aopl/202610070013.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "法國高中生不滿教育資源不足，今天掀起全國動員。巴黎示威標語牌五花八門，如「種貧窮、得憤怒」、「上課是權利，憤怒也是」、「高中生過勞」，還有反諷式的「年輕人閉嘴」。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "US death row inmate Christa Pike awake and speaking after failed execution, lawyers say",
+          "link": "https://www.bbc.co.uk/news/articles/c8kgezxn54qko?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Experts and lawyers called the apparent recovery unprecedented, noting she is believed to be the only known person to survive a lethal injection."
+        },
+        {
+          "title": "A snap election is announced following widespread housing protests in Spain.",
+          "link": "https://en.wikipedia.org/wiki/2026_Spanish_general_election",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Mistral Large 4",
+          "link": "https://mistral.ai/news/mistral-large-4/\\",
+          "source": "Hacker News · 1590 points",
+          "score": 1590,
+          "summary": ""
+        },
+        {
+          "title": "Finetuning with Sampling: SFT Learns Better Than You Think",
+          "link": "https://www.alphaxiv.org/abs/2610.02140",
+          "source": "alphaXiv · 172 likes",
+          "score": 172,
+          "summary": "Introducing new capabilities to frontier models has long been the goal of posttraining, which predominantly employs supervised finetuning (SFT) and reinforcement learning (RL) to this end. Conventiona…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1590,
+    "Hacker News 熱門": 574,
+    "alphaXiv": 172,
+    "Hugging Face Papers": 267,
+    "GitHub Trending": 889
+  },
+  "hot": [
+    {
+      "region": "world",
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "region": "world",
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "region": "taiwan",
+      "name": "九合一",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%B0%E6%96%B9%E5%85%AC%E8%81%B7%E4%BA%BA%E5%93%A1%E9%81%B8%E8%88%89"
+    },
+    {
+      "region": "taiwan",
+      "name": "東協財經",
+      "link": "https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E7%A0%94%E7%94%9F%E9%86%AB"
+    }
+  ],
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 7,
+    "兩岸政治": 1,
+    "重大災難與事故": 2,
+    "疫情與公共衛生": 2,
+    "民生大事": 2,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "九合一",
+      "title": "蔡英文助陣苗栗 允任陳品安競總榮譽主委",
+      "link": "https://www.cna.com.tw/news/aipl/202610060312.aspx",
+      "source": "中央社專題"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Watch: Riot police clash with school protesters and use tear gas in France",
+      "link": "https://www.bbc.co.uk/news/videos/cwm26078pkepo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "重大災難與事故",
+      "title": "Nigeria mourns 25 killed as military plane crashes into swamp",
+      "link": "https://www.bbc.co.uk/news/articles/ck1wvjer20qqo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "疫情與公共衛生",
+      "title": "Kenya confirms its first Ebola death as outbreak spreads",
+      "link": "https://www.bbc.co.uk/news/articles/cqzrd7v1j163o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "民生大事",
+      "title": "美國和伊朗戰爭衝擊 英國柴油價格創新高",
+      "link": "https://www.cna.com.tw/news/aopl/202610060347.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
