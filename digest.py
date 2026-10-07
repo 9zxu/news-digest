@@ -20,7 +20,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
-from email.utils import format_datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
 from zoneinfo import ZoneInfo
@@ -542,25 +541,26 @@ def write_feed(extra=None):
     for _, day in sorted(days.items(), reverse=True)[:CONFIG["keep_days"]]:
         title, body = render(day)
         sections.append(f'<section class="day" id="{day["date"]}"><h2>{escape(title)}</h2>\n{body}</section>')
-        pub = format_datetime(datetime.fromisoformat(day["generated"]))
-        items.append(f"""  <item>
+        items.append(f"""  <entry>
     <title>{escape(title)}</title>
-    <link>{escape(cfg['site_url'])}#{day['date']}</link>
-    <guid isPermaLink="false">news-digest-{day['date']}</guid>
-    <pubDate>{pub}</pubDate>
-    <description>{escape(body)}</description>
-  </item>""")
+    <link href="{escape(cfg['site_url'])}#{day['date']}"/>
+    <id>{escape(cfg['site_url'])}#{day['date']}</id>
+    <updated>{day['generated']}</updated>
+    <content type="html">{escape(body)}</content>
+  </entry>""")
+    updated = max(day["generated"] for day in days.values())  # same offset everywhere, so string order is time order
     PUBLIC.mkdir(exist_ok=True)
     (PUBLIC / "digest.xml").write_text(f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
   <title>{escape(cfg['title'])}</title>
-  <link>{escape(cfg['site_url'])}</link>
-  <description>不要錯過最重要的，平常的小事不一定要知道。原文不改寫。</description>
-  <language>zh-TW</language>
+  <subtitle>不要錯過最重要的，平常的小事不一定要知道。原文不改寫。</subtitle>
+  <link href="{escape(cfg['site_url'])}"/>
+  <link rel="self" href="{escape(cfg['site_url'])}digest.xml"/>
+  <id>{escape(cfg['site_url'])}</id>
+  <updated>{updated}</updated>
+  <author><name>{escape(cfg['author'])}</name></author>
 {chr(10).join(items)}
-</channel>
-</rss>
+</feed>
 """)
     # Item links point here (#date), so tapping a title in the reader opens the same content.
     page = (ROOT / "index.template.html").read_text()

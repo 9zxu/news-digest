@@ -187,5 +187,6 @@ url = "https://www.worldmonitor.app/"
 
 [feed]
 title = "zxu's RSS"
+author = "zxu"
 # 本機測試時可改成 http://<Mac 的 IP>:8000/
 site_url = "https://9zxu.github.io/news-digest/"
