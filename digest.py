@@ -373,7 +373,7 @@ def watch(now, seen, known, shown_titles):
                 topics.setdefault(rule["name"].format(*m.groups()), []).append((source, e))
         for name, hits in topics.items():
             counts[name] = len(hits)
-            # Skip quiet topics, and ones already covered by a CNA topic or Wikipedia (e.g. 亞運 vs 2026亞運).
+            # Skip quiet topics, and ones already in Wikipedia's Ongoing (e.g. 亞運 vs 2026亞運).
             if len(hits) < rule.get("min_hits", 2) or any(name in k or k in name for k in known):
                 continue
             known.add(name)
@@ -385,6 +385,58 @@ def watch(now, seen, known, shown_titles):
                     shown_titles.append(e.title)
                     break
     return chips, items, counts
+
+
+def cna_front(src):
+    """The big top story and the three beside it (#biggestNews, #otherNews; the tablet copy after them is skipped)."""
+    page = get(src["url"]).decode("utf-8", "replace")
+    page = page[page.find('id="biggestNews"'):page.find('id="NewsGroupTablet"')]
+    return [(html.unescape(t).strip(), urllib.parse.urljoin(src["url"], href)) for href, t in
+            re.findall(r'<a class="majorNewsClick" href="([^"]+)">(?:(?!</a>).)*?<h2[^>]*>([^<]+)</h2>', page, re.S)]
+
+
+def pts_front(src):
+    """The top story (the page's only <h1>) and the two large <h2> stories under it."""
+    page = get(src["url"]).decode("utf-8", "replace")
+    found = re.findall(r'href="([^"]+)"\s*>\s*<(h1|h2 class="text-2xl)[^>]*>([^<]+)</h', page)
+    return [(html.unescape(t).strip(), href) for href, _, t in found][:3]
+
+
+FRONT_PICKERS = {"cna_front": cna_front, "pts_front": pts_front}
+
+
+def front(seen, shown_titles):
+    """Stories that at least `min_outlets` newsrooms put on their front page (top story or the tier below it).
+    Same story = similar headlines. Returns (one article per story, each outlet's front page for tuning)."""
+    cfg, pages = CONFIG["front"], {}
+    for src in cfg["outlets"]:
+        try:
+            pages[src["name"]] = FRONT_PICKERS[src["method"]](src)
+        except Exception as ex:
+            warn(src["name"], ex)
+            continue
+        if not pages[src["name"]]:  # the site was redesigned, not a quiet day
+            warn(src["name"], "no front-page stories found")
+    stories = [(name, title, link) for name, found in pages.items() for title, link in found]
+
+    items, grouped = [], set()
+    for i, (name, title, link) in enumerate(stories):
+        if i in grouped:
+            continue
+        group = [(name, title, link)]
+        for j in range(i + 1, len(stories)):
+            if j not in grouped and stories[j][0] not in {g[0] for g in group} and similar(title, stories[j][1]):
+                group.append(stories[j])
+                grouped.add(j)
+        outlets = [g[0] for g in group]
+        if len(outlets) < cfg["min_outlets"]:
+            continue
+        if any(g[2] in seen for g in group) or any(similar(title, t) for t in shown_titles):
+            continue  # shown on an earlier day, or already today's headline
+        items.append({"topic": "主題", "title": clean(title, 300), "link": link, "source": "、".join(outlets)})
+        seen.update(g[2] for g in group)
+        shown_titles.append(title)
+    return items, {name: [t for t, _ in found] for name, found in pages.items()}
 
 
 def wikipedia_ongoing():
@@ -415,60 +467,13 @@ def wikipedia_ongoing():
     return chips
 
 
-def wikipedia_zh(name, year):
-    """The Chinese Wikipedia article for a topic name. Search ranks the general article first ("九合一選舉"),
-    so if a result is a dated edition ("2022年中華民國地方公職人員選舉"), try this year's edition of it."""
-    api = "https://zh.wikipedia.org/w/api.php?"
-    results = [r["title"] for r in json.loads(get(api + urllib.parse.urlencode({
-        "action": "query", "list": "search", "srsearch": name, "srlimit": 5, "format": "json", "formatversion": 2,
-    })))["query"]["search"]]
-    if not results:
-        return None
-    for title in results:
-        if m := re.search(r"(19|20)\d\d", title):
-            candidate = title.replace(m.group(0), str(year), 1)
-            exists = json.loads(get(api + urllib.parse.urlencode({
-                "action": "query", "titles": candidate, "format": "json", "formatversion": 2,
-            })))["query"]["pages"][0]
-            if "missing" not in exists:
-                return candidate
-    return results[0]
-
-
-def hot(now, seen):
-    """Long-running events, linked to Wikipedia for the background: Taiwan (CNA homepage topics) and
-    world (Wikipedia's "Ongoing"). Also a new article from each CNA topic for tracking."""
-    cfg, chips, tracked = CONFIG["hot"], [], []
+def hot():
+    """Long-running events (Wikipedia's "Ongoing"), linked to Wikipedia for the background."""
     try:
-        chips += [{"region": "world", **c} for c in wikipedia_ongoing()]
+        return wikipedia_ongoing()
     except Exception as ex:
         warn("Wikipedia", ex)
-
-    try:
-        page = get(cfg["cna_url"]).decode("utf-8", "replace")
-        for m in re.finditer(r'<a class="first-level" href="(/topic/newstopic/\d+\.aspx)">([^<]+)</a>(.*?)</ul>', page, re.S):
-            name = m.group(2).strip()
-            if name in cfg["cna_exclude"]:
-                continue
-            try:
-                article = wikipedia_zh(name, now.year)
-            except Exception as ex:
-                warn("Wikipedia", ex)
-                article = None
-            link = (f"https://zh.wikipedia.org/zh-tw/{urllib.parse.quote(article.replace(' ', '_'))}" if article
-                    else urllib.parse.urljoin(cfg["cna_url"], m.group(1)))  # no article: the CNA topic page
-            chips.append({"region": "taiwan", "name": name, "link": link})
-            if not cfg.get("track_cna_topics"):
-                continue
-            for href, title in re.findall(r'<a class="_ellipsis_simple" href="([^"]+)">([^<]+)</a>', m.group(3)):
-                link = urllib.parse.urljoin(cfg["cna_url"], href)
-                if link not in seen:
-                    tracked.append({"topic": name, "title": clean(title, 300), "link": link, "source": "中央社專題"})
-                    seen.add(link)
-                    break
-    except Exception as ex:
-        warn("中央社專題", ex)
-    return chips, tracked
+        return []
 
 
 # --- output ---
@@ -506,7 +511,7 @@ def render(day):
         return out
 
     parts = []
-    chips = sorted(day.get("hot", []), key=lambda c: c.get("region", "world") != "world")  # world first, then Taiwan
+    chips = day.get("hot", [])
     if chips:
         links = " · ".join(f'<a href="{escape(c["link"])}">{escape(c["name"])}</a>' for c in chips)
         parts.append(f'<p class="topics"><b>{escape(CONFIG["hot"]["label"])}：</b>{links}</p>')
@@ -595,10 +600,11 @@ def build():
         "scores": scores,  # top score per threshold source, shown or not — for tuning `min`
     }
     seen.update(a["link"] for cat in day["headlines"] for a in cat["articles"])
-    day["hot"], tracked = hot(now, seen)
-    shown = [a["title"] for cat in day["headlines"] for a in cat["articles"]] + [a["title"] for a in tracked]
+    day["hot"] = hot()
+    shown = [a["title"] for cat in day["headlines"] for a in cat["articles"]]
+    front_items, day["front_pages"] = front(seen, shown)
     _, watched, day["watch_hits"] = watch(now, seen, {c["name"] for c in day["hot"]}, shown)
-    day["tracking"] = tracked + watched
+    day["tracking"] = front_items + watched
     day["failures"] = FAILURES
     for a in day["alerts"] + day["civic"]:
         print(f"{a['source']}: {a['title']}")

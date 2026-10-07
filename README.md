@@ -11,7 +11,7 @@ uv run digest.py --preview --open   # 看今天實際會產生什麼：重新抓
 
 - `config.toml` — 所有來源、關鍵字、門檻
 - `digest.py` → `main()` → `build()` 抓資料，`render()` 排版
-- `data/YYYY-MM-DD.json` — 每天的結果，含 `scores`、`watch_hits`
+- `data/YYYY-MM-DD.json` — 每天的結果，含 `scores`、`watch_hits`、`front_pages`（調門檻用）
 - `.github/workflows/digest.yml` — 每天 06:30（台灣時間）執行
 - `sources.md` — 來源測試紀錄
 - `mcp_server.py` — MCP：`get_digest`、`read_article`、prompt `explain`

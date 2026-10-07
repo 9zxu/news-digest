@@ -59,6 +59,16 @@
 | 中央社 政治 | https://feeds.feedburner.com/rsscna/politics | ✅ 200 | 20 | 中文 |
 | 報導者 | https://www.twreporter.org/a/rss2.xml | ✅ 200 | 10 | 深度報導，發文量少 |
 | Focus Taiwan（中央社英文） | https://focustaiwan.tw/rss | ❌ 404 | — | 需要找正確的網址 |
+| 央廣 RTI | https://www.rti.org.tw/rss | ✅ 200 | 148 | 公共媒體，量大；標題前有【兩岸】【國際】等分類 |
+| 經濟日報 | https://money.udn.com/rssfeed/news/1001/5591 | ✅ 200 | 20 | 聯合報系，財經 |
+| Taipei Times | https://www.taipeitimes.com/xml/index.rss | ✅ 200 | 50 | 英文，自由時報集團 |
+| 自由時報 政治 | https://news.ltn.com.tw/rss/politics.xml | ✅ 200 | 40 | 立場偏綠 |
+| 中央社 社會／生活／地方 | https://feeds.feedburner.com/rsscna/social（lifehealth、local） | ✅ 200 | 20 | |
+| ETtoday | https://feeds.feedburner.com/ettoday/realtime | ✅ 200 | 50 | 偏聳動 |
+| 新頭殼 | https://newtalk.tw/rss/all | ✅ 200 | 100 | 立場鮮明 |
+| 聯合新聞網 | https://udn.com/rssfeed/news/2/6638 | ⚠️ 200 | 20 | 2026-10-08：標題空白、日期舊，不能用 |
+| 中時、風傳媒、關鍵評論網 | （試過的網址） | ❌ 404／502 | — | |
+| 天下 | https://www.cw.com.tw/RSS/cw_content.xml | ⚠️ 200 | 20 | 36 小時內 0 篇 |
 
 ## 🌦️ 天氣（中央氣象署）
 
@@ -85,3 +95,16 @@
 - [ ] 找 The Batch 和 Focus Taiwan 的正確 feed
 - [ ] 天氣要放哪個縣市？
 - [ ] 實際記錄幾天，看每個來源一天發幾篇
+
+## 頭版（2026-10-08 測試）
+
+頭版比對（config.toml `[front]`）要的是「編輯判斷最重要的幾則」，RSS 多半照時間排序，只能抓首頁。
+
+| 來源 | 結果 |
+|---|---|
+| 中央社首頁 | ✅ `#biggestNews` 的頭條 + `#otherNews` 的 3 則（每則是 `<a class="majorNewsClick">` 裡的 `<h2>`）。後面的 `#NewsGroupTablet` 是平板版的重複，要跳過 |
+| 公視首頁 | ✅ 唯一的 `<h1>` 是頭條，接著 2 則 `<h2 class="text-2xl …">`；下面的 `<h3>` 是時間排序的列表 |
+| Taipei Times 首頁 | ⚠️ `<h1 class="bf">` 頭條 + `<h1 class="bf2">` 第二級，結構清楚，但英文標題無法跟中文比對 |
+| BBC World RSS | ⚠️ 照重要性排序，前幾則就是頭版；同樣是英文 |
+| 自由時報首頁 | ❌ `<h3>` 列表混著命理、零食文章，看不出頭版 |
+| 央廣首頁 | ❌ 原始 HTML 裡沒有標題，可能是 JS 載入 |
