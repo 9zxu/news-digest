@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-08",
+  "generated": "2026-10-08T10:10:24+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "蔡英文：台灣非安全受援者 更是全球安全重要夥伴",
+          "link": "https://www.cna.com.tw/news/aipl/202610080022.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "前總統蔡英文今天表示，國際新聞談到台灣時，往往將台灣視為有安全風險、需要其他國家協助的地方，但這只看到一部分；台灣擁有先進製造、工程人才及完整電子產業供應鏈，不只是重要合作夥伴，更是不可或缺的夥伴，深化與台灣合作，不只提升台灣安全，也能讓印太更穩定、民主國家整體更具韌性。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Spanish pensioner whose eviction sparked nationwide protests dies, union says",
+          "link": "https://www.bbc.co.uk/news/articles/c6e3x21ev9wwo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Maricarmen Abascal, 87, was forcibly removed on a stretcher from her apartment of more than 70 years in September."
+        },
+        {
+          "title": "High school students in France and Belgium launch mass protests for better conditions, starting fires and causing 400 schools to be closed.",
+          "link": "https://en.wikipedia.org/wiki/2026_French_lyc%C3%A9e_protests",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Sharing AI progress in mathematics",
+          "link": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+          "source": "Hacker News · 1234 points",
+          "score": 1234,
+          "summary": ""
+        },
+        {
+          "title": "morluto/rea",
+          "link": "https://github.com/morluto/rea",
+          "source": "GitHub Trending · 4,655 stars today",
+          "score": 4655,
+          "summary": "Reverse engineer anything with agents, from app behavior down to native binaries."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1234,
+    "Hacker News 熱門": 764,
+    "alphaXiv": 132,
+    "Hugging Face Papers": 132,
+    "GitHub Trending": 4655
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "蔡英文：台灣非安全受援者　更是全球安全重要夥伴",
+      "財部：若總預算明年1/5前三讀　最快1/26領取普發現金1萬",
+      "早安世界》台股5萬點咫尺之遙　渣打銀看台灣「亞洲最具投資吸引力」",
+      "西班牙老婦被迫搬離住處後過世　民眾抗議住房危機怒吼「這是謀殺」"
+    ],
+    "公視": [
+      "冒名中科院購軍工晶片銷中 10業者牟利逾3億元遭起訴",
+      "不滿美對台軍售F-16V戰機 北韓官媒社論罕見發出警告",
+      "無力負擔租金遭驅離掀全國抗議 西班牙87歲長者瑪莉卡門逝世"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 8,
+    "疫情與公共衛生": 3,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "France halts use of stun grenades after boy's hand blown off in student protests",
+      "link": "https://www.bbc.co.uk/news/articles/cqzjx7z2r4gko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "疫情與公共衛生",
+      "title": "Trump to speak to Putin about plague lab worker's death in Russia",
+      "link": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
