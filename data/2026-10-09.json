@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-09",
+  "generated": "2026-10-09T10:23:19+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "傳中國民兵船現蹤台灣東部外海 美國務院批北京破壞穩定",
+          "link": "https://www.cna.com.tw/news/aipl/202610090015.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "中國對台灰色地帶侵擾不斷之際，傳出中共海上民兵船8月間首度出現在台灣東部海域。美國國務院今天回覆中央社記者表示，華府持續關切中國在台灣以東區域的行動，中國的舉措高度破壞穩定，敦促北京停止對台灣施壓。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Suspect linked to Monaco bomb attack on millionaire speaks to BBC from Ukrainian prison",
+          "link": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev."
+        },
+        {
+          "title": "American computer scientist Margaret Hamilton dies at the age of 90.",
+          "link": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Claude Haiku 5.5",
+          "link": "https://www.anthropic.com/claude-haiku-5-5",
+          "source": "Hacker News · 1034 points",
+          "score": 1034,
+          "summary": "Claude Haiku 5.5 is our fastest, most capable small model. Built for high-volume work like summarization, subagents, and browser use."
+        },
+        {
+          "title": "Margaret Hamilton has died",
+          "link": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+          "source": "Hacker News 熱門 · 2081 points",
+          "score": 2081,
+          "summary": "Margaret H. Hamilton, a profoundly influential computer scientist best known for leading the software engineering team at MIT’s Instrumentation Lab during NASA’s Apollo program, died at age 90."
+        },
+        {
+          "title": "Towards Looped Models Done Right, Part II: Rethinking at Fixed Points",
+          "link": "https://www.alphaxiv.org/abs/2610.06833",
+          "source": "alphaXiv · 282 likes",
+          "score": 282,
+          "summary": "Every recurrence of a looped language model adds cost in training, decoding, prefill, and reinforcement learning (RL). The closer recurrent states get to fixed points, the less the path to them matter…"
+        },
+        {
+          "title": "boykopovar/AnyPS5",
+          "link": "https://github.com/boykopovar/AnyPS5",
+          "source": "GitHub Trending · 4,669 stars today",
+          "score": 4669,
+          "summary": "Tool for automatic PS5 executables porting to Linux and Windows"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1034,
+    "Hacker News 熱門": 2081,
+    "alphaXiv": 282,
+    "Hugging Face Papers": 166,
+    "GitHub Trending": 4669
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "傳中國民兵船現蹤台灣東部外海　美國務院批北京破壞穩定",
+      "法國教育危機延燒　逾7萬人示威、政府急增3000代課教師",
+      "吳德榮：全台早晚偏涼、日夜溫差大　迎風面偶有零星飄雨",
+      "國慶連假首日　高公局估國道上午9路段易塞"
+    ],
+    "公視": [
+      "蔣萬安拋遷松機打造AI園區 交通部：涉國防運輸須審慎評估",
+      "青年奧運首度前進非洲 台灣派37選手遠征塞內加爾",
+      "林肯號結束海外部署返加州母港 連265天未靠岸創現代海軍紀錄"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "颱風／颶風": 1,
+    "公民參與": 4,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "Protesters blame 'vulture funds' for Spain's housing crisis",
+      "link": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
