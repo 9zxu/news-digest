@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-10",
+  "generated": "2026-10-10T09:51:08+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "駐約旦代表處國慶晚會 盼深化台約科技與經貿合作",
+          "link": "https://www.cna.com.tw/news/aipl/202610100020.aspx",
+          "source": "中央社 政治",
+          "score": null,
+          "summary": "（中央社記者施婉清開羅10日專電）駐約旦代表處8日舉辦115年國慶晚會，共約200人出席。活動透過台灣美食、茶飲及虛擬實境（VR）科技體驗，展現台灣文化特色與科技實力，也盼持續深化台灣與約旦的人道援助及經貿交流合作。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+          "link": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\"."
+        },
+        {
+          "title": "Francis Halzen is awarded the Nobel Prize in Physics for his work in neutrino astronomy.",
+          "link": "https://en.wikipedia.org/wiki/Francis_Halzen",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "OpenAI annualised revenues $20B less than previously signalled",
+          "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+          "source": "Hacker News · 421 points",
+          "score": 421,
+          "summary": "OpenAI has told investors that it hit roughly $50 billion in annualized revenue at the end of September, CNBC confirmed."
+        },
+        {
+          "title": "Cloudflare acquires Deno",
+          "link": "https://deno.com/blog/cloudflare",
+          "source": "Hacker News 熱門 · 1068 points",
+          "score": 1068,
+          "summary": "Putting ourselves in the best place to build the future of the web"
+        },
+        {
+          "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+          "link": "https://www.alphaxiv.org/abs/2610.06805",
+          "source": "alphaXiv · 220 likes",
+          "score": 220,
+          "summary": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction. Existing task-agnostic JEPA world models predict and plan at a single timescale or with m…"
+        },
+        {
+          "title": "mattpocock/skills",
+          "link": "https://github.com/mattpocock/skills",
+          "source": "GitHub Trending · 1,687 stars today",
+          "score": 1687,
+          "summary": "Skills for Real Engineers. Straight from my.agents directory."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 421,
+    "Hacker News 熱門": 1068,
+    "alphaXiv": 220,
+    "Hugging Face Papers": 135,
+    "GitHub Trending": 1687
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "影片／巴拿馬7.7強震路毀屋塌　總統宣布重大災害、全國學校停課",
+      "國慶日上午國道8路段易塞　國5北向午後高乘載管制",
+      "吳德榮：國慶日北部、東部偶零星雨　中南部白天晴熱"
+    ],
+    "公視": [
+      "屏東來義大橋國中生戲水失聯 掉入涵洞靠泳圈托頂至高處獲救",
+      "救國團遭認定為國民黨附隨組織 最高行政法院駁回上訴定讞",
+      "曾調查以色列對加薩種族滅絕罪 南非法學家皮萊獲諾貝爾和平獎"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "大地震": 3,
+    "公民參與": 5,
+    "全球政治": 2
+  },
+  "tracking": [
+    {
+      "topic": "大地震",
+      "title": "Powerful magnitude 7.7 earthquake hits Panama, damaging buildings",
+      "link": "https://www.bbc.co.uk/news/articles/c620r39zdp9wo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "公民參與",
+      "title": "France promises 3,000 extra teachers in first step to calm student protests",
+      "link": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "全球政治",
+      "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+      "link": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
