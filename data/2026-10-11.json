@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-11",
+  "generated": "2026-10-11T09:06:55+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "川普要求烏克蘭換總統 施壓停止襲擊俄羅斯煉油廠",
+          "link": "https://www.cna.com.tw/news/aopl/202610110004.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國總統川普今天批評烏克蘭總統澤倫斯基攻擊俄羅斯煉油廠，並敦促烏克蘭更換領導人，指相關攻擊助長美國柴油價格在期中選舉前居高不下；華府據報此前加大施壓，威脅若烏方不停止襲擊俄國煉油廠，將切斷至關重要的情報共享。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
+          "link": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war."
+        },
+        {
+          "title": "South African jurist Navi Pillay is awarded the Nobel Peace Prize.",
+          "link": "https://en.wikipedia.org/wiki/Navi_Pillay",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Typesafe AI raises $870M at $7.5B",
+          "link": "https://typesafe.ai/blog/series-ai",
+          "source": "Hacker News · 431 points",
+          "score": 431,
+          "summary": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access."
+        },
+        {
+          "title": "Triple-A Minesweeper",
+          "link": "https://minesweeper.mikelacher.com/",
+          "source": "Hacker News 熱門 · 1360 points",
+          "score": 1360,
+          "summary": "Sweep to survive in the action-packed, AAA reboot of the classic puzzle game."
+        },
+        {
+          "title": "storytold/artcraft",
+          "link": "https://github.com/storytold/artcraft",
+          "source": "GitHub Trending · 3,222 stars today",
+          "score": 3222,
+          "summary": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 431,
+    "Hacker News 熱門": 1360,
+    "alphaXiv": 140,
+    "Hugging Face Papers": 145,
+    "GitHub Trending": 3222
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "川普要求烏克蘭換總統　施壓停止襲擊俄羅斯煉油廠",
+      "利雅德機場一週內第3度遭襲　釀12死309傷所有班機改降",
+      "特派在現場／印度蟑螂人民黨發起抗議遭鎮壓　記者怨採訪權受損",
+      "回應賴總統國慶演說　美國務院：樂見維護台海和平穩定承諾"
+    ],
+    "公視": [
+      "韓國瑜國慶演說提卓揆不副署 行政院：不應污名化憲政機制",
+      "李彥秀稱「社工發毒品」引反彈 蔣萬安緩頰、沈伯洋指應道歉",
+      "美俄元首電話峰會 雙方達成柴油出口協議"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "大地震": 2,
+    "颱風／颶風": 2,
+    "公民參與": 7,
+    "全球政治": 2,
+    "兩岸政治": 1,
+    "重大災難與事故": 1,
+    "疫情與公共衛生": 1
+  },
+  "tracking": [
+    {
+      "topic": "大地震",
+      "title": "巴拿馬接連發生7.7及6.6強震 拉丁美洲多國感受強烈搖晃",
+      "link": "https://news.pts.org.tw/article/830775",
+      "source": "公視新聞網"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Why have hundreds of 'cockroach' protesters been detained in Delhi",
+      "link": "https://www.bbc.co.uk/news/videos/cqwy7p2y20gxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "全球政治",
+      "title": "Nobel peace laureate says US sanctions on ICC 'unacceptable'",
+      "link": "https://www.bbc.co.uk/news/articles/cqkgjrpmr47vo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
