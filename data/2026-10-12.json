@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-12",
+  "generated": "2026-10-12T09:30:54+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "留住中上校資深飛行員 國防部推專責飛官可延役至58歲",
+          "link": "https://www.cna.com.tw/news/aipl/202610120018.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "國防部今天表示，已完成「空軍專責飛行軍官運用作法」並於9月4日呈報行政院審議，採專案增編員額及延長服役方式，留用服役滿14年以上具備高資格，經驗豐富且成熟中、上校飛行軍官，保留原階級依意願延役至58歲，且不受中校服役年限26年、上校30年限制。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
+          "link": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine's leader says he will support such a truce if Moscow does, after initially expressing surprise at Donald Trump's announcement."
+        },
+        {
+          "title": "Henri B. Kagan and Kensō Soai are awarded the Nobel Prize in Chemistry for the discovery of non-linear effects and autocatalysis in asymmetric organic synthesis.",
+          "link": "https://en.wikipedia.org/wiki/Henri_B._Kagan",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "cathrynlavery/diagram-design",
+          "link": "https://github.com/cathrynlavery/diagram-design",
+          "source": "GitHub Trending · 1,083 stars today",
+          "score": 1083,
+          "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 235,
+    "Hacker News 熱門": 586,
+    "alphaXiv": 120,
+    "GitHub Trending": 1083
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "留住中上校資深飛行員　國防部推專責飛官可延役至58歲",
+      "美專家：沒有台灣就沒Google微軟輝達　台企應多訪美建立品牌形象",
+      "早安世界》美國啟動337調查鴻海台達電等入列　經濟部：必要時提供協助",
+      "英相柏南首度證實俄國曾干預脫歐公投　警告法德選民留意"
+    ],
+    "公視": [
+      "宣布合辦北市長候選人辯論會 2電視台今邀沈、蔣幕僚協商",
+      "吉布地開往葉門移民船翻覆沉沒 已知造成139死、84失蹤",
+      "尼泊爾山崩釀洪災已知5人失聯 約40棟房屋遭沖毀"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "颱風／颶風": 1,
+    "公民參與": 2,
+    "全球政治": 2,
+    "兩岸政治": 2,
+    "奧運": 2
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "川普宣布俄烏同意能源停火 澤倫斯基：俄續攻擊、烏等待細節",
+      "link": "https://www.cna.com.tw/news/aopl/202610120004.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "澤倫斯基批美放寬對俄制裁 川普籲烏克蘭「換總統」",
+      "link": "https://news.pts.org.tw/article/830875",
+      "source": "公視新聞網"
+    }
+  ],
+  "failures": []
+}
