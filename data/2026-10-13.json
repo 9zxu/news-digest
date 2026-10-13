@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-13",
+  "generated": "2026-10-13T11:06:24+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "釀酒人牛棚完封道奇打線 國聯冠軍賽2連勝[影]",
+          "link": "https://www.cna.com.tw/news/aspt/202610130036.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國職棒國聯冠軍賽第2戰，密爾瓦基釀酒人今天靠著康崔拉斯敲出追平全壘打與超前安打，加上牛棚聯手讓道奇最後15名打者連續出局，終場以7比4拿勝，系列賽取得2比0領先。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+          "link": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Despite the US president announcing energy infrastructure would not be targeted strikes have continued, Ukraine says."
+        },
+        {
+          "title": "The Houthis launch a series of attacks on Saudi Arabian airports, including King Khalid International Airport, killing at least 20 people and injuring more than 370 others.",
+          "link": "https://en.wikipedia.org/wiki/October_2026_attacks_on_Saudi_Arabia_airports",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "The gap in shared understanding of LLM capability is widening",
+          "link": "https://twitter.com/karpathy/status/2109361546505966046",
+          "source": "Hacker News · 681 points",
+          "score": 681,
+          "summary": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel. - Nap…"
+        },
+        {
+          "title": "Passkeys are a trap",
+          "link": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+          "source": "Hacker News 熱門 · 1030 points",
+          "score": 1030,
+          "summary": ""
+        },
+        {
+          "title": "bilawalsidhu/gods-eye-view",
+          "link": "https://github.com/bilawalsidhu/gods-eye-view",
+          "source": "GitHub Trending · 1,895 stars today",
+          "score": 1895,
+          "summary": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 681,
+    "Hacker News 熱門": 1030,
+    "alphaXiv": 131,
+    "GitHub Trending": 1895
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "釀酒人牛棚完封道奇打線　國聯冠軍賽2連勝[影]",
+      "回應韓國瑜國慶演說　卓榮泰：不副署是被動且必要作法",
+      "華爾街日報：中國債務惡性循環　拖累經濟成長衝擊全球",
+      "IMF估台灣今年經濟成長逾10%　亞太第一全球罕見雙位數成長"
+    ],
+    "公視": [
+      "兒參選市議員涉行賄 高雄前海洋局長父子檔3人遭聲押",
+      "Grab：與Uber各自獨立營運 進入台灣市場會遵守法規",
+      "巴黎「紅孩兒市場」發生火警 場內17美食攤位付之一炬"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 4,
+    "大地震": 1,
+    "公民參與": 1,
+    "全球政治": 4,
+    "兩岸政治": 1,
+    "重大災難與事故": 1,
+    "疫情與公共衛生": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "川普突喊能源停火 烏克蘭稱俄仍空襲顯示無意接受",
+      "link": "https://www.cna.com.tw/news/aopl/202610130028.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "英相柏南：11/20英歐峰會後討論與歐盟長期關係選項",
+      "link": "https://www.cna.com.tw/news/aopl/202610130011.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
