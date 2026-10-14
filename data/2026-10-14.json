@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-14",
+  "generated": "2026-10-14T09:19:00+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "吳德榮：16至20日白天偏熱、日夜溫差大 為「秋老虎」型態",
+          "link": "https://www.cna.com.tw/news/ahel/202610140017.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "根據氣象署網站，今天清晨平地最低溫為新竹關西攝氏14.9度。氣象專家吳德榮表示，今、明兩天西晴東偶雨，16日至20日各地天氣穩定，白天偏熱、日夜溫差大。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+          "link": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said."
+        },
+        {
+          "title": "The Houthis launch a series of attacks on Saudi Arabian airports, including King Khalid International Airport (satellite image shown), killing at least 20 people and injuring more than 370 others.",
+          "link": "https://en.wikipedia.org/wiki/October_2026_attacks_on_Saudi_airports",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Gemini 4 Argon",
+          "link": "https://deepmind.google/models/gemini/",
+          "source": "Hacker News · 977 points",
+          "score": 977,
+          "summary": ""
+        },
+        {
+          "title": "debpalash/VoiceStudio",
+          "link": "https://github.com/debpalash/VoiceStudio",
+          "source": "GitHub Trending · 1,748 stars today",
+          "score": 1748,
+          "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 977,
+    "Hacker News 熱門": 690,
+    "alphaXiv": 146,
+    "Hugging Face Papers": 272,
+    "GitHub Trending": 1748
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "吳德榮：16至20日白天偏熱、日夜溫差大　為「秋老虎」型態",
+      "捷運三鶯線鶯歌站電力異常　部分路段改公車接駁",
+      "法國聲援抗議學生集會遍地開花　逾16萬人上街示威",
+      "早安世界》IMF估台灣今年經濟成長逾10%　亞太第一全球罕見雙位數成長"
+    ],
+    "公視": [
+      "高市議員參選人涉行賄 張騏晟交保、父兄羈押禁見",
+      "基隆捷運經費審議通過 近700億元力拚2033年通車",
+      "黑海商船遭無人機攻擊沉沒 船上11名船員下落不明"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 4,
+    "公民參與": 4,
+    "全球政治": 1,
+    "疫情與公共衛生": 1,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "俄羅斯空襲基輔發電廠 澤倫斯基稱未獲西方盟友預警",
+      "link": "https://www.cna.com.tw/news/aopl/202610140014.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "公民參與",
+      "title": "'If we don't scream, they won't listen to us': Student protesters speak to BBC in Paris",
+      "link": "https://www.bbc.co.uk/news/videos/ckg5jqg1npd7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
