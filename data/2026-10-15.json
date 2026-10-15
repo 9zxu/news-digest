@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-15",
+  "generated": "2026-10-15T08:42:51+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》中油每年採購600萬噸阿拉斯加天然氣 估最高投資44億美元",
+          "link": "https://www.cna.com.tw/news/ahel/202610155001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "路透社報導，美國總統川普指台灣已同意在未來20年內採購阿拉斯加液化天然氣管線計畫30%天然氣。經濟部14日表示，中油已與美方開發商協商取得重大進展。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
+          "link": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\"."
+        },
+        {
+          "title": "Canadian poet Anne Carson is awarded the Nobel Prize in Literature.",
+          "link": "https://en.wikipedia.org/wiki/Anne_Carson",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Redesigning source control at Anthropic",
+          "link": "https://www.anthropic.com/engineering/redesigning-source-control",
+          "source": "Hacker News · 866 points",
+          "score": 866,
+          "summary": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 866,
+    "Hacker News 熱門": 821,
+    "alphaXiv": 148,
+    "Hugging Face Papers": 266,
+    "GitHub Trending": 947
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》中油每年採購600萬噸阿拉斯加天然氣　估最高投資44億美元",
+      "黃仁勳：客戶若開發不安全AI　將停止供應晶片",
+      "OpenAI控前員工洩密　跳槽蘋果前寄逾百份未公開產品機密文件",
+      "韓媒：台積電三星等晶片大廠組研發聯盟　力抗中國長鑫存儲崛起"
+    ],
+    "公視": [
+      "外交部長林佳龍率團出訪波蘭 宣布晶片技術合作",
+      "高雄市長電視辯論會30日登場 柯志恩、賴瑞隆將交叉詰問",
+      "德國漢莎航空砸12億歐元 收購葡航44.9%股權獲黃金航線"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 2,
+    "全球政治": 2,
+    "重大災難與事故": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "諾貝爾和平獎得主皮萊批川普制裁ICC 要他去了解國際法",
+      "link": "https://www.cna.com.tw/news/aopl/202610140344.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
