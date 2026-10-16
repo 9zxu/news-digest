@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-16",
+  "generated": "2026-10-16T08:32:47+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》美光新廠啟用 賴總統：世界越需要AI 就越需要值得信賴的台灣",
+          "link": "https://www.cna.com.tw/news/ahel/202610165001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "總統賴清德15日出席美光科技在台中舉行台灣美光先進封裝與測試二廠啟用典禮，他致詞提到，台灣除有台積電領先全球的先進製程與封裝測試，也有美光持續布局的高階記憶體。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
+          "link": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Trump said some would \"rather not watch\" the killing of Nidal Hasan, the first military execution in over 60 years."
+        },
+        {
+          "title": "The Houthis launch a series of attacks on Saudi Arabian airports, including King Khalid International Airport (satellite image shown), killing at least 20 people and injuring more than 370 others.",
+          "link": "https://en.wikipedia.org/wiki/October_2026_Houthi_attacks_on_Saudi_Arabian_airports",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+          "link": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+          "source": "Hacker News · 939 points",
+          "score": 939,
+          "summary": "Cyber experts say AI labs’ containment and monitoring failures — not agents with minds of their own — are to blame for recent alarming hacking reports. CISOs should vet their AI vendors and tighten se…"
+        },
+        {
+          "title": "Things to know when you get cancer",
+          "link": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
+          "source": "Hacker News 熱門 · 1860 points",
+          "score": 1860,
+          "summary": "Personal website and portfolio"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 939,
+    "Hacker News 熱門": 1860,
+    "alphaXiv": 108,
+    "Hugging Face Papers": 276,
+    "GitHub Trending": 307
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》美光新廠啟用　賴總統：世界越需要AI　就越需要值得信賴的台灣",
+      "美國俄勒岡州小學槍擊案　警方：多人受害、槍手已死",
+      "福衛八號第2顆衛星拚今年底起運　明年第1季升空",
+      "德國擬與輝達簽合作協議　砸數億歐元加速AI導入工業領域"
+    ],
+    "公視": [
+      "台北市長選戰首場辯論會10/31登場 形式含交叉詰問、媒體提問",
+      "輕生中尉生前遭霸凌音檔疑曝光 陸軍強調交由司法偵辦",
+      "國光客運2天內無預警取消65班 公路局：最高罰9萬"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "公民參與": 6,
+    "疫情與公共衛生": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+      "link": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Student protesters attack government buildings in Albania",
+      "link": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
