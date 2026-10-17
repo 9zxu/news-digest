@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-17",
+  "generated": "2026-10-17T08:40:24+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》中經院上修今年經濟成長預測值至12.16% 景氣內外皆熱",
+          "link": "https://www.cna.com.tw/news/ahel/202610175001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "AI熱潮助攻出口、帶動內需，中經院上修2026年經濟成長率預測值至12.16%，是目前主要預測機構最高，達1988年以來最高水準。中經院解讀，逐季走勢受基期影響而微幅放緩，成長模式則呈現「內外皆熱」。外貿方面，AI相關硬體需求暢旺，預估海關出口、進口年增率分別為40.51%、39.09%。內需方面，民間消費因勞動市場穩健改善，台股勁揚帶動財富效果，估年增率4.94%，明顯優於去年的1.36%。民間…"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+          "link": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Neural networks are clean",
+          "link": "https://already-clean.goodfire.com/",
+          "source": "Hacker News · 797 points",
+          "score": 797,
+          "summary": "A working hypothesis about neurons, generalization, and the ecology of circuits."
+        },
+        {
+          "title": "Tesla Roadster",
+          "link": "https://www.tesla.com/roadster",
+          "source": "Hacker News 熱門 · 1142 points",
+          "score": 1142,
+          "summary": ""
+        },
+        {
+          "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
+          "link": "https://huggingface.co/papers/2610.20571",
+          "source": "Hugging Face Papers · 341 upvotes",
+          "score": 341,
+          "summary": "Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. Passing prompts or recent frames between shots does…"
+        },
+        {
+          "title": "anthropics/claude-plugins-official",
+          "link": "https://github.com/anthropics/claude-plugins-official",
+          "source": "GitHub Trending · 1,552 stars today",
+          "score": 1552,
+          "summary": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 797,
+    "Hacker News 熱門": 1142,
+    "alphaXiv": 79,
+    "Hugging Face Papers": 341,
+    "GitHub Trending": 1552
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》中經院上修今年經濟成長預測值至12.16%　景氣內外皆熱",
+      "台灣將赴美打造產業園區　美國務院：貿易投資關係持續成長",
+      "歐盟峰會多項議題未達共識　移民政策、長期預算架構及援烏延後再議",
+      "台南鐵路地下化自強號列車首發　迎來交通新篇章"
+    ],
+    "公視": [
+      "國民黨推普發2萬特別條例 立院逕付二讀交付協商",
+      "老人福利法修正案三讀通過 所得稅率未達20%長者免健保費",
+      "台南鐵路地下化將首階通車 今22:29地面末班車駛離"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 4,
+    "大地震": 2,
+    "公民參與": 3,
+    "兩岸政治": 3,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "熱門",
+      "title": "台南鐵路地下化自強號列車首發 迎來交通新篇章",
+      "link": "https://www.cna.com.tw/news/aloc/202610170011.aspx",
+      "source": "中央社、公視"
+    },
+    {
+      "topic": "戰爭／衝突",
+      "title": "Seven crew missing after drone attack leaves tanker ablaze off Romania's coast",
+      "link": "https://www.bbc.co.uk/news/articles/c60qkgpp592yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "大地震",
+      "title": "日地震速報誤判9.9強震 氣象廳：兩度標錯震央、不排除再發生",
+      "link": "https://www.cna.com.tw/news/aopl/202610160323.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "沖繩命案陰影猶存 日防衛省要求美軍利劍軍演期間減少外出",
+      "link": "https://www.cna.com.tw/news/aopl/202610160295.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
