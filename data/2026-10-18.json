@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-18",
+  "generated": "2026-10-18T08:08:25+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》台南鐵路地下化自強號列車首發 迎來交通新篇章",
+          "link": "https://www.cna.com.tw/news/ahel/202610185001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "台南市區平面鐵路16日晚間揮別最後一班列車，17日清晨迎來新篇章，鐵路地下化自強號列車首發，交通部長陳世凱、台南市長黃偉哲等人登上列車南下高雄，體驗台南百年鐵道的改變。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
+          "link": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Disorder broke out in cities across the country on a day in which more than half a million joined cost of living protests."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Claude reveals ECDSA curve origins",
+          "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
+          "source": "Hacker News · 1020 points",
+          "score": 1020,
+          "summary": "The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained."
+        },
+        {
+          "title": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+          "link": "https://huggingface.co/papers/2610.21601",
+          "source": "Hugging Face Papers · 665 upvotes",
+          "score": 665,
+          "summary": "Policy-shift distillation reuses the difference between a teacher's log probabilities before and after reinforcement learning (RL) as supervision on student-generated trajectories. However, this endpo…"
+        },
+        {
+          "title": "MadsLorentzen/ai-job-search",
+          "link": "https://github.com/MadsLorentzen/ai-job-search",
+          "source": "GitHub Trending · 1,365 stars today",
+          "score": 1365,
+          "summary": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1020,
+    "Hacker News 熱門": 699,
+    "alphaXiv": 89,
+    "Hugging Face Papers": 665,
+    "GitHub Trending": 1365
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》台南鐵路地下化自強號列車首發　迎來交通新篇章",
+      "教宗良十四世出院獲夾道歡迎　信徒高呼無比喜樂",
+      "台灣大賽首戰龍獲勝　G2龍派梅賽鍶、兄弟菲力士洋投再對決",
+      "颱風薔琵升級強颱　22日抵東部外海、不排除通過台灣"
+    ],
+    "公視": [
+      "符合條件長者免健保費修法三讀 民團指缺財政紀律、籲修標準",
+      "特斯拉飛天車是否能上路引關注 交部：兼具飛行功能須符民航法",
+      "南鐵2009年核定東移方案 沿線323拆遷戶抗爭長達9年"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "大地震": 1,
+    "公民參與": 8,
+    "全球政治": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "Anti-government protesters battle with police in Albania",
+      "link": "https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
