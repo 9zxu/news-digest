@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-19",
+  "generated": "2026-10-19T08:20:50+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》韓媒：三星應輝達要求 下一代HBM基礎晶粒採台積電3奈米",
+          "link": "https://www.cna.com.tw/news/ahel/202610195001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "韓國「首爾經濟日報」報導，三星電子將採用台積電的3奈米製程，為輝達下一代客製化高頻寬記憶體（HBM）晶片製造基礎晶粒（base die）。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Macron calls for 'calm and order' after riots across France",
+          "link": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "French President Emmanuel Macron gives a national address after widespread disorder and as some looting continued in Paris."
+        },
+        {
+          "title": "The International Bureau of Weights and Measures votes to abolish the leap second over concerns about disruptions to computer systems.",
+          "link": "https://en.wikipedia.org/wiki/Leap_second",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "anomalyco/opencode",
+          "link": "https://github.com/anomalyco/opencode",
+          "source": "GitHub Trending · 1,414 stars today",
+          "score": 1414,
+          "summary": "The open source coding agent."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 240,
+    "Hacker News 熱門": 941,
+    "alphaXiv": 102,
+    "GitHub Trending": 1414
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》韓媒：三星應輝達要求　下一代HBM基礎晶粒採台積電3奈米",
+      "歐洲抗議浪潮失控搶商店毀古蹟　馬克宏矢言不寬貸、梅洛尼譴責暴力",
+      "加拿大基地大火4軍人殉職數十重傷　救護資源吃緊醫院籲非必要避急診",
+      "颱風薔琵來勢洶洶　最快21日晚間發海警"
+    ],
+    "公視": [
+      "賴清德赴宜蘭輔選林國漳 鄭麗文、柯文哲至新竹挺高虹安",
+      "中國船侵擾花蓮、東沙等海域 我海巡署派艦艇監控驅離",
+      "立院三讀部分長者免健保費 石崇良：保費恐調漲轉嫁青壯年"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 4,
+    "全球政治": 2,
+    "兩岸政治": 2,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "歐洲抗議浪潮失控搶商店毀古蹟 馬克宏矢言不寬貸、梅洛尼譴責暴力",
+      "link": "https://www.cna.com.tw/news/aopl/202610190004.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "川普為放寬俄羅斯制裁辯護 抨擊澤倫斯基不想結束戰爭",
+      "link": "https://www.cna.com.tw/news/aopl/202610190006.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
