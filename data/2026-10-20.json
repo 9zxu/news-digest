@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-20",
+  "generated": "2026-10-20T09:08:50+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "吳德榮：歐洲模擬颱風薔琵登陸機會高 23、24日風雨最劇",
+          "link": "https://www.cna.com.tw/news/ahel/202610200018.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "氣象專家吳德榮今天表示，歐洲模式模擬，強颱薔琵可能在23、24日中心登陸、通過台灣，部分模擬為通過台灣近海，強風豪雨不可小覷；明天東北季風南下，迎風面轉雨，氣溫逐日下降。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
+          "link": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "It comes after the country's interior minister admits that police \"lost control\" in some cities."
+        },
+        {
+          "title": "The Hôtel de Ville in Limoges is partially destroyed by arson (damage pictured) as fuel and student protests escalate in France.",
+          "link": "https://en.wikipedia.org/wiki/2026_French_student_protests",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Timestral: Mistral's time-series foundation models",
+          "link": "https://mistral.ai/news/timestral/",
+          "source": "Hacker News · 542 points",
+          "score": 542,
+          "summary": "State-of-the-art probabilistic forecasting in four sizes (5M–209M params), CPU-efficient, zero-shot ready."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 542,
+    "Hacker News 熱門": 671,
+    "alphaXiv": 145,
+    "GitHub Trending": 666
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "吳德榮：歐洲模擬颱風薔琵登陸機會高　23、24日風雨最劇",
+      "早安世界》日本國家資格證照開放填「台灣」　旅日牙醫：身分認同終於被承認",
+      "費半終止連8黑AI股反彈　法人：台股守穩看外資動向",
+      "巴黎里昂等地局部宵禁　法國不排除宣布緊急狀態"
+    ],
+    "公視": [
+      "薔琵颱風估週五、六最近台 北轉路徑仍有變數",
+      "男子花蓮七星潭落海漂流 空勤出動黑鷹直升機吊掛送醫",
+      "以色列警方逮10屯墾區攻擊嫌犯 涉襲擊歐洲外交官與巴人橄欖園"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "颱風／颶風": 2,
+    "公民參與": 8,
+    "全球政治": 1,
+    "兩岸政治": 1,
+    "重大災難與事故": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "法國示威演變成暴力衝突 北部城市局部宵禁",
+      "link": "https://www.cna.com.tw/news/aopl/202610200002.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
