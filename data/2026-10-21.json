@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-21",
+  "generated": "2026-10-21T08:44:20+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》前9月外銷訂單8192億美元 提前改寫全年新高",
+          "link": "https://www.cna.com.tw/news/ahel/202610215001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "經濟部20日公布9月外銷訂單1142.1億美元，連續2個月突破千億美元水準，且美國、中國大陸及香港、歐洲、東協等4大主要接單地區訂單金額皆創下歷年單月新高；前9月外銷訂單累計8192億美元，提前超越去年全年的高點紀錄7437億美元。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Zelensky says US intelligence sharing 'works now' after talks with Trump envoy in Oslo",
+          "link": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine had accused the US of withholding key intelligence - a claim rejected as \"scandalous\" by Washington."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+          "link": "https://github.com/deepseek-ai/DeepInfer",
+          "source": "Hacker News · 2112 points",
+          "score": 2112,
+          "summary": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models - deepseek-ai/DeepInfer"
+        },
+        {
+          "title": "Generative Representation Learning for Scalable Latent Tokenization",
+          "link": "https://www.alphaxiv.org/abs/2610.20533",
+          "source": "alphaXiv · 167 likes",
+          "score": 167,
+          "summary": "We introduce an approach for self-supervised representation learning designed to be used as a tokenizer for generative modeling. Our objective supervises a representation loss by factorizing the point…"
+        },
+        {
+          "title": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+          "link": "https://huggingface.co/papers/2610.20424",
+          "source": "Hugging Face Papers · 455 upvotes",
+          "score": 455,
+          "summary": "Existing long-horizon agent benchmarks often emphasize final task success while providing limited assessment of intermediate execution validity. Yet real-world business operations require agents to na…"
+        },
+        {
+          "title": "cloudflare/security-audit-skill",
+          "link": "https://github.com/cloudflare/security-audit-skill",
+          "source": "GitHub Trending · 1,712 stars today",
+          "score": 1712,
+          "summary": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 2112,
+    "Hacker News 熱門": 713,
+    "alphaXiv": 167,
+    "Hugging Face Papers": 455,
+    "GitHub Trending": 1712
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》前9月外銷訂單8192億美元　提前改寫全年新高",
+      "法國防動亂再起　首都巴黎部分地點連2夜實施宵禁",
+      "颱風薔琵持續增強長胖　估最快21日深夜發海警",
+      "SpaceX上季營收倍增優於預期　AI業務勁增助攻"
+    ],
+    "公視": [
+      "薔琵颱風北轉角度成關鍵 氣象署：最快週三晚發布海警",
+      "澎湖男涉冒領2張千萬發票未得手 同集團3人遭拘提聲押",
+      "台積電楠梓廠工安意外 4工人墜落其中3名OHCA"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "颱風／颶風": 2,
+    "公民參與": 4,
+    "全球政治": 1,
+    "兩岸政治": 2,
+    "重大災難與事故": 1,
+    "疫情與公共衛生": 1,
+    "民生大事": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "Houthi missile strike on Yemen camp kills 73 security recruits, local authorities say",
+      "link": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Seventh day of violent clashes between Albanian protesters and police",
+      "link": "https://www.bbc.co.uk/news/articles/cmy4xjlpqgd3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
