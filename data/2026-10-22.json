@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-22",
+  "generated": "2026-10-22T08:47:16+08:00",
+  "alerts": [
+    {
+      "title": "10/22 08:30 發布海上颱風警報",
+      "link": "https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_WARN.html?T=202610220830",
+      "source": "中央氣象署"
+    }
+  ],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "川普：正和俄羅斯就俄烏戰爭談判 近達成協議不會施加制裁",
+          "link": "https://www.cna.com.tw/news/aopl/202610220018.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國總統川普上週簽署行政命令，暫緩執行針對俄羅斯經濟的大規模新制裁方案，引發兩大黨國會議員齊聲撻伐。川普今天說，美國正和俄羅斯針對俄烏戰爭進行談判，當接近達成協議且正進行需小心處理的談判時，「是不會施加制裁的」。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Missiles hit Kyiv after Russia agrees to US call to resume Ukraine peace talks",
+          "link": "https://www.bbc.co.uk/news/articles/cq3djn5nxx12o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Moscow says it is \"ready in principle\" to resume peace talks and US President Donald Trump says the world is \"the closest we've been\" to ending the war."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "PHP2Shell: AI uncovers critical RCE in PHP",
+          "link": "https://www.wiz.io/blog/php2shell-php-rce",
+          "source": "Hacker News · 432 points",
+          "score": 432,
+          "summary": "Core PHP engine flaws enable remote code execution and Heartbleed-style memory disclosure across the web."
+        },
+        {
+          "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+          "link": "https://www.php.net/archive/2026.php#2026-10-21-5",
+          "source": "Hacker News 熱門 · 1504 points",
+          "score": 1504,
+          "summary": "PHP is a popular general-purpose scripting language that powers everything from your blog to the most popular websites in the world."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 432,
+    "Hacker News 熱門": 1504,
+    "alphaXiv": 107,
+    "Hugging Face Papers": 291,
+    "GitHub Trending": 441
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "川普：正和俄羅斯就俄烏戰爭談判　近達成協議不會施加制裁",
+      "沙烏地連遭致命襲擊　美下令部分外交人員及眷屬撤離",
+      "颱風薔琵海上警報發布　最快22日中午前後發陸警",
+      "早安世界》9月電力景氣燈號連18紅　台綜院估半導體用電全年破500億度"
+    ],
+    "公視": [
+      "颱風薔琵海警發布 最快今中午前後陸警",
+      "無法消除限制競爭疑慮 公平會否決Grab併購foodpanda案",
+      "聯合國：聖嬰現象恐破歷史紀錄 將衝擊全球經濟、加劇區域衝突"
+    ]
+  },
+  "watch_hits": {
+    "颱風／颶風": 6,
+    "公民參與": 7,
+    "全球政治": 1,
+    "兩岸政治": 3,
+    "重大災難與事故": 1
+  },
+  "tracking": [
+    {
+      "topic": "熱門",
+      "title": "颱風薔琵海上警報發布 最快22日中午前後發陸警",
+      "link": "https://www.cna.com.tw/news/ahel/202610220004.aspx",
+      "source": "中央社、公視"
+    },
+    {
+      "topic": "颱風／颶風",
+      "title": "颱風薔琵來襲 外交部：23日可領護照提前至22日下午發放",
+      "link": "https://www.cna.com.tw/news/ahel/202610210344.aspx",
+      "source": "中央社 政治"
+    },
+    {
+      "topic": "公民參與",
+      "title": "義大利30日大規模示威 學生代表：沒衝突就沒民主",
+      "link": "https://www.cna.com.tw/news/aopl/202610220016.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "蕭副總統接見加拿大國安訪團 感謝加國挺台海和平",
+      "link": "https://www.cna.com.tw/news/aipl/202610210279.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
