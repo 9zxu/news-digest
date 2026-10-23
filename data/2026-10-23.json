@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-23",
+  "generated": "2026-10-23T08:47:49+08:00",
+  "alerts": [
+    {
+      "title": "10/23 08:30 發布海上陸上颱風警報",
+      "link": "https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_WARN.html?T=202610230830",
+      "source": "中央氣象署"
+    }
+  ],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "駐英副代表江雅綺出席大林肯郡論壇 推科技經貿合作",
+          "link": "https://www.cna.com.tw/news/aipl/202610230022.aspx",
+          "source": "中央社 政治",
+          "score": null,
+          "summary": "（中央社記者陳韻聿倫敦22日專電）英格蘭東部大林肯郡（Greater Lincolnshire）與台南市締結姊妹市，創台灣與英國地方交流史首例。大林肯郡21日舉行年度「大林肯郡博覽會」，駐英國副代表江雅綺出席論壇與談，推廣雙邊科技與經貿合作。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Hospitals deliberately targeted by Sudan's RSF fighters, BBC investigation finds",
+          "link": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The UN human rights chief Volker Türk says the multiple attacks may amount to war crimes."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Claude Duet",
+          "link": "https://claude.com/product/claude-duet",
+          "source": "Hacker News · 547 points",
+          "score": 547,
+          "summary": "Claude Duet is a personal AI agent you message. It handles your inbox, calendar and follow-ups and messages you when something needs you. Join the waitlist."
+        },
+        {
+          "title": "PHP 8.2.35",
+          "link": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+          "source": "Hacker News 熱門 · 1078 points",
+          "score": 1078,
+          "summary": "The PHP development team announces the immediate availability of PHP 8.2.35. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthe..."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 547,
+    "Hacker News 熱門": 1078,
+    "alphaXiv": 111,
+    "Hugging Face Papers": 190,
+    "GitHub Trending": 287
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》颱風薔琵來襲21縣市停班課　台鐵今對號列車全線停駛",
+      "西藏那曲地震規模7深度僅10公里　已知16死32傷、逾300屋倒",
+      "颱風薔琵暴風圈已觸台灣東半部　23日至24日晨降雨最明顯"
+    ],
+    "公視": [
+      "薔琵暴風圈持續進逼 各縣市停班課狀況一次看",
+      "薔琵撲台前夕疑自潛遭海流捲走 小琉球遊客送醫不治",
+      "PHP資安漏洞影響全球7成網站 可能造成風險、原因一次看"
+    ]
+  },
+  "watch_hits": {
+    "大地震": 2,
+    "颱風／颶風": 7,
+    "公民參與": 3,
+    "全球政治": 2,
+    "兩岸政治": 1,
+    "疫情與公共衛生": 1,
+    "Apple 發表會": 1
+  },
+  "tracking": [
+    {
+      "topic": "熱門",
+      "title": "早安世界》颱風薔琵來襲21縣市停班課 台鐵今對號列車全線停駛",
+      "link": "https://www.cna.com.tw/news/ahel/202610235001.aspx",
+      "source": "中央社、公視"
+    },
+    {
+      "topic": "大地震",
+      "title": "Powerful earthquake hits Tibet killing 16 people, reports say",
+      "link": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "颱風／颶風",
+      "title": "颱風薔琵接近沖繩先島群島 日本西部下週初恐受影響",
+      "link": "https://www.cna.com.tw/news/aopl/202610220344.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "澤倫斯基：與川普無私怨 警告放寬制裁恐壯大普丁",
+      "link": "https://www.cna.com.tw/news/aopl/202610230004.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
