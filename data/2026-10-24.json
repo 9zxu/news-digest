@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-24",
+  "generated": "2026-10-24T08:54:57+08:00",
+  "alerts": [
+    {
+      "title": "10/24 08:30 發布海上陸上颱風警報",
+      "link": "https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_WARN.html?T=202610240830",
+      "source": "中央氣象署"
+    }
+  ],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "颱風薔琵強度減弱暴風圈縮小 雨勢逐漸緩和",
+          "link": "https://www.cna.com.tw/news/ahel/202610240019.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "氣象署今天表示，颱風薔琵過去3小時強度稍減弱且暴風圈縮小，預計今天上午雨勢將較清晨緩和，儘管颱風影響最嚴重時間已經過去，但仍須留意台灣附近海面風浪仍強勁。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Deadly shooting near Paris is a 'racist terrorist attack', Macron says",
+          "link": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "One person is killed and five wounded in a series of attacks. The suspected gunman has been apprehended."
+        },
+        {
+          "title": "Two high-impact security vulnerabilities in PHP cause disruptions to many online services.",
+          "link": "https://en.wikipedia.org/wiki/PHP2Shell",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Every AI model has the same \"controversial\" take on humans",
+          "link": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+          "source": "Hacker News · 614 points",
+          "score": 614,
+          "summary": "We asked 13 AI models for their most controversial opinion of humans, three times each. 32 of 38 answers were the same one: we care more about belonging than about the truth."
+        },
+        {
+          "title": "Quad9 to exit France",
+          "link": "https://quad9.net/news/blog/au-revoir-france/",
+          "source": "Hacker News 熱門 · 1338 points",
+          "score": 1338,
+          "summary": "A public and free DNS service for a better security and privacy"
+        },
+        {
+          "title": "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model",
+          "link": "https://www.alphaxiv.org/abs/2610.28480",
+          "source": "alphaXiv · 181 likes",
+          "score": 181,
+          "summary": "Tracking large human-motion datasets has become the dominant route to general, expressive humanoid whole-body control, but scaling across many motions is expensive. Current pipelines use model-free re…"
+        },
+        {
+          "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
+          "link": "https://huggingface.co/papers/2610.28402",
+          "source": "Hugging Face Papers · 431 upvotes",
+          "score": 431,
+          "summary": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming v…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 614,
+    "Hacker News 熱門": 1338,
+    "alphaXiv": 181,
+    "Hugging Face Papers": 431,
+    "GitHub Trending": 716
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "颱風薔琵強度減弱暴風圈縮小　雨勢逐漸緩和",
+      "早安世界》AI需求暢旺　9月工業生產指數年增19.17%、連31紅",
+      "川普警告伊朗不協議就動武　揚言發動新一輪軍事行動",
+      "美第一夫人促成俄烏在奧列什基停火　川普：她想拯救孩童"
+    ],
+    "公視": [
+      "薔琵颱風移動減緩 10/24各縣市停班課狀況一次看",
+      "颱風近陸地將降速打轉 今夜至明早影響最劇烈",
+      "業者涉將工業氣體混入食品級 販售好市多、IKEA上千瓶"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "大地震": 1,
+    "颱風／颶風": 7,
+    "公民參與": 4,
+    "兩岸政治": 2,
+    "重大災難與事故": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+      "link": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "颱風／颶風",
+      "title": "颱風薔琵來襲 國軍各作戰區預置兵力強化災防應變",
+      "link": "https://www.cna.com.tw/news/aipl/202610230116.aspx",
+      "source": "中央社 政治"
+    },
+    {
+      "topic": "公民參與",
+      "title": "巴黎群眾24日再次示威 商家釘木板或歇業自保",
+      "link": "https://www.cna.com.tw/news/aopl/202610230259.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
