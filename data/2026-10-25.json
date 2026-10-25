@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-25",
+  "generated": "2026-10-25T08:26:35+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》颱風薔琵釀全台1死616傷 多處路樹倒塌、招牌掉落",
+          "link": "https://www.cna.com.tw/news/ahel/202610255001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "颱風薔琵24日掠過台灣，在宜蘭外海打轉一圈後北上，海上陸上颱風警報於24日晚間8時30分解除。中央災害應變中心24日下午表示，累計造成1人死亡、616人受傷，以擦挫傷等輕傷居多，486人已出院。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
+          "link": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Officials have so far managed to avoid a repeat of last weekend's rioting and looting as hundreds of thousands took part in demonstrations."
+        },
+        {
+          "title": "A drone attack on a market in the disputed Abyei region on the South Sudan–Sudan border kills at least 220 people.",
+          "link": "https://en.wikipedia.org/wiki/Amiet_market_massacre",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "No signs of AI payoff outside the tech sector",
+          "link": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+          "source": "Hacker News · 453 points",
+          "score": 453,
+          "summary": "Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech. Subscribe for daily updates."
+        },
+        {
+          "title": "Today, we hacked what we'd set out to hack: the iPhone",
+          "link": "https://blog.calif.io/p/iphone",
+          "source": "Hacker News 熱門 · 1072 points",
+          "score": 1072,
+          "summary": "Today, we hacked what we'd set out to hack: the iPhone."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 453,
+    "Hacker News 熱門": 1072,
+    "alphaXiv": 117,
+    "Hugging Face Papers": 238,
+    "GitHub Trending": 896
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》颱風薔琵釀全台1死616傷　多處路樹倒塌、招牌掉落",
+      "法國各地數百場抗議　41萬人上街頭表達不滿、巴黎爆警民衝突",
+      "義大利連兩週末示威　警方逮9人另短暫拘留371人",
+      "烏克蘭星鏈恢復穩定連線　馬斯克承認曾限速"
+    ],
+    "公視": [
+      "工研院發展稀土技術 目標2030年滿足50%內需",
+      "鹿港查獲非法屠宰場 疑販售狗肉將送檢釐清",
+      "盼救兒童返家 美第一夫人促俄烏區域性停火"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "颱風／颶風": 7,
+    "公民參與": 6,
+    "全球政治": 1,
+    "兩岸政治": 2,
+    "重大災難與事故": 3,
+    "疫情與公共衛生": 1
+  },
+  "tracking": [
+    {
+      "topic": "颱風／颶風",
+      "title": "颱風薔琵遠離 藍綠籲政府啟動農損評估紓困",
+      "link": "https://www.cna.com.tw/news/aipl/202610240176.aspx",
+      "source": "中央社 政治"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Fireworks and tear gas as protesters and riot police clash in Paris",
+      "link": "https://www.bbc.co.uk/news/videos/cm89zqw9lx1do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "重大災難與事故",
+      "title": "約旦教堂喪禮期間傳槍擊釀7死 3凶嫌仍在逃、警方定調恐攻",
+      "link": "https://news.pts.org.tw/article/832799",
+      "source": "公視新聞網"
+    }
+  ],
+  "failures": []
+}
