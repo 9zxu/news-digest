@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-26",
+  "generated": "2026-10-26T08:32:07+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》卓榮泰宜蘭勘災 要求農損補助從優從速從寬3天核撥",
+          "link": "https://www.cna.com.tw/news/ahel/202610265001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "颱風薔琵遠離，行政院長卓榮泰25日前往宜蘭縣視察農損表示，農業部第一時間針對各縣市損害情形加開審定會議，目前累積農損達新台幣1億4000餘萬元，最大宗在雲林縣，光是雲林就超過1億元，已要求農業部從優、從速、從寬，收件3天內就要核撥補助。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Serbia's veteran ruler Vučić concedes election to student-led protest movement",
+          "link": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+          "link": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+          "source": "Hacker News · 503 points",
+          "score": 503,
+          "summary": "America is Losing Hundreds of Thousands of Jobs in Media, Film & the Arts. How Much is AI to Blame?"
+        },
+        {
+          "title": "A Fix for Softmax and Cross-Entropy",
+          "link": "https://www.alphaxiv.org/abs/2610.31642",
+          "source": "alphaXiv · 211 likes",
+          "score": 211,
+          "summary": "Standard implementations of softmax, log-softmax, and cross-entropy have two numerical bugs. The first bug, Softmax Collapse, rounds the target logit's gradient to zero if that one logit is much large…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 503,
+    "Hacker News 熱門": 740,
+    "alphaXiv": 211,
+    "GitHub Trending": 675
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》卓榮泰宜蘭勘災　要求農損補助從優從速從寬3天核撥",
+      "流亡近1年　委內瑞拉反對派領袖馬查多返國",
+      "美國：已協助波灣國家經荷莫茲海峽出口15億桶原油",
+      "「世界貓王」唐嘉鴻單槓摘金　世錦賽史上台灣第一人[影]"
+    ],
+    "公視": [
+      "金鐘61節目類頒獎典禮 我是陳派派橫掃3獎【涉己新聞】",
+      "10歲男童彰化路跑遭轎車擦撞 主辦方推測車輛自未管制區進入",
+      "全台剩1廠商生產娃娃車 交通部擬放寬限制吸引車廠製造"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "颱風／颶風": 4,
+    "公民參與": 8,
+    "兩岸政治": 1,
+    "疫情與公共衛生": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "颱風／颶風",
+      "title": "颱風薔琵遠離 何欣純江啟臣趕場為市議員參選人站台",
+      "link": "https://www.cna.com.tw/news/aipl/202610250111.aspx",
+      "source": "中央社 政治"
+    },
+    {
+      "topic": "公民參與",
+      "title": "Who are the candidates in Brazil's presidential election?",
+      "link": "https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
