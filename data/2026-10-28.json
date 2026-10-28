@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-28",
+  "generated": "2026-10-28T09:31:31+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "美AI股勁揚台積電ADR漲 法人：台股拚收復季線",
+          "link": "https://www.cna.com.tw/news/afe/202610280018.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美AI晶片股勁揚，台積電ADR漲2.95%，台指期夜盤收46880點上漲774點，台積電期貨夜盤揚升42點收2438點。期貨法人指出，人工智慧巨擘Anthropic提交首次公開募股（IPO）申請，重燃市場對科技產業樂觀情緒，台股今天有機會收復季線約46282點。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Norway and Finland leaders hold rare call with Putin",
+          "link": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "An end to the conflict in Ukraine \"will not be achieved through silence,\" Finland's President Alexander Stubb said."
+        },
+        {
+          "title": "Luiz Inácio Lula da Silva is re-elected President of Brazil, while the Liberal Party retain a plurality of seats in both houses of the National Congress in the general election.",
+          "link": "https://en.wikipedia.org/wiki/2026_Brazilian_general_election",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "GPT-6.1 Terra",
+          "link": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "source": "Hacker News · 623 points",
+          "score": 623,
+          "summary": ""
+        },
+        {
+          "title": "Three new discoveries in mathematics, computer science, and physics",
+          "link": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "source": "Hacker News 熱門 · 1127 points",
+          "score": 1127,
+          "summary": ""
+        },
+        {
+          "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
+          "link": "https://www.alphaxiv.org/abs/2610.kimi-k3-1-pro",
+          "source": "alphaXiv · 158 likes",
+          "score": 158,
+          "summary": "Moonshot AI's most capable 3T-class open-weight model, a post-trained Kimi K3 with a 1M-token context that approaches frontier proprietary models on coding, 3D creation, and finance, with cyber capabi…"
+        },
+        {
+          "title": "elayadesign/ai-design-skills",
+          "link": "https://github.com/elayadesign/ai-design-skills",
+          "source": "GitHub Trending · 1,395 stars today",
+          "score": 1395,
+          "summary": ""
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 623,
+    "Hacker News 熱門": 1127,
+    "alphaXiv": 158,
+    "Hugging Face Papers": 292,
+    "GitHub Trending": 1395
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "美AI股勁揚台積電ADR漲　法人：台股拚收復季線",
+      "教廷外長：在北京設辦事處有代價　目前不準備付",
+      "早安世界》9月證券劃撥存款餘額逼近4.7兆創高　外匯存款首破10兆大關",
+      "東北季風影響桃園以北偏涼　北涼南暖注意溫差"
+    ],
+    "公視": [
+      "台籍女子赴日河口湖旅遊遇害 夫涉假結婚詐保遭收押禁見",
+      "稱毛澤東獨裁者遭中國抵制 法球星姆巴佩多語言發文致歉",
+      "溫室氣體濃度創新高 WMO：恐影響氣候長達數百年"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "公民參與": 7,
+    "兩岸政治": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "Ceasefire extended across Ukraine's Kherson region, officials say",
+      "link": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "公民參與",
+      "title": "巴西大選後政局動盪 傳小波索納洛遭限制出境仍潛逃出國",
+      "link": "https://www.cna.com.tw/news/aopl/202610280015.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
