@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-29",
+  "generated": "2026-10-29T09:53:40+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 30 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "陽明山高檔餐廳飲宴涉賄選 陳重文80萬元交保",
+          "link": "https://www.cna.com.tw/news/asoc/202610290025.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "檢調獲報，國民黨籍台北市議員陳重文疑在陽明山高檔餐廳招待飲宴，涉嫌違反選罷法。士林地檢署昨天指揮調查局搜索、約談陳重文等21人。檢察官今天凌晨諭令陳重文新台幣80萬元交保。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "High-speed train crash kills at least 68 people in Spain",
+          "link": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The crash, between a moving train and another that was stopped further up the track, was caused by an \"inexplicable\" error, the transport minister said."
+        },
+        {
+          "title": "At least 68 people are killed in a collision between two high-speed trains in Toledo province, Spain.",
+          "link": "https://en.wikipedia.org/wiki/2026_Toledo_train_collision",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Gemini 4 Carbon",
+          "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "source": "Hacker News · 811 points",
+          "score": 811,
+          "summary": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities."
+        },
+        {
+          "title": "Ghostty 1.4",
+          "link": "https://ghostty.org/docs/install/release-notes/1-4-0",
+          "source": "Hacker News 熱門 · 1301 points",
+          "score": 1301,
+          "summary": "Release notes for Ghostty 1.4.0, released on October 27, 2026."
+        },
+        {
+          "title": "The Exponential Time Hypothesis Is False",
+          "link": "https://www.alphaxiv.org/abs/2610.exponential-time-hypothesis-refutation",
+          "source": "alphaXiv · 152 likes",
+          "score": 152,
+          "summary": "We give a deterministic algorithm for exactly counting the satisfying assignments of an arbitrary k-CNF formula. For every fixed k ⩾ 2, on a formula with n variables and m clauses, our algorithm uses…"
+        },
+        {
+          "title": "Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents",
+          "link": "https://huggingface.co/papers/2610.33568",
+          "source": "Hugging Face Papers · 367 upvotes",
+          "score": 367,
+          "summary": "Successful tool-use trajectories are not necessarily useful supervision. Even successful interactions may underrepresent multi-step dependencies or contain actions that are unjustified by the informat…"
+        },
+        {
+          "title": "JetBrains/thinkrail",
+          "link": "https://github.com/JetBrains/thinkrail",
+          "source": "GitHub Trending · 1,068 stars today",
+          "score": 1068,
+          "summary": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 811,
+    "Hacker News 熱門": 1301,
+    "alphaXiv": 152,
+    "Hugging Face Papers": 367,
+    "GitHub Trending": 1068
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "陽明山高檔餐廳飲宴涉賄選　陳重文80萬元交保",
+      "西班牙高鐵追撞至少68死　交通部長：調度中心下錯指令",
+      "東北季風減弱北部氣溫回升　基隆北海岸及東半部有雨",
+      "聯準會維持利率在3.75%至4%不變　12月升息機率達8成"
+    ],
+    "公視": [
+      "駐日內瓦辦事處長李冠德遭降調 外交部認定部分行為構成霸凌",
+      "遭控陽明山辦餐會涉賄選 北市議員陳重文被檢調搜索",
+      "高雄月子中心疑無預警倒閉趕人 2負責人涉詐欺10萬元交保"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "颱風／颶風": 1,
+    "公民參與": 3,
+    "全球政治": 1,
+    "兩岸政治": 2,
+    "民生大事": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "What we know about Ukraine-Russia truce in Oleshky, brokered by Melania Trump",
+      "link": "https://www.bbc.co.uk/news/videos/c687z5ne1w4ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
