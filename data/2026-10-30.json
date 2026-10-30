@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-30",
+  "generated": "2026-10-30T10:04:45+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 29 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "美國樂見巴基斯坦恢復台灣航空使用其空域 反對北京脅迫行為",
+          "link": "https://www.cna.com.tw/news/aipl/202610300002.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "傳出巴基斯坦一度以「一中政策」為由拒絕台灣航空公司進出領空，之後又恢復。美國國務院今天表示，樂見巴基斯坦撤回拒絕台灣民航公司進入其空域的報導，並反對北京脅迫行為；商業航空的決定應基於安全而非北京的政治要求。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+          "link": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority."
+        },
+        {
+          "title": "In Jordan, a mass shooting at a church leaves nine people dead.",
+          "link": "https://en.wikipedia.org/wiki/2026_Karak_church_shooting",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "We're releasing the weights of Mistral Large 4",
+          "link": "https://mistral.ai/news/mistral-large-4-oss/",
+          "source": "Hacker News · 1212 points",
+          "score": 1212,
+          "summary": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe."
+        },
+        {
+          "title": "Patrick Stewart has died",
+          "link": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+          "source": "Hacker News 熱門 · 2440 points",
+          "score": 2440,
+          "summary": ""
+        },
+        {
+          "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
+          "link": "https://huggingface.co/papers/2610.34283",
+          "source": "Hugging Face Papers · 414 upvotes",
+          "score": 414,
+          "summary": "Training a spatial VLM to answer which side an object lies on does not require it to preserve the metric displacement that determines that answer, while supervision for a distance estimate may leave c…"
+        },
+        {
+          "title": "HKUDS/DeepTutor",
+          "link": "https://github.com/HKUDS/DeepTutor",
+          "source": "GitHub Trending · 1,930 stars today",
+          "score": 1930,
+          "summary": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1212,
+    "Hacker News 熱門": 2440,
+    "alphaXiv": 75,
+    "Hugging Face Papers": 414,
+    "GitHub Trending": 1930
+  },
+  "hot": [
+    {
+      "name": "2026 Ethiopian offensive",
+      "link": "https://en.wikipedia.org/wiki/2026_Ethiopian_offensive"
+    },
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "美國樂見巴基斯坦恢復台灣航空使用其空域　反對北京脅迫行為",
+      "台股早盤跳水跌1600點失守45000點關卡　權值股、AI股受挫",
+      "與捲間諜案中國籍企業主管關係密切？黃仁勳稱彼此往來正常",
+      "颱風煙花轉強颱　吳德榮：東部有雨、中南部晴朗上看34度"
+    ],
+    "公視": [
+      "政院拍板少事法修正案 提高犯重罪少年假釋門檻",
+      "畢凱艦長、X教授演員派崔克史都華 逝世享壽86歲",
+      "台中西屯鐵皮工廠大火 貨梯工人輕微燒燙傷"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "颱風／颶風": 1,
+    "公民參與": 3,
+    "全球政治": 2,
+    "兩岸政治": 2,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+      "link": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "全球政治",
+      "title": "EU chief lays out vision for new Canada partnership at Montreal summit",
+      "link": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
