@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-31",
+  "generated": "2026-10-31T09:43:07+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 28 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    },
+    {
+      "title": "全國性公民投票案第22案，5場電視發表會11月12日登場，中選會公布主持人與正反方代表人名單",
+      "link": "https://web.cec.gov.tw/central/article/65456",
+      "source": "中選會新聞稿"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "北市長辯論中午登場 蔣萬安、沈伯洋首次交手成焦點",
+          "link": "https://www.cna.com.tw/news/aipl/202610310020.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "台北市長辯論會今天中午登場，依主辦單位規劃包含政見申論、交叉詰問、媒體提問、結論共4階段，交叉詰問將加入追問機制，蔣萬安與沈伯洋首次交手將成外界關注焦點。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "US approves sale of 500 Patriot missiles to Ukraine",
+          "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles."
+        },
+        {
+          "title": "British actor Patrick Stewart dies at the age of 86.",
+          "link": "https://en.wikipedia.org/wiki/Patrick_Stewart",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+          "link": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+          "source": "Hacker News · 775 points",
+          "score": 775,
+          "summary": "Phorion has detected a backdoor in the official Claude Code for VS Code extension bundle on the Cursor Marketplace that drops a persistent SSH backdoor across macOS, Linux, and Windows. This write-up…"
+        },
+        {
+          "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+          "link": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+          "source": "Hacker News 熱門 · 1727 points",
+          "score": 1727,
+          "summary": ""
+        },
+        {
+          "title": "thedotmack/claude-mem",
+          "link": "https://github.com/thedotmack/claude-mem",
+          "source": "GitHub Trending · 1,140 stars today",
+          "score": 1140,
+          "summary": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 775,
+    "Hacker News 熱門": 1727,
+    "alphaXiv": 117,
+    "Hugging Face Papers": 205,
+    "GitHub Trending": 1140
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "北市長辯論中午登場　蔣萬安、沈伯洋首次交手成焦點",
+      "美科技股大幅下修　蘋果超越輝達成全球最大企業",
+      "強化烏克蘭防空能力　川普政府批准出售500枚愛國者飛彈",
+      "早安世界》台灣出口投資超預期　第3季經濟成長率14.36%創48年同期最高"
+    ],
+    "公視": [
+      "電商技術服務91APP個資外洩 公司證實可能影響近480萬人",
+      "高雄市長辯論會／賴瑞隆喊「接下第四棒」 柯志恩稱輪替才能揭弊",
+      "立院三讀加重毒駕刑責 10年內累犯致死者可求處死刑"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "公民參與": 5,
+    "全球政治": 1,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+      "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "公民參與",
+      "title": "義大利全國大示威 數萬學生羅馬街頭呼喊「還我未來」",
+      "link": "https://www.cna.com.tw/news/aopl/202610310019.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
