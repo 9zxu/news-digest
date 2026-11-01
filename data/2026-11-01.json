@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-01",
+  "generated": "2026-11-01T09:20:00+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 27 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》北市長首場辯論交鋒 蔣萬安、沈伯洋市政議題直球對決",
+          "link": "https://www.cna.com.tw/news/ahel/202611015001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "台北市長首場電視辯論會10月31日登場。民進黨參選人沈伯洋和國民黨參選人台北市長蔣萬安首度正面交鋒，雙方在都市更新、市民大道廊道串聯、樹木保育、營養午餐、舉辦雙城論壇等議題直球對決。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+          "link": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "One evacuated couple says they crossed minefields in Oleshky in search of food."
+        },
+        {
+          "title": "US$6.3 billion is stolen from cryptocurrency exchange Binance.",
+          "link": "https://en.wikipedia.org/wiki/2026_Binance_hack",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "AI isn't replacing SREs, it's deskilling them",
+          "link": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+          "source": "Hacker News · 647 points",
+          "score": 647,
+          "summary": "When AI handles 95% of your incident response, do you get worse at handling the 5% that actually matters?"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 647,
+    "Hacker News 熱門": 807,
+    "alphaXiv": 131,
+    "Hugging Face Papers": 99,
+    "GitHub Trending": 742
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》北市長首場辯論交鋒　蔣萬安、沈伯洋市政議題直球對決",
+      "G20外長會議關鍵安全議題未達共識　聚焦討論全球經濟挑戰",
+      "法國數十萬人抗議生活成本　萬聖節變裝上街[影]",
+      "德國Z世代34城示威　法蘭克福警方水砲驅散"
+    ],
+    "公視": [
+      "北市長候選人辯論會登場 沈伯洋、蔣萬安交鋒政績與城市願景",
+      "柯志恩批辯論會迴避問題 賴瑞隆：已充分說明",
+      "台灣同志遊行17萬人參與 倡議從「看見」邁向「傾聽」"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 6,
+    "全球政治": 2,
+    "兩岸政治": 1,
+    "疫情與公共衛生": 2
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "德國Z世代34城示威 法蘭克福警方水砲驅散",
+      "link": "https://www.cna.com.tw/news/aopl/202611010006.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "北韓官媒：制裁無法否定平壤當局核武國家地位",
+      "link": "https://www.cna.com.tw/news/aopl/202610310166.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "疫情與公共衛生",
+      "title": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
+      "link": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
