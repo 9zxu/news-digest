@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-02",
+  "generated": "2026-11-02T09:41:46+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 26 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台積電跌60元 台股早盤挫812點失守45000點",
+          "link": "https://www.cna.com.tw/news/afe/202611020018.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "英特爾上週五股價暴跌近3成，美股半導體族群重摔，台積電ADR股價大跌5.95%，拖累台股今天早盤最多下跌812點，失守45000點大關。至9時10分，台股加權指數下跌386點，至44825點。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Ukraine air raid app apparently hacked as users receive false radiation threat, Air Force says",
+          "link": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Hours later Russian authorities said its app was also hacked, with fake warnings sent inside the country."
+        },
+        {
+          "title": "Mexican politician Cuauhtémoc Cárdenas dies at the age of 92.",
+          "link": "https://en.wikipedia.org/wiki/Cuauht%C3%A9moc_C%C3%A1rdenas",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Anthropic blocks users for anything touching training larger models",
+          "link": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+          "source": "Hacker News · 455 points",
+          "score": 455,
+          "summary": "Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for \"training a competitor,…"
+        },
+        {
+          "title": "HackerTube: YouTube built from videos recommended by HN",
+          "link": "https://karpathy.bearblog.dev/hacker-tube/",
+          "source": "Hacker News 熱門 · 2287 points",
+          "score": 2287,
+          "summary": "Instead of YouTube, watch HackerTube!"
+        },
+        {
+          "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+          "link": "https://www.alphaxiv.org/abs/2610.39302",
+          "source": "alphaXiv · 154 likes",
+          "score": 154,
+          "summary": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, b…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 455,
+    "Hacker News 熱門": 2287,
+    "alphaXiv": 154,
+    "GitHub Trending": 825
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台積電跌60元　台股早盤挫812點失守45000點",
+      "早安世界》金融三業前3季獲利破1.27兆締新猷　持續推高全年紀錄",
+      "川普稱若民主黨贏得國會多數席次　他將變成「否決先生」",
+      "幣安遭竊63億美元後恢復上線　客戶提領36.4億美元"
+    ],
+    "公視": [
+      "國光客運缺工脫班遭累罰45萬 交通部擬爭取開放僑外生駕駛",
+      "台糖粗油採購案流標 擬11/4重新招標",
+      "保加利亞總統大選 代理總統約托娃宣布勝選"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 6,
+    "全球政治": 1,
+    "兩岸政治": 1,
+    "疫情與公共衛生": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "印度反對派號召5萬人示威 蟑螂人民黨保持中立不參加",
+      "link": "https://www.cna.com.tw/news/aopl/202611010155.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
