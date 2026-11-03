@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-03",
+  "generated": "2026-11-03T11:34:03+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 25 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台股44000點保衛戰 盤中跌逾900點資訊服務股走強",
+          "link": "https://www.cna.com.tw/news/afe/202611030061.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "台股今天開低震盪，盤中一度下跌908.04點，最低來到44012.10點，失守44500點，陷入44000點保衛戰。電子、金融類股同步走弱，部分資訊服務、資安概念股表現強勢。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
+          "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an \"utterly horrific\" attack."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Astra can read and write weights to improve Qwen",
+          "link": "https://rikiyat.github.io/blog/weight-space-programming/",
+          "source": "Hacker News 熱門 · 2104 points",
+          "score": 2104,
+          "summary": "We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms."
+        },
+        {
+          "title": "Training Foundation Models with a Single Algorithm",
+          "link": "https://www.alphaxiv.org/abs/2610.40564",
+          "source": "alphaXiv · 166 likes",
+          "score": 166,
+          "summary": "Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show t…"
+        },
+        {
+          "title": "vercel-labs/agent-desktop",
+          "link": "https://github.com/vercel-labs/agent-desktop",
+          "source": "GitHub Trending · 2,275 stars today",
+          "score": 2275,
+          "summary": "Computer use CLI for AI agents"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 297,
+    "Hacker News 熱門": 2104,
+    "alphaXiv": 166,
+    "GitHub Trending": 2275
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台股44000點保衛戰　盤中跌逾900點資訊服務股走強",
+      "卓榮泰盼立院速通過追加預算　共同照顧民生保護弱勢",
+      "美軍秘密攻擊伊朗葛希姆島　刻意保持低調避免全面開戰",
+      "116年大學入學3管道簡章公告　戴智慧眼鏡視同舞弊不計分"
+    ],
+    "公視": [
+      "患者家屬不滿治療方案施暴醫師 涉違醫療法、傷害罪遭移送",
+      "79歲日籍旅客獨行雞籠山 已失聯4日警消擴大搜索中",
+      "冰箱被改為解凍模式 歐洲多國超市系統遭駭客攻擊"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 4,
+    "公民參與": 4,
+    "全球政治": 3,
+    "兩岸政治": 2
+  },
+  "tracking": [
+    {
+      "topic": "戰爭／衝突",
+      "title": "Fighting returns to Kherson region after longest Ukraine war ceasefire",
+      "link": "https://www.bbc.co.uk/news/articles/ckg5jlyp66jzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "公民參與",
+      "title": "歐洲掀起Z世代抗爭潮 德國青年萬聖節變裝上街抗議",
+      "link": "https://news.pts.org.tw/article/833967",
+      "source": "公視新聞網"
+    },
+    {
+      "topic": "全球政治",
+      "title": "中國以電子郵件邀出席APEC峰會 卓榮泰盼給平等待遇",
+      "link": "https://www.cna.com.tw/news/aipl/202611030041.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
