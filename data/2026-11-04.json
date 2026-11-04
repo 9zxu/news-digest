@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-04",
+  "generated": "2026-11-04T10:31:35+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 24 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "傳張俊傑已從基隆偷渡出海 管碧玲：檢方已指揮偵辦",
+          "link": "https://www.cna.com.tw/news/asoc/202611040039.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "媒體報導，涉貪污、共諜案的立委高金素梅助理張俊傑疑於10月底自基隆正濱漁港偷渡出海。海委會主委管碧玲今天表示，檢方已指揮偵辦，將由檢方調查釐清真相。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Spanish transport minister resigns days after deadly train crash",
+          "link": "https://www.bbc.co.uk/news/articles/c6wydqd4yxdyo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "At least 69 people were killed and dozens injured in the collision south of the capital, Madrid."
+        },
+        {
+          "title": "American labor activist Dolores Huerta dies aged 96.",
+          "link": "https://en.wikipedia.org/wiki/Dolores_Huerta",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+          "link": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+          "source": "Hacker News · 1051 points",
+          "score": 1051,
+          "summary": "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster. - [SEVERE] Desktop auto..."
+        },
+        {
+          "title": "WTF Ubuntu?",
+          "link": "https://chalmovsky.com/posts/wtf-ubuntu",
+          "source": "Hacker News 熱門 · 1602 points",
+          "score": 1602,
+          "summary": ""
+        },
+        {
+          "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+          "link": "https://www.alphaxiv.org/abs/2611.weight-space-programming",
+          "source": "alphaXiv · 374 likes",
+          "score": 374,
+          "summary": "Frontier LLMs can read raw neural network weights to tell what a network does, and write or edit weights directly to fix or build networks without gradient descent."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1051,
+    "Hacker News 熱門": 1602,
+    "alphaXiv": 374,
+    "Hugging Face Papers": 62,
+    "GitHub Trending": 438
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "傳張俊傑已從基隆偷渡出海　管碧玲：檢方已指揮偵辦",
+      "中聯油案影響沙拉油豆粕　農業部：年底前供應無虞",
+      "美國期中選舉成川普執政公投　民主黨力拚翻盤重掌國會",
+      "勞動部提產假12週加產檢假10天　拚明年初上路"
+    ],
+    "公視": [
+      "美國期中選舉陸續開票 參議院民主黨以45：35席領先【不斷更新】",
+      "針孔偽裝廁所清潔日用品 警籲留意新型態偷拍",
+      "歐洲7航班陷假炸彈恐嚇 多架轉降、戰機一度升空護航"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 3,
+    "公民參與": 1,
+    "兩岸政治": 3
+  },
+  "tracking": [
+    {
+      "topic": "熱門",
+      "title": "美國期中選舉成川普執政公投 民主黨力拚翻盤重掌國會",
+      "link": "https://www.cna.com.tw/news/aopl/202611040034.aspx",
+      "source": "中央社、公視"
+    },
+    {
+      "topic": "戰爭／衝突",
+      "title": "川普接受福斯節目電訪 證實美軍空襲伊朗",
+      "link": "https://www.cna.com.tw/news/aopl/202611030350.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "防範台海衝突 日陸上自衛隊擬整合飛彈指揮系統2030年啟用",
+      "link": "https://www.cna.com.tw/news/aopl/202611030348.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
