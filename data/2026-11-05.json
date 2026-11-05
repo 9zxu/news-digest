@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-05",
+  "generated": "2026-11-05T10:39:24+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 23 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "美媒：共和黨敗選究責 戰爭部長赫格塞斯最快下週可能面臨彈劾",
+          "link": "https://www.cna.com.tw/news/aopl/202611050039.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "根據美國媒體報導，共和黨內部在期中選舉失利後將矛頭指向戰爭部長赫格塞斯（Pete Hegseth），眾議院可能最快下週表決彈劾他。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "'This is a disaster': Angry Republicans blame Trump for midterms defeat",
+          "link": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Some Republicans tell the BBC the president's focus on his legacy and indifference to voter concerns cost them."
+        },
+        {
+          "title": "The Polish Constitutional Tribunal crisis escalates with the suspension of tribunal head Bogdan Święczkowski and deputy head Bartłomiej Sochański by judge Anna Korwin-Piotrowska.",
+          "link": "https://en.wikipedia.org/wiki/Polish_Constitutional_Tribunal_crisis_(2015%E2%80%932016)",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "AI is forcing us to pay off 40 years of technical debt",
+          "link": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+          "source": "Hacker News · 1088 points",
+          "score": 1088,
+          "summary": "AI is forcing us to pay off 40 years of technical debt"
+        },
+        {
+          "title": "Mistral Large 4",
+          "link": "https://www.alphaxiv.org/abs/2611.mistral-large-4",
+          "source": "alphaXiv · 200 likes",
+          "score": 200,
+          "summary": "We introduce Mistral Large 4 (ML4), a 52B active, 1T total parameter multimodal mixture-of-experts model designed for reasoning and long-horizon agentic tasks. We build a scalable agent-based pipeline…"
+        },
+        {
+          "title": "NVIDIA/auto-ontology",
+          "link": "https://github.com/NVIDIA/auto-ontology",
+          "source": "GitHub Trending · 2,050 stars today",
+          "score": 2050,
+          "summary": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1088,
+    "Hacker News 熱門": 809,
+    "alphaXiv": 200,
+    "Hugging Face Papers": 134,
+    "GitHub Trending": 2050
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "美媒：共和黨敗選究責　戰爭部長赫格塞斯最快下週可能面臨彈劾",
+      "台股震盪走低跌逾千點　跌破42000點關卡",
+      "吳德榮：2波東北季風接力南下　下週冷空氣較強",
+      "美眾院民主黨團：無人提彈劾總統　新會期聚焦民生法案"
+    ],
+    "公視": [
+      "彰化工廠大量化學溶劑燃燒 員工背部30%二度燒燙傷送醫",
+      "法國國家血液銀行遭駭 儲存冷凍庫溫度調高至110℃",
+      "美期中選舉共和黨失利 川普坦承敗選歸咎對伊朗開戰"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 1,
+    "全球政治": 3,
+    "兩岸政治": 1,
+    "重大災難與事故": 1,
+    "民生大事": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "美眾院民主黨團：無人提彈劾總統 新會期聚焦民生法案",
+      "link": "https://www.cna.com.tw/news/aopl/202611050015.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
