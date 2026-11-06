@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-06",
+  "generated": "2026-11-06T10:41:35+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 22 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台股重挫失守4萬點 國安基金：若失序不排除召開臨時會",
+          "link": "https://www.cna.com.tw/news/afe/202611060051.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "台股連日重挫，今天開盤再崩跌逾3700點，外界關注國安基金是否可能進場，財政部次長阮清華今天表示，此次主要是受到國際股市影響，國安基金密切關注股市變化、國內外資金情形，若有投資人信心崩盤、失序下跌狀況，不排除召開臨時會討論因應。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Major tech stocks plunge as US midterms add to fears of AI slowdown",
+          "link": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Markets have been reacting to possible tougher scrutiny of data centre construction and the AI industry following the US midterms."
+        },
+        {
+          "title": "The Polish Constitutional Tribunal crisis escalates with the suspension of tribunal head Bogdan Święczkowski and deputy head Bartłomiej Sochański by judge Anna Korwin-Piotrowska.",
+          "link": "https://en.wikipedia.org/wiki/2026_Polish_Constitutional_Tribunal_crisis",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Claude Code sends your email address to websites",
+          "link": "https://github.com/anthropics/claude-code/issues/107757",
+          "source": "Hacker News · 587 points",
+          "score": 587,
+          "summary": "Bug Description I receive dozens of scam emails per day because claude code divulged my email to arbitrary 3rd parties in the User-Agent request header while conducting web searches without my perm..."
+        },
+        {
+          "title": "sshole",
+          "link": "https://sshhole.com",
+          "source": "Hacker News 熱門 · 2368 points",
+          "score": 2368,
+          "summary": "openssh on musl linux has been letting people into password-less accounts since 2016."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 587,
+    "Hacker News 熱門": 2368,
+    "alphaXiv": 126,
+    "Hugging Face Papers": 85,
+    "GitHub Trending": 612
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台股重挫失守4萬點　國安基金：若失序不排除召開臨時會",
+      "新台幣貶至33元　寫逾1年半新低",
+      "美民主黨橫掃國會　劉雲平將接黨團主席創亞裔紀錄",
+      "高金素梅遭控涉共諜案　高檢署依國安法等起訴求刑14年"
+    ],
+    "公視": [
+      "台灣史上首面青奧桌球金牌 陳忞昕激戰6局擊退新加坡黎明映",
+      "不滿經濟衰退、兵役改革 德國Z世代12萬人上街抗議",
+      "黃之鋒入獄近6年 遭控勾結外國勢力再判10年"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 3,
+    "全球政治": 1,
+    "兩岸政治": 4
+  },
+  "tracking": [
+    {
+      "topic": "兩岸政治",
+      "title": "陸配亞亞續拍爭議影片 陸委會：會影響入境審查",
+      "link": "https://www.cna.com.tw/news/acn/202611050293.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
