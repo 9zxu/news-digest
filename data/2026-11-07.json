@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-07",
+  "generated": "2026-11-07T10:09:23+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 21 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "紐時：黃姓女主管為中國國安部間諜 任務是蒐集黃仁勳情報",
+          "link": "https://www.cna.com.tw/news/aopl/202611070020.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "「紐約時報」今天進一步報導，出現在輝達執行長黃仁勳身旁的黃姓企業女主管是中國國安部的間諜，任務是蒐集有關他的情報。輝達發言人回應指出，不會向客戶透露公司機密，兩人互動和所有商業會晤一樣，沒有不尋常。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "AI stocks climb after trillions wiped from market values",
+          "link": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+          "link": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+          "source": "Hacker News · 496 points",
+          "score": 496,
+          "summary": "Cuban says he has been seeing his own face in scammy AI-generated ads for nonexistent diabetes cures."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 496,
+    "Hacker News 熱門": 855,
+    "alphaXiv": 133,
+    "Hugging Face Papers": 87,
+    "GitHub Trending": 306
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "紐時：黃姓女主管為中國國安部間諜　任務是蒐集黃仁勳情報",
+      "巴拉圭總統潘尼亞遭彈劾後居家監禁　副總統接任就職",
+      "早安世界》行政院5大策略穩台股　國安基金進場、金管會祭限空令",
+      "傳台積電進軍3D DRAM　應輝達要求規劃製造、評估建廠"
+    ],
+    "公視": [
+      "台股跌落4萬國安基金進場護盤 金管會宣布限空令9日上路",
+      "卓榮泰不副署長者免健保費修法 列弱勢保障缺口等3大問題",
+      "台64線丟包導致乘客遭輾身亡 多元計程車司機一審判刑13年"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 4,
+    "全球政治": 3,
+    "兩岸政治": 1,
+    "疫情與公共衛生": 1
+  },
+  "tracking": [
+    {
+      "topic": "熱門",
+      "title": "早安世界》行政院5大策略穩台股 國安基金進場、金管會祭限空令",
+      "link": "https://www.cna.com.tw/news/ahel/202611075001.aspx",
+      "source": "中央社、公視"
+    },
+    {
+      "topic": "公民參與",
+      "title": "法國青年示威借用紅豬與魯夫 在日本動漫找抗爭共鳴",
+      "link": "https://www.cna.com.tw/news/aopl/202611070013.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "巴拉圭總統潘尼亞遭彈劾後居家監禁 副總統接任就職",
+      "link": "https://www.cna.com.tw/news/aopl/202611070015.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
