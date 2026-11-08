@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-08",
+  "generated": "2026-11-08T09:40:54+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 20 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台灣關閉巴紐駐處 美國務院：北京對台恫嚇又一例證",
+          "link": "https://www.cna.com.tw/news/aipl/202611080006.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "巴布亞紐幾內亞7月片面宣布關閉台灣駐巴紐代表處，台灣外交部本週宣布決定主動關閉巴紐駐處。美國國務院今天回應表示，對巴紐片面要求關閉台灣駐處的報導深感關切，同時也批評，這是北京對台恫嚇又一例證，威脅全球和平與繁榮。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "What we know so far after Krakow gun attack",
+          "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "The end of Microsoft Research's AI Frontiers group",
+          "link": "https://hunch.net/?p=13764006",
+          "source": "Hacker News · 384 points",
+          "score": 384,
+          "summary": ""
+        },
+        {
+          "title": "Libghostty 1.0",
+          "link": "https://mitchellh.com/writing/libghostty-1-0",
+          "source": "Hacker News 熱門 · 1027 points",
+          "score": 1027,
+          "summary": ""
+        },
+        {
+          "title": "You don't need long context",
+          "link": "https://www.alphaxiv.org/abs/2611.05306",
+          "source": "alphaXiv · 157 likes",
+          "score": 157,
+          "summary": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 384,
+    "Hacker News 熱門": 1027,
+    "alphaXiv": 157,
+    "Hugging Face Papers": 100,
+    "GitHub Trending": 190
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台灣關閉巴紐駐處　美國務院：北京對台恫嚇又一例證",
+      "吳德榮：東北季風9日增強　10日清晨北部低溫探15度",
+      "德國青年示威反映未來焦慮　學者：悲觀助長政治極化",
+      "早安世界》外資資產達外匯存底近3倍　台股震盪掀資金潮考驗央行穩匯"
+    ],
+    "公視": [
+      "今立冬北部降溫有雨 下週更強東北季風下探16℃",
+      "老農津貼三讀調高至1.5萬元 農業部：未提出完整財源規劃",
+      "歐洲多國媒體收恐嚇信 愛爾蘭電視台疏散人員影響播出"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 4,
+    "全球政治": 1,
+    "兩岸政治": 2
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "No clear winner after tight New Zealand general election",
+      "link": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
