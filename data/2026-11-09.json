@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-09",
+  "generated": "2026-11-09T09:49:27+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 19 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "川普下週赴中國出席APEC 盼會習近平普丁談伊朗戰事",
+          "link": "https://www.cna.com.tw/news/aopl/202611090024.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國總統川普今天表示，他認為自己下週在中國舉行的亞太經濟合作會議（APEC）領袖峰會上，將與中國國家主席習近平和俄羅斯總統普丁（Vladimir Putin）會面，討論結束伊朗戰爭及非核化等議題。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+          "link": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
+        },
+        {
+          "title": "A mass shooting in the Main Square of Kraków, Poland, leaves six people dead and sixteen others injured.",
+          "link": "https://en.wikipedia.org/wiki/2026_Krak%C3%B3w_shooting",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Goodbye Claude, hello Pi",
+          "link": "https://caleb.software/posts/claude-to-pi.html",
+          "source": "Hacker News · 702 points",
+          "score": 702,
+          "summary": ""
+        },
+        {
+          "title": "Together Compiler: Continual Compilation for AI Inference",
+          "link": "https://www.alphaxiv.org/abs/2611.together-compiler-continual-ai-inference",
+          "source": "alphaXiv · 153 likes",
+          "score": 153,
+          "summary": "Today’s AI workloads are rapidly changing: new models are released more often, model architectures are increasingly diverse, and traffic distributions change frequently. The challenge we face at Toget…"
+        },
+        {
+          "title": "sherlock-project/sherlock",
+          "link": "https://github.com/sherlock-project/sherlock",
+          "source": "GitHub Trending · 2,373 stars today",
+          "score": 2373,
+          "summary": "Hunt down social media accounts by username across social networks"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 702,
+    "Hacker News 熱門": 776,
+    "alphaXiv": 153,
+    "GitHub Trending": 2373
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "川普下週赴中國出席APEC　盼會習近平普丁談伊朗戰事",
+      "台股早盤漲逾千點站回4萬點　台積電等權值股勁揚",
+      "吳德榮：北台灣越晚越涼　10日晨平地探15度",
+      "黃仁勳致輝達員工信件全文曝光　坦承婚外情並願負全責"
+    ],
+    "公視": [
+      "藥局倒閉潮去年減少近247家 不敵缺換藥、房租人事上漲",
+      "11/9起祭5項禁空令穩定股市 5千億國安基金進場護盤",
+      "埃及火車追撞至少7死125傷 同路段3度出事「籲交長下台」"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "大地震": 1,
+    "公民參與": 2,
+    "兩岸政治": 2,
+    "奧運": 1
+  },
+  "tracking": [],
+  "failures": []
+}
