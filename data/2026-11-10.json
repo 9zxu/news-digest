@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-10",
+  "generated": "2026-11-10T12:14:26+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 18 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台灣10月總人口數2320萬4000人 連34個月負成長",
+          "link": "https://www.cna.com.tw/news/aipl/202611100077.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "內政部統計，截至今年10月底，台灣人口數為2320萬4000人，總人口數較9月減少9251人，人口連續34個月負成長；10月新生兒為8035人，較9月增加331人，今年1至10月的新生兒共7萬7481人。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+          "link": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The US president said he spoke with Jensen Huang on Monday and asked him about the affair with the alleged spy."
+        },
+        {
+          "title": "President of Paraguay Santiago Peña is impeached, arrested, and replaced by Vice President Pedro Alliana amid a banking crisis involving Ueno Bank.",
+          "link": "https://en.wikipedia.org/wiki/2026_Paraguay_banking_crisis",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Claude Fable 5.2 and Mythos 5.2",
+          "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "source": "Hacker News · 967 points",
+          "score": 967,
+          "summary": "Claude Fable 5.2 and Claude Mythos 5.2, our new models for the hardest technical challenges. Fable 5.2 sets a new bar in coding, finance, and the sciences."
+        },
+        {
+          "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+          "link": "https://www.alphaxiv.org/abs/2611.08438",
+          "source": "alphaXiv · 161 likes",
+          "score": 161,
+          "summary": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making…"
+        },
+        {
+          "title": "anthropics/skills",
+          "link": "https://github.com/anthropics/skills",
+          "source": "GitHub Trending · 1,038 stars today",
+          "score": 1038,
+          "summary": "Public repository for Agent Skills"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 967,
+    "Hacker News 熱門": 952,
+    "alphaXiv": 161,
+    "GitHub Trending": 1038
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台灣10月總人口數2320萬4000人　連34個月負成長",
+      "選前專案掃蕩不法金流　檢警調查獲233案、扣逾4億",
+      "台股盤中重登43000點　台積電聯發科領軍",
+      "中國在西太平洋演練區域拒止　顧立雄：破壞印太和平"
+    ],
+    "公視": [
+      "易遊網遭駭逾69萬人個資外洩 業者：不含身分證、信用卡號",
+      "土耳其鋼鐵廠爆炸陷火海 疑天車砸熔爐釀16死13傷",
+      "滿載非洲移民船隻沉沒39死 西班牙耶羅島進入緊急狀態"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 3,
+    "全球政治": 4,
+    "兩岸政治": 1,
+    "重大災難與事故": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+      "link": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
