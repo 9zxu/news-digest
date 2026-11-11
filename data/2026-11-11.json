@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-11",
+  "generated": "2026-11-11T10:03:49+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 17 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "傳洽購肯德基必勝客業務估年底前達協議 統一：無法置評",
+          "link": "https://www.cna.com.tw/news/afe/202611110028.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "統一企業傳洽購怡和旗下肯德基、必勝客亞洲餐飲業務，據路透社報導，潛在交易估值約4億美元（約新台幣131億元）。統一回應，此訊息無法置評，對任何可能的投資機會都願意審慎評估，須具策略意義，並能為股東創造價值，才會進行相關作業。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+          "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Google Gemini routes personal Drive files and emails to human annotators",
+          "link": "https://github.com/thisisme6598/gemini_files/",
+          "source": "Hacker News · 714 points",
+          "score": 714,
+          "summary": "Documentation of Gemini File Leaking Behavior. Contribute to thisisme6598/gemini_files development by creating an account on GitHub."
+        },
+        {
+          "title": "meta/astryx",
+          "link": "https://github.com/meta/astryx",
+          "source": "GitHub Trending · 3,108 stars today",
+          "score": 3108,
+          "summary": "An open source design system that's fully customizable and agent ready"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 714,
+    "Hacker News 熱門": 719,
+    "alphaXiv": 120,
+    "Hugging Face Papers": 90,
+    "GitHub Trending": 3108
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "傳洽購肯德基必勝客業務估年底前達協議　統一：無法置評",
+      "新竹關西凌晨13.4度　吳德榮：13日前氣溫緩升",
+      "台揚財報淨值為負數12/21終止上市　股價跳空跌停",
+      "韓國金融保安院遭駭　逾300筆金融機構員工個資外洩"
+    ],
+    "公視": [
+      "美秀集團前成員涉毒駕拒測 車內搜出疑沾毒品殘渣袋",
+      "美俄烏睽違9個月重啟會談 澤倫斯基：有實質進展",
+      "控未經國會授權對伊朗動武 眾議員對赫格塞斯提彈劾案"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 3,
+    "全球政治": 5,
+    "兩岸政治": 3,
+    "奧運": 1,
+    "Apple 發表會": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
+      "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "G7外長關切台海和平 重申反對武力脅迫改變現狀",
+      "link": "https://www.cna.com.tw/news/aipl/202611100355.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
