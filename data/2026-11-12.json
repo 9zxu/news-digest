@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-12",
+  "generated": "2026-11-12T11:13:50+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 16 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "寶林茶室案一審宣判 負責人遭判1年10月、店長無罪",
+          "link": "https://www.cna.com.tw/news/asoc/202611120048.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "寶林茶室食物中毒案釀6人死亡，台北地方法院審理近2年，一審今天宣判，依過失致死罪判處負責人黎仿軒1年10月，代班廚師胡清富判8月徒刑。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
+          "link": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "My AI agents found an unmapped Maya site?",
+          "link": "https://pietromiotti.com/latest/maya-site",
+          "source": "Hacker News · 938 points",
+          "score": 938,
+          "summary": "AI agents analyzed public lidar data overnight and found a Maya site under the jungle. It turned out archaeologists had mapped it already, but it wasn't in Mexico's official register yet."
+        },
+        {
+          "title": "Smart home devices should work without the internet",
+          "link": "https://docodethatmatters.com/home-automation-overnight-success/",
+          "source": "Hacker News 熱門 · 1145 points",
+          "score": 1145,
+          "summary": "Rule one is that nothing in my house needs a vendor's server to work. The rest of the rules I follow after ten years of home automation, plus both talks I gave on it, slide by slide."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 938,
+    "Hacker News 熱門": 1145,
+    "alphaXiv": 132,
+    "Hugging Face Papers": 99,
+    "GitHub Trending": 278
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "寶林茶室案一審宣判　負責人遭判1年10月、店長無罪",
+      "謝典霖另涉犯詐取公款延押2月　爭彰化議長連任增變數",
+      "俄烏阿布達比會談現轉機　美特使將分晤普丁澤倫斯基",
+      "紐約時報：黃仁勳遭爆與下屬發展婚外情　輝達內部早有議論"
+    ],
+    "公視": [
+      "明年起勞保費率調漲至13% 勞工每月多繳46元",
+      "寶林茶室6死中毒案 負責人黎仿軒一審判1年10個月",
+      "義國6千學校遭炸彈恐嚇 發信網域來自台灣大葉大學"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 3,
+    "全球政治": 4,
+    "兩岸政治": 4,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "Indonesia's vice president resigns amid signs ruling alliance is fraying",
+      "link": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "G7外長聯合聲明 強調維持台海和平與穩定至關重要",
+      "link": "https://www.cna.com.tw/news/aipl/202611120003.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
