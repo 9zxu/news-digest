@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-13",
+  "generated": "2026-11-13T10:45:29+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 15 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "微軟365、Outlook等服務當機 數以千計美國用戶受影響",
+          "link": "https://www.cna.com.tw/news/ait/202611130010.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "根據服務中斷追蹤網站Downdetector.com，微軟365、Outlook與Teams今天發生當機，影響數以千計美國用戶，也波及OpenAI與Anthropic的人工智慧（AI）服務所使用的連接器。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
+          "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "US lawmakers now want to question him over whether one of his alleged relationships was with a Chinese spy."
+        },
+        {
+          "title": "The End of Everything by M. John Harrison wins the Booker Prize.",
+          "link": "https://en.wikipedia.org/wiki/The_End_of_Everything_(Harrison_novel)",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Anthropic IPO",
+          "link": "https://ipo.anthropic.com/us/",
+          "source": "Hacker News · 838 points",
+          "score": 838,
+          "summary": "Anthropic has filed to become a public company. Read the Founders’ letter and other relevant information."
+        },
+        {
+          "title": "Jensen Huang resigns",
+          "link": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+          "source": "Hacker News 熱門 · 3038 points",
+          "score": 3038,
+          "summary": ""
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 838,
+    "Hacker News 熱門": 3038,
+    "alphaXiv": 149,
+    "Hugging Face Papers": 88,
+    "GitHub Trending": 739
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "微軟365、Outlook等服務當機　數以千計美國用戶受影響",
+      "黃仁勳去職利空出盡　台股勁揚逾1200點突破44300點",
+      "東北季風減弱各地回暖　吳德榮：14日午後降雨機會增",
+      "立陶宛青年團體挺台發起抗議　反對政府更改台灣代表處名稱"
+    ],
+    "公視": [
+      "輝達宣布黃仁勳辭職 財務長克雷斯接任臨時執行長",
+      "廢非核家園公投／牛煦庭稱廢核未解決電力缺口 陳培瑜：核電非經濟成長必要條件",
+      "新北瑞芳中學生刺頸案 被害人搶救48天宣告不治"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 8,
+    "全球政治": 2,
+    "兩岸政治": 5,
+    "民生大事": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "立陶宛青年團體挺台發起抗議 反對政府更改台灣代表處名稱",
+      "link": "https://www.cna.com.tw/news/aipl/202611130030.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "混合式攻擊事件頻 歐洲峰會維安升級戒備",
+      "link": "https://news.pts.org.tw/article/835510",
+      "source": "公視新聞網"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "G7外長關切台海 外交部：維護現狀是國際共識",
+      "link": "https://www.cna.com.tw/news/aipl/202611120342.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
