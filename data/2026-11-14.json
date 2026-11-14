@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-14",
+  "generated": "2026-11-14T10:35:08+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 14 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "路透：黃仁勳傳與中國女商人黃樂婚外情 曾誤導輝達法務長",
+          "link": "https://www.cna.com.tw/news/aopl/202611140041.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "路透社引述兩名知情人士說法和內部通訊內容報導，輝達前執行長黃仁勳曾就他與中國女商人黃樂的關係性質誤導公司多名高層，包括法務長泰德和行銷長瓦根菲爾德。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+          "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
+        },
+        {
+          "title": "Nvidia CEO Jensen Huang resigns amidst allegations of being targeted by a Chinese spy and of having extramarital affairs.",
+          "link": "https://en.wikipedia.org/wiki/Jensen_Huang",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Gemini 4 Hydrogen",
+          "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "source": "Hacker News · 559 points",
+          "score": 559,
+          "summary": "Today, we’re introducing Gemini 4 Hydrogen, our daily driver for agentic workflows"
+        },
+        {
+          "title": "FAA issues national ground stop",
+          "link": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+          "source": "Hacker News 熱門 · 1347 points",
+          "score": 1347,
+          "summary": "The homeland security secretary said there was “no indication as of yet” that anything “nefarious” was behind the ground stop, which he attributed to a telecommunications outage."
+        },
+        {
+          "title": "A Survey on Continuous Diffusion and Flow Language Models",
+          "link": "https://www.alphaxiv.org/abs/2611.continuous-diffusion-flow-language-models",
+          "source": "alphaXiv · 165 likes",
+          "score": 165,
+          "summary": "Continuous diffusion and flow language models generate text by transforming noise into continuous representations of tokens. They can refine many positions in parallel while preserving dependencies be…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 559,
+    "Hacker News 熱門": 1347,
+    "alphaXiv": 165,
+    "Hugging Face Papers": 44,
+    "GitHub Trending": 215
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "路透：黃仁勳傳與中國女商人黃樂婚外情　曾誤導輝達法務長",
+      "白宮宣布美中俄領袖峰會19日舉行　輝達風波不影響川普中國行",
+      "傳輝達接洽安謀執行長哈斯　董事會：正遴選獵才公司助尋找人選",
+      "美財長：法國超市冰箱駭客攻擊事件　是用中國AI模型"
+    ],
+    "公視": [
+      "立院三讀拍板產假增為14週 育兒留停期限放寬至子女滿9歲",
+      "黃仁勳請辭輝達執行長 對台灣供應鏈與全球AI產業影響一次看",
+      "水下無人載具「黑鯨」 現身蘇澳首度下水測試"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 2,
+    "全球政治": 1,
+    "兩岸政治": 1,
+    "奧運": 2
+  },
+  "tracking": [],
+  "failures": []
+}
