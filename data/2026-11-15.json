@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-15",
+  "generated": "2026-11-15T10:02:00+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 13 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "早安世界》美10月躉售通膨創4年來新高 市場押注聯準會12月升息",
+          "link": "https://www.cna.com.tw/news/ahel/202611155001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國最新經濟數據顯示，10月躉售通膨年增率達6.5%，創4年以來新高，儘管月增幅度較9月明顯收斂，低於9月的1.4%，但食品價格大漲，加上美伊戰爭推升能源成本，使通膨降溫之路增添變數，也讓市場對聯準會12月升息預期加深。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
+          "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
+        },
+        {
+          "title": "The Salvadoran military intervention in Haiti intensifies with airstrikes on 400 Mawozo 's alleged headquarters and a deployment to Stade Sylvio Cator.",
+          "link": "https://en.wikipedia.org/wiki/Salvadoran_military_intervention_in_Haiti",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+          "link": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+          "source": "Hacker News · 1036 points",
+          "score": 1036,
+          "summary": "Following the departure of now-former NVIDIA CEO, Jensen Huang, a new report by The Wall Street Journal (via Wccftech) has emerged alleging that NVIDIA artificially inflated the ongoing GPU and memory…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1036,
+    "Hacker News 熱門": 932,
+    "alphaXiv": 123,
+    "Hugging Face Papers": 135,
+    "GitHub Trending": 408
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "早安世界》美10月躉售通膨創4年來新高　市場押注聯準會12月升息",
+      "SpaceX首度完成太空船捕捉回收　星艦返回發射台[影]",
+      "李四川中和造勢　三子站台相挺盼票倉開出好成績",
+      "蘇巧慧撞斷牙續登台　賴總統讚「打落牙齒和血吞」"
+    ],
+    "公視": [
+      "廢非核家園公投／陳中舜稱核電是AI用電救命丸 賴建信：核電與經濟發展無關",
+      "北市公辦政見發表蔣提4年施政 沈攻兒虐、營養午餐議題",
+      "高雄政見會柯志恩提均衡發展 賴瑞隆主張AI帶動傳產發展"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 6,
+    "全球政治": 2,
+    "兩岸政治": 1,
+    "疫情與公共衛生": 2
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
+      "link": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "全球政治",
+      "title": "美中俄領袖APEC期間首度三方峰會 核武與伊朗戰爭成焦點",
+      "link": "https://www.cna.com.tw/news/aopl/202611150003.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "疫情與公共衛生",
+      "title": "巴西今年首見M痘死亡病例 暫不列為疫情爆發",
+      "link": "https://www.cna.com.tw/news/aopl/202611150012.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
