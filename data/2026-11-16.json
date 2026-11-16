@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-16",
+  "generated": "2026-11-16T10:18:44+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 12 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "彭博：輝達曾就員工涉嫌對中國走私晶片案求助台灣官員",
+          "link": "https://www.cna.com.tw/news/afe/202611163001.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "彭博報導，輝達公司一名員工被台灣檢方指控協助向中國走私人工智慧晶片後，該公司向台灣官員尋求協助，再次引發外界對輝達如何看待自身在遏制非法貿易中所扮演角色的疑問。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+          "link": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks."
+        },
+        {
+          "title": "American ocean liner SS United States is scuttled in the Gulf of Mexico to create the largest artificial reef.",
+          "link": "https://en.wikipedia.org/wiki/SS_United_States",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "All AI-generated code should be Open Source",
+          "link": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "source": "Hacker News · 1094 points",
+          "score": 1094,
+          "summary": "All code generated with help from AI should be Open Source or on Creative Commons Zero (CC0) license."
+        },
+        {
+          "title": "SpaceX catches the Starship to end Flight 15",
+          "link": "https://www.spacex.com/launches/starship-flight-15",
+          "source": "Hacker News 熱門 · 1646 points",
+          "score": 1646,
+          "summary": "SpaceX designs, manufactures and launches advanced rockets and spacecraft."
+        },
+        {
+          "title": "An Energy-Based Perspective on Machine Learning",
+          "link": "https://www.alphaxiv.org/abs/2611.14383",
+          "source": "alphaXiv · 163 likes",
+          "score": 163,
+          "summary": "Energy-based models (EBMs) define a distribution through a scalar energy, $p_\\theta(x)\\propto\\exp(-E_\\theta(x))$, and are usually presented as one model family among many. This tutorial has a broader…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1094,
+    "Hacker News 熱門": 1646,
+    "alphaXiv": 163,
+    "GitHub Trending": 988
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "彭博：輝達曾就員工涉嫌對中國走私晶片案求助台灣官員",
+      "台股早盤跌逾1300點跌破43000點　台積電跌55元",
+      "俄國安會傳解除禁殺令　允暗殺澤倫斯基等烏克蘭高層",
+      "女子網路造謠沈伯洋私德問題　北檢諭令20萬交保"
+    ],
+    "公視": [
+      "藍白大咖助陣蔣萬安夜市掃街 賴清德送沈伯洋「水滴寶劍」",
+      "交通部預告修法 擬2032年起新車須裝防暴衝系統",
+      "葉門政府軍撤出曼德海峽周邊 全球商船繞道恐成常態"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 2,
+    "兩岸政治": 1,
+    "重大災難與事故": 1
+  },
+  "tracking": [],
+  "failures": []
+}
