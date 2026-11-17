@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-17",
+  "generated": "2026-11-17T12:40:53+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 11 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "高鐵選舉疏運加開22班 27日南下尖峰3站自由座擬實施管制",
+          "link": "https://www.cna.com.tw/news/ahel/202611170052.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "地方公職人員選舉將屆，高鐵啟動應變措施，包括加開22班、10班紅眼班次77折優惠，首度延至凌晨1時55分收班，估27日傍晚南港、台北、板橋南下自由座等候人潮紅燈，首度實施閘門管制。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Five EU countries announce migrant deportation centre in Rwanda",
+          "link": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Germany, Denmark, Austria, Greece and the Netherlands have announced a \"return hub\" for failed asylum seekers."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Unbundling Multimodal Vision Encoding",
+          "link": "https://www.alphaxiv.org/abs/2611.17334",
+          "source": "alphaXiv · 226 likes",
+          "score": 226,
+          "summary": "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 94,
+    "Hacker News 熱門": 980,
+    "alphaXiv": 226,
+    "GitHub Trending": 791
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "高鐵選舉疏運加開22班　27日南下尖峰3站自由座擬實施管制",
+      "桃園市長選舉政見發表會　交通、公車議題交鋒",
+      "2架疑似俄機闖日本領空後　南下通過台灣東部外海",
+      "台股盤中震盪1747點力守4萬點　電子權值股金融抗跌"
+    ],
+    "公視": [
+      "育兒「減工時不扣薪」企業可全額補助 1年最高135萬元",
+      "台鐵「纜繩式月台門」 防落軌 高雄站正式啟動耐用度試運轉",
+      "歐盟5國宣布設境外遣返中心 非法移民將送往盧安達"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 4,
+    "全球政治": 3,
+    "兩岸政治": 3,
+    "半導體與科技地緣政治": 1,
+    "重大災難與事故": 3,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "味全龍封王遊行11/22登場 天母出發規劃3處應援集結點",
+      "link": "https://www.cna.com.tw/news/aspt/202611160253.aspx",
+      "source": "中央社 體育"
+    },
+    {
+      "topic": "全球政治",
+      "title": "川普預定出席東協特別峰會 將對菲律賓國是訪問",
+      "link": "https://www.cna.com.tw/news/aopl/202611170047.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "英日「警戒島嶼」軍演 汲取烏克蘭戰場經驗、強化印太安全",
+      "link": "https://www.cna.com.tw/news/aopl/202611170016.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "重大災難與事故",
+      "title": "Two mass shootings in South Africa leave 17 dead",
+      "link": "https://www.bbc.co.uk/news/articles/c8y5x3n4kywpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
