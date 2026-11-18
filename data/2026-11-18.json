@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-18",
+  "generated": "2026-11-18T11:46:11+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 10 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "輝達立場轉變 代理執行長證實Hopper晶片停止銷中",
+          "link": "https://www.cna.com.tw/news/aopl/202611180054.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國人工智慧（AI）晶片巨擘輝達代理執行長克瑞斯在公司第3季財報電話會議中告訴分析師，輝達不再向中國出貨Hopper資料中心晶片。美國政府去年才批准銷售同款晶片的一種版本。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+          "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "GPT‑6.2 Astra and Sol",
+          "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "source": "Hacker News · 1139 points",
+          "score": 1139,
+          "summary": ""
+        },
+        {
+          "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+          "link": "https://www.cs.cmu.edu/learn/",
+          "source": "Hacker News 熱門 · 2289 points",
+          "score": 2289,
+          "summary": ""
+        },
+        {
+          "title": "Latent Feedback Is a Compute and Data Amplifier: Scaling Law for Latent Feedback Transformers on Repeated Data",
+          "link": "https://www.alphaxiv.org/abs/2611.latent-feedback-transformers-scaling-law",
+          "source": "alphaXiv · 215 likes",
+          "score": 215,
+          "summary": "When high-quality data runs out, a common practice is to train on it for several epochs, but each repeat is worth less than the last. Latent feedback, which feeds each token’s top-layer state into the…"
+        },
+        {
+          "title": "elementalsouls/Claude-BugHunter",
+          "link": "https://github.com/elementalsouls/Claude-BugHunter",
+          "source": "GitHub Trending · 1,005 stars today",
+          "score": 1005,
+          "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1139,
+    "Hacker News 熱門": 2289,
+    "alphaXiv": 215,
+    "Hugging Face Papers": 126,
+    "GitHub Trending": 1005
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "輝達立場轉變　代理執行長證實Hopper晶片停止銷中",
+      "施振榮任APEC領袖代表　將分享台灣科技、AI產業優勢",
+      "黃仁勳婚外情掀國安風暴　將首度赴美國會公開作證",
+      "經濟學人剖析2027年趨勢　川普政治動向、台海安全與AI風險受矚"
+    ],
+    "公視": [
+      "黃仁勳表態願重新接掌輝達 稱對整起事件深感後悔",
+      "台中市長選舉公辦政見會登場 江啟臣、何欣純、洪麗華交鋒",
+      "美國「麻疹消除國」地位撤銷 我疾管署：旅遊疫情升至第2級"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 2,
+    "兩岸政治": 1,
+    "半導體與科技地緣政治": 1,
+    "重大災難與事故": 2,
+    "疫情與公共衛生": 1
+  },
+  "tracking": [
+    {
+      "topic": "重大災難與事故",
+      "title": "Russian military plane crashes, killing all 19 on board",
+      "link": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
