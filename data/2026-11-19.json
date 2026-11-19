@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-19",
+  "generated": "2026-11-19T11:44:11+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 9 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "習近平川普普丁APEC合影 美中俄三方峰會前同框",
+          "link": "https://www.cna.com.tw/news/aopl/202611190052.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "中國國家主席習近平、美國總統川普與俄羅斯總統普丁今天在亞太經濟合作會議（APEC）峰會上合影，隨後將舉行備受關注的三方峰會。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+          "link": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Watch: The BBC's Jonathan Beale joins Ukrainian forces taking the battle below ground and out of sight of Russian drones."
+        },
+        {
+          "title": "In Canadian football, the Edmonton Elks defeat the Montreal Alouettes to win the Grey Cup ( MVP Cody Fajardo pictured).",
+          "link": "https://en.wikipedia.org/wiki/113th_Grey_Cup",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "AI is killing All About Berlin",
+          "link": "https://nicolasbouliane.com/blog/death-by-ai",
+          "source": "Hacker News · 765 points",
+          "score": 765,
+          "summary": "They used my work to train their AI, and now they're using their AI to put me out of work."
+        },
+        {
+          "title": "Unauthenticated remote code execution in Nginx",
+          "link": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+          "source": "Hacker News 熱門 · 1193 points",
+          "score": 1193,
+          "summary": "Two critical HTTP/2 flaws can allow attackers to compromise NGINX servers, putting the websites, APIs, and sensitive data they handle at risk."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 765,
+    "Hacker News 熱門": 1193,
+    "alphaXiv": 131,
+    "Hugging Face Papers": 98,
+    "GitHub Trending": 314
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "習近平川普普丁APEC合影　美中俄三方峰會前同框",
+      "輝達董事長稱黃仁勳不回鍋　代理執行長籲員工向前看",
+      "聯準會會議紀錄：幾乎所有官員認為有必要進一步升息",
+      "Anthropic估值1.5兆美元　超越SpaceX改寫史上最大IPO紀錄"
+    ],
+    "公視": [
+      "雪霸引入野生鮭魚繁殖 防櫻花鉤吻鮭白化症",
+      "APEC峰會歡迎晚宴 美中俄領袖罕見同框",
+      "以哈停火逾1年 以色列軍隊越線發動攻擊"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 1,
+    "全球政治": 7,
+    "兩岸政治": 3,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "Steve Rosenberg: Historic talks with Xi and Trump are a coup for Putin",
+      "link": "https://www.bbc.co.uk/news/articles/c9n70gd320mpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    },
+    {
+      "topic": "兩岸政治",
+      "title": "中共10機艦船台海周邊活動 國軍嚴密監控應處",
+      "link": "https://www.cna.com.tw/news/aipl/202611190037.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
