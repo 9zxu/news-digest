@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-20",
+  "generated": "2026-11-20T11:38:07+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 8 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    },
+    {
+      "title": "115年11月28日(星期六)為115年地方公職人員選舉及全國性公民投票案第22案投票日，為便利選舉區內各級機關、學校、團體、事業機構員工前往投票，是日依法為應放假之日，請查照轉知。",
+      "link": "https://web.cec.gov.tw/central/article/66085",
+      "source": "中選會公告"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "限空令難擋賣壓 台股重挫逾2200點史上第5大盤中跌點",
+          "link": "https://www.cna.com.tw/news/afe/202611200056.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "AI利空頻傳，市場信心潰散，台股今天早盤最多重挫逾2200點，失守37000點關卡，創史上第5大盤中跌點。至10時22分，集中市場指數下跌2095.04點，報36331.85點，成交值約新台幣4444億元。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+          "link": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry."
+        },
+        {
+          "title": "The space probe Voyager 1 (rendering shown) becomes the first human-made object to reach one light-day from Earth.",
+          "link": "https://en.wikipedia.org/wiki/Voyager_1",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Gemini 4 Neon",
+          "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "source": "Hacker News · 1021 points",
+          "score": 1021,
+          "summary": "Today, we’re introducing Gemini 4 Neon"
+        },
+        {
+          "title": "obra/superpowers",
+          "link": "https://github.com/obra/superpowers",
+          "source": "GitHub Trending · 2,028 stars today",
+          "score": 2028,
+          "summary": "An agentic skills framework & software development methodology that works."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1021,
+    "Hacker News 熱門": 982,
+    "alphaXiv": 124,
+    "Hugging Face Papers": 160,
+    "GitHub Trending": 2028
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "限空令難擋賣壓　台股重挫逾2200點史上第5大盤中跌點",
+      "台積電盤中失守2000元關卡　創7個月來新低",
+      "川習三會習近平指中美經貿加強溝通　川普稱雙方對AI監管有共識",
+      "玉山測站零下2.3度　氣象署：有霧淞結霜現象"
+    ],
+    "公視": [
+      "施振榮APEC會後返國 稱圓滿完成總統託付",
+      "新一波限空令11/20起上路 個股收跌3.5％以上隔日禁空",
+      "國際法院80年來首認定 緬甸對羅興亞人犯種族滅絕罪"
+    ]
+  },
+  "watch_hits": {
+    "大地震": 1,
+    "全球政治": 3,
+    "兩岸政治": 1,
+    "奧運": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "美媒：美中俄峰會未取得重大突破 川普普丁習近平各有盤算",
+      "link": "https://www.cna.com.tw/news/aopl/202611200018.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
