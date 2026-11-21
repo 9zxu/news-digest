@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-21",
+  "generated": "2026-11-21T11:20:30+08:00",
+  "alerts": [
+    {
+      "title": "11/21 10:34 發布低溫特報",
+      "link": "https://www.cwa.gov.tw/V8/C/P/Warning/W28.html?T=202611211034",
+      "source": "中央氣象署"
+    }
+  ],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 7 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    },
+    {
+      "title": "本會委員會議審議張瑋辰先生領銜提出之全國性公民投票提案",
+      "link": "https://web.cec.gov.tw/central/article/66159",
+      "source": "中選會新聞稿"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "民眾黨候選人涉收紅錢遭起訴 黃國昌：應說清楚讓選民信任",
+          "link": "https://www.cna.com.tw/news/aipl/202611210048.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "民眾黨桃園市議員候選人周曉芸涉嫌接受中共資金參選遭起訴，民眾黨主席黃國昌今天表示，尊重當事人爭取清白，但也應有能力說清楚讓選民信任；周曉芸則聲明自己沒有收受紅錢。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+          "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Anthropic’s Nasdaq debut",
+          "link": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+          "source": "Hacker News · 1130 points",
+          "score": 1130,
+          "summary": ""
+        },
+        {
+          "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+          "link": "https://alpo.ge/remark.pdf",
+          "source": "Hacker News 熱門 · 2416 points",
+          "score": 2416,
+          "summary": ""
+        },
+        {
+          "title": "A Society of AI Scientists",
+          "link": "https://www.alphaxiv.org/abs/2611.society-ai-scientists",
+          "source": "alphaXiv · 447 likes",
+          "score": 447,
+          "summary": "Artificial intelligence agents can now conduct end-to-end research, yet whether independent agents can collaborate, critique peer findings and build cumulative knowledge as a scientific community rema…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1130,
+    "Hacker News 熱門": 2416,
+    "alphaXiv": 447,
+    "Hugging Face Papers": 146,
+    "GitHub Trending": 773
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "民眾黨候選人涉收紅錢遭起訴　黃國昌：應說清楚讓選民信任",
+      "美中爭奪AI霸權仍達共識　川習同意重大軍事決策須有人類把關",
+      "雷虎科技董事長陳冠如：無人機非藝術品　消耗戰須具大量生產能力【專訪】",
+      "Anthropic上市難挽跌勢　AI股單週市值蒸發逾4兆美元"
+    ],
+    "公視": [
+      "立院三讀普發2萬特別條例 綠白聯手否決仍不敵藍人數優勢",
+      "廢非核公投意見會／黃士修指核電每年可賺2400億 鄧宇佑指重啟成本更貴",
+      "限空令、護盤仍難擋跌勢 台股跌2393點史上第三大"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "大地震": 1,
+    "公民參與": 4,
+    "全球政治": 1,
+    "兩岸政治": 1,
+    "民生大事": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "助理遭警方帶走 徐欣瑩質疑司法介選赴竹檢抗議",
+      "link": "https://www.cna.com.tw/news/aipl/202611200344.aspx",
+      "source": "中央社 政治"
+    }
+  ],
+  "failures": []
+}
