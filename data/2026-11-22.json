@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-22",
+  "generated": "2026-11-22T10:28:01+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 6 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "新竹關西清晨6.6度 吳德榮：各地晴朗防日夜溫差",
+          "link": "https://www.cna.com.tw/news/ahel/202611220014.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "氣象署表示，今天清晨平地最低溫為新竹關西攝氏6.6度。氣象專家吳德榮表示，今、明兩天東北季風減弱，各地晴朗穩定、日夜溫差大，24日至26日北部、東半部轉雨、降溫。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+          "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine."
+        },
+        {
+          "title": "The video game Grand Theft Auto VI achieves US$3.79 billion in sales within a day of its release, more than any other entertainment product in history.",
+          "link": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Hurried Announcement: Alessandro Masullo GRH",
+          "link": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+          "source": "Hacker News 熱門 · 2394 points",
+          "score": 2394,
+          "summary": "Hi everyone, I am at the American Mathematical Society Executive Committee and Board of Trustees meeting now, and about to chair an hours-long meeting, but this is urgent, so I will try to get this…"
+        },
+        {
+          "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+          "link": "https://www.alphaxiv.org/abs/2611.24778",
+          "source": "alphaXiv · 267 likes",
+          "score": 267,
+          "summary": "World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question follows: what would…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 279,
+    "Hacker News 熱門": 2394,
+    "alphaXiv": 267,
+    "Hugging Face Papers": 52,
+    "GitHub Trending": 769
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "新竹關西清晨6.6度　吳德榮：各地晴朗防日夜溫差",
+      "早安世界》台股崩跌　金管會11/23起祭全面平盤下禁空令5措施",
+      "U23台灣投手雷皓博傳旅美　藍鳥擬以約40萬美元簽下",
+      "美財長：輝達調查將釐清是否有不當銷售情況"
+    ],
+    "公視": [
+      "金管會祭第3波限空令 23日起全面禁止平盤以下放空",
+      "北市政見發表蔣萬安打政績牌 沈伯洋提兒虐、食安問題",
+      "中壢毒駕車禍釀1死6傷 肇事駕駛遭聲押"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 2,
+    "公民參與": 3,
+    "全球政治": 1,
+    "兩岸政治": 2
+  },
+  "tracking": [
+    {
+      "topic": "熱門",
+      "title": "早安世界》台股崩跌 金管會11/23起祭全面平盤下禁空令5措施",
+      "link": "https://www.cna.com.tw/news/ahel/202611225001.aspx",
+      "source": "中央社、公視"
+    }
+  ],
+  "failures": []
+}
