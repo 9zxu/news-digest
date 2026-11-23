@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-23",
+  "generated": "2026-11-23T10:56:58+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 5 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "美情報總監示警 系統汰舊換新恐釀更多科技當機",
+          "link": "https://www.cna.com.tw/news/ait/202611230019.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國近期接連發生航班停飛、銀行系統故障等科技當機事件，國家情報總監克雷頓今天表示，隨著企業與政府機關汰換老舊系統，美國民眾應預期還會有更多當機和服務中斷。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "COP31 fails to reach major climate deal as talks expose deep divisions",
+          "link": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Hopes for an agreement on tackling climate change collapsed after a row about mentioning fossil fuels"
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+          "link": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+          "source": "Hacker News · 905 points",
+          "score": 905,
+          "summary": "A case study of Anthropic’s total power use and emissions. We find the company could emit 32 million metric tons of carbon dioxide in 2028."
+        },
+        {
+          "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+          "link": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+          "source": "Hacker News 熱門 · 1202 points",
+          "score": 1202,
+          "summary": "Japan’s automakers will work together to lower production costs as they band together to compete against China’s growing automotive sector."
+        },
+        {
+          "title": "Language Model Harnesses Can Be Compositional Generalizers",
+          "link": "https://www.alphaxiv.org/abs/2611.harness-cg",
+          "source": "alphaXiv · 318 likes",
+          "score": 318,
+          "summary": "Modern language models (LMs) are post-trained and deployed as agents inside a “harness”, but standard harness designs accumulate context that the neural network is forced to generalize to, making trai…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 905,
+    "Hacker News 熱門": 1202,
+    "alphaXiv": 318,
+    "GitHub Trending": 699
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "美情報總監示警　系統汰舊換新恐釀更多科技當機",
+      "COP31氣候峰會破局　全球氣候外交機制面臨改革壓力",
+      "新竹關西清晨探10.9度　吳德榮：24日北、東部轉雨偏涼",
+      "黃仁勳回歸？美財長：他已是外部人士　等待輝達說明"
+    ],
+    "公視": [
+      "選前黃金週蕭美琴站台沈伯洋 蔣萬安同盧秀燕、韓國瑜車掃",
+      "十分瀑布遊客遭虎頭蜂攻擊 17人送醫幸皆無生命危險",
+      "COP31延會逾48小時創紀錄 協議草案未提化石燃料多國拒簽"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 3,
+    "全球政治": 2,
+    "兩岸政治": 1
+  },
+  "tracking": [
+    {
+      "topic": "全球政治",
+      "title": "COP31氣候峰會破局 全球氣候外交機制面臨改革壓力",
+      "link": "https://www.cna.com.tw/news/aopl/202611230026.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
