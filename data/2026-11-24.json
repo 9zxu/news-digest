@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-24",
+  "generated": "2026-11-24T14:14:49+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 4 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台股強漲3310點創史上最大漲點紀錄 收在40122點",
+          "link": "https://www.cna.com.tw/news/afe/202611240129.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "輝達（NVIDIA）宣布創辦人黃仁勳即刻恢復執行長等職務，台股今天展開報復性反彈，終場大漲3310.46點，創下史上收盤最大漲點，收在40122.35點，成交值新台幣4194.05億元，為今年新低量。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+          "link": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's stock value."
+        },
+        {
+          "title": "The joint ESA – JAXA mission BepiColombo (spacecraft pictured) enters orbit around Mercury.",
+          "link": "https://en.wikipedia.org/wiki/BepiColombo",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+          "link": "https://z.ai/blog/glm-5.4",
+          "source": "Hacker News · 1096 points",
+          "score": 1096,
+          "summary": ""
+        },
+        {
+          "title": "Nvidia Reinstates Jensen Huang as CEO",
+          "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+          "source": "Hacker News 熱門 · 2396 points",
+          "score": 2396,
+          "summary": "The Nvidia board said it had input from senior levels of the U.S. government."
+        },
+        {
+          "title": "A Claimed Proof of the Riemann Hypothesis",
+          "link": "https://www.alphaxiv.org/abs/2611.claimed-riemann-hypothesis-proof",
+          "source": "alphaXiv · 262 likes",
+          "score": 262,
+          "summary": "Levent Alpöge claims to have discovered, with Claude, a proof of the Riemann Hypothesis and the Generalized Riemann Hypothesis, and says the arguments have been formalized. The text describes a propos…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1096,
+    "Hacker News 熱門": 2396,
+    "alphaXiv": 262,
+    "GitHub Trending": 790
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台股強漲3310點創史上最大漲點紀錄　收在40122點",
+      "傳索羅門群島告知北京不續簽安全協議　改與澳洲簽新約",
+      "沈伯洋啟動傳統式車掃從中正萬華出發　提醒市民記得投票",
+      "蔣萬安與藍營議員候選人啟動車掃　3天跑6選區全力催票"
+    ],
+    "公視": [
+      "台股近5萬高點墜落1.4萬點 明起擔保維持率降至120%",
+      "輝達董事會宣布恢復黃仁勳職務 美國政府確認無國安風險",
+      "南韓發現俄軍機入侵防空識別區 擬召見武官表達抗議"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 5,
+    "全球政治": 2,
+    "兩岸政治": 2
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "西班牙大選民調封關前夕 右翼保持領先可望過半",
+      "link": "https://www.cna.com.tw/news/aopl/202611240038.aspx",
+      "source": "中央社 國際"
+    },
+    {
+      "topic": "全球政治",
+      "title": "報復瑞士制裁兒童夏令營 北韓威脅關閉外交辦事處",
+      "link": "https://www.cna.com.tw/news/aopl/202611240074.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
