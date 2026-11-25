@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-25",
+  "generated": "2026-11-25T12:58:12+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 3 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    },
+    {
+      "title": "115年地方公職人員選舉選舉人人數及全國性公民投票案第22案投票權人人數",
+      "link": "https://web.cec.gov.tw/central/article/66267",
+      "source": "中選會新聞稿"
+    },
+    {
+      "title": "公告115年地方公職人員選舉選舉人人數及全國性公民投票案第22案投票權人人數",
+      "link": "https://web.cec.gov.tw/central/article/66268",
+      "source": "中選會公告"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台股放量重挫 新台幣閃現33元午盤暫收32.997元",
+          "link": "https://www.cna.com.tw/news/afe/202611250103.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "台灣金融市場今天股匯雙殺，台股放量重挫，盤中下跌3440點，至中午成交金額逼近新台幣兆元；台北外匯市場新台幣兌美元早盤一度貶破33元關卡，中午暫收32.997元，貶5.8分，成交金額14.79億美元。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "US attorney general dodges questions about Nvidia investigation",
+          "link": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
+        },
+        {
+          "title": "Mongolian president Ukhnaagiin Khürelsükh announces his resignation in response to corruption allegations.",
+          "link": "https://en.wikipedia.org/wiki/Ukhnaagiin_Kh%C3%BCrels%C3%BCkh",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "LLM agents work for their parent companies, not for you",
+          "link": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+          "source": "Hacker News · 947 points",
+          "score": 947,
+          "summary": "I built an Instagram-to-Bandcamp tool with Claude, but when the API broke, the model refused to help me work around it, while happily downloading from YouTube instead, which pays the artist nothing. T…"
+        },
+        {
+          "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+          "link": "https://twitter.com/ylecun/status/2124550037912920090",
+          "source": "Hacker News 熱門 · 1987 points",
+          "score": 1987,
+          "summary": "Dario's spiel since GPT-2 has always been about hyping the dangers so that open models would be made illegal and *he* would stay in control. He left OpenAI because he wasn't going to have control. It'…"
+        },
+        {
+          "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+          "link": "https://www.alphaxiv.org/abs/2611.glm-5",
+          "source": "alphaXiv · 252 likes",
+          "score": 252,
+          "summary": "GLM-5.4 adapts a pre-trained 750B GLM-5 base into a Loop Transformer that runs 28 shared layers twice, reaching intelligence comparable to 2T-3T parameter models."
+        },
+        {
+          "title": "HKUDS/CLI-Anything",
+          "link": "https://github.com/HKUDS/CLI-Anything",
+          "source": "GitHub Trending · 1,074 stars today",
+          "score": 1074,
+          "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 947,
+    "Hacker News 熱門": 1987,
+    "alphaXiv": 252,
+    "Hugging Face Papers": 94,
+    "GitHub Trending": 1074
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台股放量重挫　新台幣閃現33元午盤暫收32.997元",
+      "北市藍綠大車掃第2天　警籲人車配合交通疏導",
+      "台股重摔逾3000點創盤中第2大跌點　上市櫃逾1800家下跌",
+      "美301調查將出爐　台美經貿人士：估最終稅率15%不疊加"
+    ],
+    "公視": [
+      "新北國中生割頸案民事賠償改判 二審裁定加碼至1782萬",
+      "高雄增2例本土登革熱 疾管署籲醫師善用快篩與通報",
+      "美陪審團裁定華為10項罪名成立 含竊商業機密、暗助伊朗政府"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 2,
+    "兩岸政治": 1,
+    "半導體與科技地緣政治": 2
+  },
+  "tracking": [
+    {
+      "topic": "半導體與科技地緣政治",
+      "title": "川普力促黃仁勳回歸 分析：可能助長加強晶片出口管制呼聲",
+      "link": "https://www.cna.com.tw/news/aopl/202611250028.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
