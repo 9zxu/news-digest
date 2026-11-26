@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-26",
+  "generated": "2026-11-26T12:15:36+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 2 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "美國301關稅 農業部：蝴蝶蘭、毛豆等農產品在美具競爭優勢",
+          "link": "https://www.cna.com.tw/news/aipl/202611260047.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美國公布結構性產能過剩301調查報告，台灣共取得2232項產品關稅豁免，其中包括322項農產品。農業部長陳駿季今天表示，會確保符合台美對等貿易協定所提的15%不疊加MFN關稅，維持農產品輸美優勢，台灣主力外銷美國的蝴蝶蘭仍是專屬豁免品項，稅率為零，另毛豆、吳郭魚等也比中國的高稅率具有競爭優勢。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "US announces new tariffs on host of countries including China",
+          "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU."
+        },
+        {
+          "title": "Sandagiin Byambatsogt becomes acting president of Mongolia after Ukhnaagiin Khürelsükh resigns amid corruption allegations.",
+          "link": "https://en.wikipedia.org/wiki/Sandagiin_Byambatsogt",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+          "link": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+          "source": "Hacker News · 454 points",
+          "score": 454,
+          "summary": "TL;DR * Two agents running on the same inference server can reliably communicate, even if they cannot send each other messages or access the same fi…"
+        },
+        {
+          "title": "1Password Security Incident",
+          "link": "https://1password.com/blog/update-on-nov-2026-security-incident",
+          "source": "Hacker News 熱門 · 1255 points",
+          "score": 1255,
+          "summary": "1Password identified a security incident involving some of our backend systems. Customer vaults were not accessed and remain secure."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 454,
+    "Hacker News 熱門": 1255,
+    "alphaXiv": 145,
+    "Hugging Face Papers": 213,
+    "GitHub Trending": 826
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "美國301關稅　農業部：蝴蝶蘭、毛豆等農產品在美具競爭優勢",
+      "美232調查中　鄭麗君：半導體配額內已免稅、無人機全球最低",
+      "氣象署：28日投票日天氣大致晴朗　北部清晨低溫16度",
+      "301台灣稅率估15%　鄭麗君：等同美FTA國優於中國東南亞"
+    ],
+    "公視": [
+      "美擬對台課15％產能過剩關稅 鄭麗君：有信心續享2232項產品豁免",
+      "沈伯洋取消選前之夜實體造勢 蔣萬安競辦：願讓市府路權",
+      "國1彰化路段4車連環追撞 和欣客運司機、2乘客送醫不治"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 4
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "Protesters call on Israel to free Palestinian student held without charge",
+      "link": "https://www.bbc.co.uk/news/articles/cw62p8z9edjlo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World"
+    }
+  ],
+  "failures": []
+}
