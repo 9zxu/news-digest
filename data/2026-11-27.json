@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-27",
+  "generated": "2026-11-27T12:23:54+08:00",
+  "alerts": [],
+  "civic": [
+    {
+      "title": "📅 115年地方公職人員選舉投票：11/28（還有 1 天）",
+      "link": "https://www.cec.gov.tw/",
+      "source": "中選會行事曆"
+    }
+  ],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "台股盤中漲逾300點 多空交戰挑戰年線",
+          "link": "https://www.cna.com.tw/news/afe/202611270059.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "美股感恩節休市，台股今天開高震盪，盤中漲逾300點、逼近39500點，隨後遭遇年線反壓，漲勢收斂。台積電、鴻海穩盤，低軌衛星、無人機等題材股走勢搶眼；PCB與光通訊概念股疲軟。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+          "link": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Ukraine's president voices frustration with US and says it is \"strange\" Trump has described Vladimir Putin as a friend."
+        },
+        {
+          "title": "Mathematician Levent Alpöge, working with the AI model Claude, announces a formal proof of the Riemann hypothesis.",
+          "link": "https://en.wikipedia.org/wiki/Riemann_hypothesis",
+          "source": "Wikipedia",
+          "score": null,
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "The New York Times warns photographers not to update Photoshop over AI features",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+          "source": "Hacker News · 659 points",
+          "score": 659,
+          "summary": "The NYT doesn’t want AI metadata inadvertently added to its photos."
+        },
+        {
+          "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+          "link": "https://scottaaronson.blog/?p=10379",
+          "source": "Hacker News 熱門 · 2010 points",
+          "score": 2010,
+          "summary": "I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what’s now happening, so I’m trying again. Last night, we ha…"
+        },
+        {
+          "title": "Verifiable On-Policy Distillation",
+          "link": "https://www.alphaxiv.org/abs/2611.30325",
+          "source": "alphaXiv · 201 likes",
+          "score": 201,
+          "summary": "Reinforcement learning with verifiable rewards (RLVR) has become a powerful approach for improving language-model reasoning, but its supervision is inherently sparse: a sequence-level verifier reward…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 659,
+    "Hacker News 熱門": 2010,
+    "alphaXiv": 201,
+    "Hugging Face Papers": 106,
+    "GitHub Trending": 702
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "台股盤中漲逾300點　多空交戰挑戰年線",
+      "2026九合一選舉暨公投投票帶什麼　地點、流程、領票張數彙整",
+      "美國新規堵漏洞　輝達晶片買家恐禁租算力予中企",
+      "美擴大對中晶片設備禁令恐重創ASML　荷蘭表態抵制"
+    ],
+    "公視": [
+      "北市選戰沈伯洋合體蔡英文直播 蔣萬安掃街與市民互動",
+      "英最大連鎖書店揭年度圖書獎 《臺灣漫遊錄》奪最佳虛構小說",
+      "中教大學生課堂持刀恐嚇教師 檢方聲請預防性羈押獲准"
+    ]
+  },
+  "watch_hits": {
+    "公民參與": 5,
+    "全球政治": 1,
+    "兩岸政治": 1,
+    "重大災難與事故": 1
+  },
+  "tracking": [
+    {
+      "topic": "公民參與",
+      "title": "紐西蘭大選結果出爐 盧克森右翼執政聯盟差1席過半",
+      "link": "https://www.cna.com.tw/news/aopl/202611270031.aspx",
+      "source": "中央社 國際"
+    }
+  ],
+  "failures": []
+}
