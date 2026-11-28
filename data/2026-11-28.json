@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-28",
+  "generated": "2026-11-28T12:03:59+08:00",
+  "alerts": [],
+  "civic": [],
+  "headlines": [
+    {
+      "key": "taiwan",
+      "name": "🇹🇼 台灣",
+      "each": false,
+      "articles": [
+        {
+          "title": "花蓮玉里鎮男子疑自認廢票撕毀選票 警方將函請選委會裁處",
+          "link": "https://www.cna.com.tw/news/asoc/202611280044.aspx",
+          "source": "中央社",
+          "score": null,
+          "summary": "今天是九合一選舉與「廢除非核家園」公投投、開票日，花蓮玉里一名男子疑似認為自己漏蓋選票成廢票，撕毀選票，當場被選務人員發現，並通知警方，將函請縣選委會認定裁處。"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "name": "🌍 World",
+      "each": true,
+      "articles": [
+        {
+          "title": "Spanish PM and rivals rally supporters in final pitch for votes",
+          "link": "https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "score": null,
+          "summary": "Prime Minister Pedro Sánchez wants to defy the polls, and his main rivals accuse him of not telling the truth and of \"betrayal\"."
+        }
+      ]
+    },
+    {
+      "key": "developer",
+      "name": "💻 Developer",
+      "each": true,
+      "articles": [
+        {
+          "title": "AI made self-hosting fun again",
+          "link": "https://janlukas.blog/posts/ai-self-hosting",
+          "source": "Hacker News · 1107 points",
+          "score": 1107,
+          "summary": "I’ve been self-hosting things for many years. There were times when I was quite enthusiastic about it, constantly trying out new software and tinkering with my infrastructure. But at some point, that…"
+        },
+        {
+          "title": "Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems",
+          "link": "https://www.alphaxiv.org/abs/2611.32606",
+          "source": "alphaXiv · 160 likes",
+          "score": 160,
+          "summary": "Large language models increasingly work as teams of agents, and a team is expected to solve problems beyond the reach of any single member. Most evaluations credit a team for outperforming a single ag…"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "Hacker News": 1107,
+    "Hacker News 熱門": 691,
+    "alphaXiv": 160,
+    "Hugging Face Papers": 81,
+    "GitHub Trending": 660
+  },
+  "hot": [
+    {
+      "name": "伊朗戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_%282026%E5%B9%B4%29"
+    },
+    {
+      "name": "俄烏戰爭",
+      "link": "https://zh.wikipedia.org/zh-tw/%E4%BF%84%E7%83%8F%E6%88%B0%E7%88%AD_%282022%E5%B9%B4%E8%87%B3%E4%BB%8A%29"
+    },
+    {
+      "name": "2026年也門攻勢",
+      "link": "https://zh.wikipedia.org/zh-tw/2026%E5%B9%B4%E4%B9%9F%E9%96%80%E6%94%BB%E5%8B%A2"
+    }
+  ],
+  "front_pages": {
+    "中央社": [
+      "花蓮玉里鎮男子疑自認廢票撕毀選票　警方將函請選委會裁處",
+      "返鄉投票熱　雙鐵客運27日疏運較上屆選舉增近3成",
+      "中共45機艦船台海周邊活動　國軍嚴密監控應處",
+      "鄭宗哲遭美職老虎隊DFA　與李灝宇當隊友有變數"
+    ],
+    "公視": [
+      "投票禁穿戴可識別候選人物品 違者最重可處2年有期徒刑",
+      "選舉不只在新聞裡，也在你的生活裡｜2026九合一大選",
+      "蘆洲護理之家非法超收詐領上億 住民居住空間擁擠、伙食惡劣"
+    ]
+  },
+  "watch_hits": {
+    "戰爭／衝突": 1,
+    "公民參與": 2,
+    "兩岸政治": 1,
+    "奧運": 1
+  },
+  "tracking": [],
+  "failures": [
+    "中選會行事曆"
+  ]
+}
